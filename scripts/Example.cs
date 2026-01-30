@@ -1,10 +1,10 @@
 using Godot;
 using System;
 
-public partial class Example : Node2D
+public partial class Example : Interactable
 {
-    public override void _Ready()
+    public override void OnInteract()
     {
-        base._Ready();
+        GetTree().Quit();
     }
 }
