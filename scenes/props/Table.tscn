@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://oaajihjusq4q"]
+
+[ext_resource type="Texture2D" uid="uid://c6vkwoiusbgu7" path="res://assets/sprites/props/Table.png" id="1_4irf3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4irf3"]
+size = Vector3(1.6696777, 1, 0.68359375)
+
+[node name="Table" type="StaticBody3D" unique_id=959571379]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1796003828]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0013427772, 0, -0.054687504)
+shape = SubResource("BoxShape3D_4irf3")
+metadata/_edit_lock_ = true
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=73377299]
+pixel_size = 0.004
+texture = ExtResource("1_4irf3")
+metadata/_edit_lock_ = true
