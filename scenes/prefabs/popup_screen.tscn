@@ -1,0 +1,116 @@
+[gd_scene format=3 uid="uid://d0iq3ovi1hlok"]
+
+[ext_resource type="Script" uid="uid://cxqji1mtqcge" path="res://scripts/PopupScreen.cs" id="1_2awst"]
+[ext_resource type="Texture2D" uid="uid://c2tcm85a4l0qm" path="res://assets/textures/UI-Scaleable.png" id="1_650ad"]
+
+[node name="PopupScreen" type="Control" unique_id=1773701320]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2awst")
+
+[node name="BoxContainer" type="BoxContainer" parent="." unique_id=951035780]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+vertical = true
+
+[node name="Control" type="Control" parent="BoxContainer" unique_id=990395926]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="BoxContainer" type="BoxContainer" parent="BoxContainer" unique_id=1354063763]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+
+[node name="Control" type="Control" parent="BoxContainer/BoxContainer" unique_id=71375280]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Window" type="Control" parent="BoxContainer/BoxContainer" unique_id=992406523]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="NinePatchRect" type="NinePatchRect" parent="BoxContainer/BoxContainer/Window" unique_id=1030314531]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_650ad")
+region_rect = Rect2(1, 1, 30, 30)
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="MarginContainer" type="MarginContainer" parent="BoxContainer/BoxContainer/Window" unique_id=659312221]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="VBoxContainer" type="BoxContainer" parent="BoxContainer/BoxContainer/Window/MarginContainer" unique_id=1213375272]
+layout_mode = 2
+vertical = true
+
+[node name="PopupTitle" type="RichTextLabel" parent="BoxContainer/BoxContainer/Window/MarginContainer/VBoxContainer" unique_id=1618666673]
+unique_name_in_owner = true
+layout_mode = 2
+bbcode_enabled = true
+text = "[POPUP_TITLE]"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1
+
+[node name="PopupContent" type="RichTextLabel" parent="BoxContainer/BoxContainer/Window/MarginContainer/VBoxContainer" unique_id=1963464174]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "[POPUP_CONTENT]"
+fit_content = true
+
+[node name="HButtonContainer" type="BoxContainer" parent="BoxContainer/BoxContainer/Window/MarginContainer/VBoxContainer" unique_id=941081702]
+layout_mode = 2
+alignment = 1
+
+[node name="ButtonDeny" type="Button" parent="BoxContainer/BoxContainer/Window/MarginContainer/VBoxContainer/HButtonContainer" unique_id=1544625360]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "[POPUP_DENY]"
+
+[node name="ButtonConfirm" type="Button" parent="BoxContainer/BoxContainer/Window/MarginContainer/VBoxContainer/HButtonContainer" unique_id=413212600]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "[POPUP_CONFIRM]"
+
+[node name="Control2" type="Control" parent="BoxContainer/BoxContainer" unique_id=295856646]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Control2" type="Control" parent="BoxContainer" unique_id=1467684790]
+layout_mode = 2
+size_flags_vertical = 3
+
+[connection signal="button_up" from="BoxContainer/BoxContainer/Window/MarginContainer/VBoxContainer/HButtonContainer/ButtonDeny" to="." method="DenyAction"]
+[connection signal="button_up" from="BoxContainer/BoxContainer/Window/MarginContainer/VBoxContainer/HButtonContainer/ButtonConfirm" to="." method="AcceptAction"]

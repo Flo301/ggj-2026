@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bhi8mlxv4if6m"]
 
 [ext_resource type="Texture2D" uid="uid://don6j007y1u5l" path="res://assets/textures/LWFH-BG.png" id="1_gpbvw"]
+[ext_resource type="Script" uid="uid://cvwuh0wy08q51" path="res://scripts/Titlemenu.cs" id="1_q7ugu"]
 [ext_resource type="Texture2D" uid="uid://efimvbpv0tve" path="res://assets/textures/MenuItemBase.png" id="2_iulo1"]
 [ext_resource type="Texture2D" uid="uid://od1u57gk6mkk" path="res://assets/textures/Reset-Icon.png" id="3_q7ugu"]
 
@@ -11,6 +12,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_q7ugu")
 
 [node name="Background" type="TextureRect" parent="." unique_id=1013399480]
 layout_mode = 1
@@ -86,3 +88,5 @@ size_flags_vertical = 3
 layout_mode = 2
 size_flags_horizontal = 3
 vertical = true
+
+[connection signal="button_up" from="HBoxContainer/VBoxContainer/ButtonQuit" to="." method="QuitGame"]
