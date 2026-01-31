@@ -17,6 +17,12 @@ public partial class ConditionalNodeHidder : Node3D
 
     public override void _Ready()
     {
+        checkIfShouldHide();
+        GlobalState.Instance.DialogDone += checkIfShouldHide;
+    }
+
+    private void checkIfShouldHide(string dialogName = "")
+    {
         if (ShouldHide())
         {
             Visible = false;

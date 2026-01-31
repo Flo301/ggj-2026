@@ -6,10 +6,13 @@ using Godot;
 
 partial class GlobalState : Node
 {
+    [Signal]
+    public delegate void DialogDoneEventHandler(string dialogName);
+
     public static GlobalState Instance { get; private set; }
     public string LastScene { get; internal set; }
 
-    public List<string> doneDialogs = [];
+    private List<string> doneDialogs = [];
     public List<string> availableEmotions = ["happy"];
 
     public bool isDialogOpen = false;
@@ -46,5 +49,14 @@ partial class GlobalState : Node
         var instance = scene.Instantiate<DialogueUi>();
         GetTree().Root.FindChild("InGameUi", true, false).AddChild(instance);
         instance.Init(dialog);
+    }
+
+    public void AddDialogDone(string dialogName)
+    {
+        if (!HasDoneDialog(dialogName))
+        {
+            doneDialogs.Add(dialogName);
+            EmitSignal(SignalName.DialogDone, dialogName);
+        }
     }
 }

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://beodwmp3pvlcs"]
 
 [ext_resource type="Script" uid="uid://d3najwu2fpmnl" path="res://scripts/Example.cs" id="1_02xiy"]
-[ext_resource type="Texture2D" uid="uid://c3mrk8hcvl3vw" path="res://assets/sprites/office/Bürotür.png" id="2_02xiy"]
+[ext_resource type="Texture2D" uid="uid://c2bw3adspihyg" path="res://assets/sprites/dialogue/Babyman.png" id="2_02xiy"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_gmvds"]
 radius = 1.1157227
@@ -17,7 +17,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 shape = SubResource("CylinderShape3D_gmvds")
 
 [node name="Sprite3D" type="Sprite3D" parent="." unique_id=387633324]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1176262, 0)
+transform = Transform3D(0.56, 0, 0, 0, 0.56, 0, 0, 0, 0.56, 0, 1.1176262, 0)
 pixel_size = 0.004
 texture = ExtResource("2_02xiy")
 

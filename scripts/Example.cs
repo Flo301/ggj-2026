@@ -2,7 +2,6 @@ using Godot;
 using System;
 
 
-
 public partial class Example : Interactable
 {
     public override void _Ready()
@@ -12,6 +11,6 @@ public partial class Example : Interactable
 
     public override void OnInteract()
     {
-        GlobalState.Instance.openDialog("demoDialog");
+        GlobalState.Instance.openDialog("boss");
     }
 }

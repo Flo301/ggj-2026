@@ -217,9 +217,9 @@ public partial class DialogueUi : Control
 	void jumpToSection(string name)
 	{
 		var dialogkey = dialog.name + "." + name;
-		if (!GlobalState.Instance.doneDialogs.Contains(dialogkey))
+		if (!GlobalState.Instance.HasDoneDialog(dialogkey))
 		{
-			GlobalState.Instance.doneDialogs.Add(dialog.name + "." + name);
+			GlobalState.Instance.AddDialogDone(dialog.name + "." + name);
 		}
 		activeSection = dialog.getSectionById(name);
 		activeLine = 0;
@@ -239,7 +239,7 @@ public partial class DialogueUi : Control
 		{
 			case "didDialog":
 				// Check if the player did the given dialog
-				return GlobalState.Instance.doneDialogs.Contains(condition.Value);
+				return GlobalState.Instance.HasDoneDialog(condition.Value);
 			case "hasEmotion":
 				// Check if the player has the given emotion
 				return GlobalState.Instance.availableEmotions.Contains(condition.Value);

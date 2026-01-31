@@ -4,9 +4,11 @@
 [ext_resource type="Material" uid="uid://cru6isnn2ffor" path="res://assets/textures/architecture/floor.tres" id="2_1uvqo"]
 [ext_resource type="PackedScene" uid="uid://bgbb7p4i3cbu6" path="res://scenes/interactables/TransitionDoorOffice.tscn" id="4_ydf51"]
 [ext_resource type="PackedScene" uid="uid://dwytcgscm8ukm" path="res://scenes/props/office/Wall.tscn" id="5_2gnet"]
+[ext_resource type="PackedScene" uid="uid://beodwmp3pvlcs" path="res://scenes/interactables/ExampleInteractable.tscn" id="6_2r08a"]
 [ext_resource type="PackedScene" uid="uid://bwmg6eb1x3uma" path="res://scenes/props/office/CoffeeMaschine.tscn" id="6_rgr8h"]
 [ext_resource type="PackedScene" uid="uid://oaajihjusq4q" path="res://scenes/props/office/Table.tscn" id="7_yd851"]
 [ext_resource type="PackedScene" uid="uid://k5njibnt0l2l" path="res://scenes/props/office/Mailbox.tscn" id="8_3jl2r"]
+[ext_resource type="Script" uid="uid://cjpm8ycgfm0ma" path="res://scripts/ConditionalNodeHidder.cs" id="8_xfxer"]
 [ext_resource type="PackedScene" uid="uid://f8l67qwkyx7y" path="res://scenes/props/office/Poster.tscn" id="9_28jjv"]
 [ext_resource type="PackedScene" uid="uid://3p476btw42pn" path="res://scenes/props/office/YogaMatt.tscn" id="10_ccje7"]
 
@@ -116,6 +118,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.946407, 0.049999952, -0.898
 [node name="CoffeeMaschine" parent="." unique_id=959571379 instance=ExtResource("6_rgr8h")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.14812267, 0.049999714, -1.0975876)
 
+[node name="Example_Interactable" parent="." unique_id=1584149579 instance=ExtResource("6_2r08a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.867214, 0.072295666, -1.0905354)
+InteractionText = "Talk to me"
+
 [node name="Table" parent="." unique_id=1438465405 instance=ExtResource("7_yd851")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.3736744, 0.049999833, 1.2070847)
 
@@ -130,6 +136,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.806532, 0.049999356, 5.4536
 
 [node name="Table7" parent="." unique_id=1380039806 instance=ExtResource("7_yd851")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.622479, 0.049999118, 8.98234)
+script = ExtResource("8_xfxer")
+DoHideWhenFlags = PackedStringArray("boss.start")
 
 [node name="Table2" parent="." unique_id=1810965948 instance=ExtResource("7_yd851")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.470557, 0.049999833, 4.9371963)
