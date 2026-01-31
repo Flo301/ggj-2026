@@ -27,6 +27,10 @@ partial class GlobalState : Node
         }
     }
 
+    public bool HasDoneDialog(string dialogName)
+    {
+        return doneDialogs.Contains(dialogName);
+    }
 
     public void openDialog(string dialogName)
     {
