@@ -10,7 +10,7 @@ public partial class Example : Interactable
         base._Ready();
     }
 
-    public override void OnInteract()
+    protected override void onInteract()
     {
         GlobalState.Instance.openDialog("demoDialog");
     }

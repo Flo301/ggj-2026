@@ -1,13 +1,19 @@
 using Godot;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 
 public partial class DialogueUi : Control
 {
 
+
+	[Signal]
+	public delegate void InteractEventHandler();
+
 	PackedScene MenuItemScene = GD.Load<PackedScene>("scenes/prefabs/container_option.tscn");
+	private ColorRect background => GetNode<ColorRect>("Background");
 
 	Dialog dialog;
 	Section activeSection;
@@ -137,17 +143,10 @@ public partial class DialogueUi : Control
 		// Trigger event
 		if (line is EventLine eventLine)
 		{
-			switch (eventLine.Name)
+			var continueExecution = handledEventArgs(eventLine.Name, eventLine.Value);
+			if (!continueExecution)
 			{
-				case "getEmotion":
-					if (!GlobalState.Instance.availableEmotions.Contains(eventLine.Value))
-					{
-						GlobalState.Instance.availableEmotions.Add(eventLine.Value);
-					}
-					break;
-				default:
-					GD.PushError("Unknown event name: " + eventLine.Name);
-					break;
+				return;
 			}
 		}
 
@@ -199,6 +198,38 @@ public partial class DialogueUi : Control
 
 		activeLine++;
 		_ = handleCurrentLine();
+	}
+
+	private bool handledEventArgs(string name, string value)
+	{
+		switch (name)
+		{
+			case "getEmotion":
+				if (!GlobalState.Instance.availableEmotions.Contains(value))
+				{
+					GlobalState.Instance.availableEmotions.Add(value);
+				}
+				break;
+			case "background":
+				switch (value)
+				{
+					case "black":
+						background.Color = Color.FromHtml("black");
+						break;
+					default:
+						background.Color = Color.FromHtml("#00000037");
+						break;
+				}
+				break;
+			case "interact":
+				EmitSignal(SignalName.Interact);
+				return false;
+			default:
+				GD.PushError("Unknown event name: " + name);
+				break;
+		}
+
+		return true;
 	}
 
 	public async Task updateCurrentVisibleCharacters()

@@ -28,11 +28,11 @@ partial class GlobalState : Node
     }
 
 
-    public void openDialog(string dialogName)
+    public DialogueUi openDialog(string dialogName)
     {
         if (isDialogOpen)
         {
-            return;
+            return null;
         }
 
         var dialog = DialogParser.LeadDialog(dialogName);
@@ -42,5 +42,6 @@ partial class GlobalState : Node
         var instance = scene.Instantiate<DialogueUi>();
         GetTree().Root.FindChild("InGameUi", true, false).AddChild(instance);
         instance.Init(dialog);
+        return instance;
     }
 }
