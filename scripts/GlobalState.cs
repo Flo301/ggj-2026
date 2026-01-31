@@ -6,6 +6,7 @@ using Godot;
 partial class GlobalState : Node
 {
     public static GlobalState Instance { get; private set; }
+    public string LastScene { get; internal set; }
 
     public override void _Ready()
     {

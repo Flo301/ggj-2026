@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://bh00menjxwv4u"]
+
+[ext_resource type="Material" uid="uid://c0rlhcr4gttn6" path="res://assets/textures/floor_texture.tres" id="1_slyuw"]
+[ext_resource type="PackedScene" uid="uid://oaajihjusq4q" path="res://scenes/props/Table.tscn" id="2_vp1t3"]
+[ext_resource type="PackedScene" uid="uid://bgbb7p4i3cbu6" path="res://scenes/interactables/Transition.tscn" id="5_ohhgo"]
+[ext_resource type="PackedScene" uid="uid://np5laepqvf8u" path="res://scenes/InGameUI.tscn" id="6_31vqn"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_8s0of"]
+material = ExtResource("1_slyuw")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ut3x7"]
+size = Vector3(2, 0.01, 2)
+
+[node name="3dPlayground" type="Node3D" unique_id=1894997718]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=183504690]
+transform = Transform3D(-0.63804245, 0.541395, -0.54753387, -2.9802322e-08, 0.7110818, 0.7031093, 0.77000123, 0.44861358, -0.45370036, 0, 3.5521686, 0)
+
+[node name="Ground" type="StaticBody3D" parent="." unique_id=83004813]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Ground" unique_id=1779877090]
+material_override = ExtResource("1_slyuw")
+mesh = SubResource("PlaneMesh_8s0of")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground" unique_id=1886842643]
+shape = SubResource("BoxShape3D_ut3x7")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1415309910]
+transform = Transform3D(1, 0, 0, 0, 0.9464072, 0.32297605, 0, -0.32297605, 0.9464072, -0.07702422, 2.9306722, 8.934057)
+projection = 1
+current = true
+fov = 70.0
+size = 5.4362597
+
+[node name="Table" parent="." unique_id=959571379 instance=ExtResource("2_vp1t3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1586471, 0.9099997, 4.0175443)
+
+[node name="Table2" parent="." unique_id=2063696293 instance=ExtResource("2_vp1t3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8358388, 0.90999997, 2.956658)
+
+[node name="Table3" parent="." unique_id=1634791002 instance=ExtResource("2_vp1t3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2225413, 0.9099997, 6.117807)
+
+[node name="Table4" parent="." unique_id=2092351143 instance=ExtResource("2_vp1t3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5453496, 0.90999997, 5.2206554)
+
+[node name="LevelTransition" parent="." unique_id=469549717 node_paths=PackedStringArray("SpawnPosition") instance=ExtResource("5_ohhgo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.13649201, 0, -2.163228)
+SpawnPosition = NodePath("Spawn")
+TargetLevelPath = "res://scenes/levels/3D_Playground_1.tscn"
+
+[node name="Spawn" type="Node3D" parent="LevelTransition" unique_id=1817781924]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.85757077, 1.6740279)
+
+[node name="InGameUi" parent="." unique_id=432755473 instance=ExtResource("6_31vqn")]

@@ -40,8 +40,8 @@ public partial class CharacterController : CharacterBody3D
 
         // Get input direction relative to character's forward direction
         Vector2 inputDir = Input.GetVector("ui_left", "ui_right", "ui_up", "ui_down");
-        Vector3 forward = -Transform.Basis.Z;
-        Vector3 right = -Transform.Basis.X;
+        Vector3 forward = Vector3.Back;
+        Vector3 right = Vector3.Right;
         Vector3 direction = (right * inputDir.X + forward * inputDir.Y).Normalized();
 
         // Apply movement

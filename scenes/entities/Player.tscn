@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://b2vgqtykri4ic"]
+
+[ext_resource type="Script" uid="uid://w5gvduche184" path="res://scripts/CharacterController.cs" id="1_uifn6"]
+[ext_resource type="Texture2D" uid="uid://bdjr0ijtr2ip5" path="res://assets/sprites/mainCharacter/main_character_no_emote_front.png" id="2_oboob"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_gmvds"]
+
+[node name="Player" type="CharacterBody3D" unique_id=1100889597]
+transform = Transform3D(-0.9999999, 0, -8.742276e-08, 0, 1, 0, 8.742277e-08, 0, -0.9999998, 0, 0, 0)
+script = ExtResource("1_uifn6")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1588916921]
+shape = SubResource("CapsuleShape3D_gmvds")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="." unique_id=814434721]
+visible = false
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=2060509712]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.056342244, 0)
+pixel_size = 0.0014
+billboard = 2
+texture = ExtResource("2_oboob")
