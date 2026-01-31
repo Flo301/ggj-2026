@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cucsrpjhcbq4s"]
 
 [ext_resource type="PackedScene" uid="uid://np5laepqvf8u" path="res://scenes/InGameUI.tscn" id="1_qbkdb"]
-[ext_resource type="PackedScene" uid="uid://bgbb7p4i3cbu6" path="res://scenes/interactables/TransitionDoor.tscn" id="3_ojv2i"]
+[ext_resource type="PackedScene" uid="uid://b8q1x6tp5flbv" path="res://scenes/interactables/TransitionInvisible.tscn" id="2_qbkdb"]
 [ext_resource type="PackedScene" uid="uid://cwy64im38csj1" path="res://scenes/props/supermarkt/CarCarrier.tscn" id="3_oy4nh"]
 [ext_resource type="PackedScene" uid="uid://bovlsdxi75qsi" path="res://scenes/props/supermarkt/Building.tscn" id="3_qlsl0"]
 [ext_resource type="PackedScene" uid="uid://c1kubfxwm03fo" path="res://scenes/props/supermarkt/CarOld.tscn" id="4_o8hgf"]
@@ -43,23 +43,20 @@ fov = 70.0
 size = 6.424
 near = 0.001
 
-[node name="LevelTransitionStreetA" parent="." unique_id=469549717 node_paths=PackedStringArray("SpawnPosition") instance=ExtResource("3_ojv2i")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5092015, 0.050575256, 11.470682)
-SpawnPosition = NodePath("Spawn")
+[node name="LevelTransitionApartment" parent="." unique_id=1584149579 node_paths=PackedStringArray("SpawnPosition") instance=ExtResource("2_qbkdb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09840751, 0.049999952, 13.027482)
+SpawnPosition = NodePath("Node3D")
+
+[node name="Node3D" type="Node3D" parent="LevelTransitionApartment" unique_id=564140868]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6550076, 0)
+
+[node name="LevelTransitionOffice" parent="." unique_id=126022392 node_paths=PackedStringArray("SpawnPosition") instance=ExtResource("2_qbkdb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.8476324, 0.049999952, 8.612136)
+SpawnPosition = NodePath("Node3D")
 TargetLevelPath = "res://scenes/levels/Office.tscn"
-InteractionText = "Enter Office"
 
-[node name="Spawn" type="Node3D" parent="LevelTransitionStreetA" unique_id=820280113]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0914073, 0.6856934, 0.92967236)
-
-[node name="LevelTransitionStreetB" parent="." unique_id=728121500 node_paths=PackedStringArray("SpawnPosition") instance=ExtResource("3_ojv2i")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5455923, 0.049999714, 7.2174788)
-SpawnPosition = NodePath("Spawn")
-TargetLevelPath = "res://scenes/levels/Office.tscn"
-InteractionText = "Enter Office"
-
-[node name="Spawn" type="Node3D" parent="LevelTransitionStreetB" unique_id=332418699]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6856936, 1.6117578)
+[node name="Node3D" type="Node3D" parent="LevelTransitionOffice" unique_id=1403049586]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6550076, 0)
 
 [node name="Props" type="Node3D" parent="." unique_id=255167590]
 
