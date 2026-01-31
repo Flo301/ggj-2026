@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://do68o4lg40ipu"]
+
+[sub_resource type="Gradient" id="Gradient_kllol"]
+offsets = PackedFloat32Array(0, 0.29752067)
+colors = PackedColorArray(1, 1, 1, 0.3137255, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_7yr7v"]
+gradient = SubResource("Gradient_kllol")
+
+[node name="ContainerOption" type="MarginContainer" unique_id=349841877]
+
+[node name="Background" type="TextureRect" parent="." unique_id=537805067]
+layout_mode = 2
+texture = SubResource("GradientTexture2D_7yr7v")
+expand_mode = 1
+
+[node name="HBoxContainerOption" type="BoxContainer" parent="." unique_id=302871121]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="HBoxContainerOption" unique_id=29414037]
+layout_mode = 2
+
+[node name="LabelOptionNumber" type="RichTextLabel" parent="HBoxContainerOption" unique_id=1364159723]
+layout_mode = 2
+text = "[NR]"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+vertical_alignment = 1
+
+[node name="ButtonOption" type="Button" parent="HBoxContainerOption" unique_id=891022664]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "[OPTION_TEXT]"
+alignment = 0

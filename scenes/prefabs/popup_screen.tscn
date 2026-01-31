@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://d0iq3ovi1hlok"]
 
 [ext_resource type="Script" uid="uid://cxqji1mtqcge" path="res://scripts/PopupScreen.cs" id="1_2awst"]
-[ext_resource type="Texture2D" uid="uid://c2tcm85a4l0qm" path="res://assets/textures/UI-Scaleable.png" id="1_650ad"]
+[ext_resource type="PackedScene" uid="uid://5mbjetkkvlmv" path="res://scenes/prefabs/ui_background.tscn" id="2_2awst"]
 
 [node name="PopupScreen" type="Control" unique_id=1773701320]
 layout_mode = 3
@@ -11,6 +11,15 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_2awst")
+
+[node name="Background" type="ColorRect" parent="." unique_id=815867247]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.2784314)
 
 [node name="BoxContainer" type="BoxContainer" parent="." unique_id=951035780]
 layout_mode = 1
@@ -40,20 +49,8 @@ size_flags_horizontal = 3
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="NinePatchRect" type="NinePatchRect" parent="BoxContainer/BoxContainer/Window" unique_id=1030314531]
-texture_filter = 1
+[node name="UIBackground" parent="BoxContainer/BoxContainer/Window" unique_id=1493063387 instance=ExtResource("2_2awst")]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("1_650ad")
-region_rect = Rect2(1, 1, 30, 30)
-patch_margin_left = 5
-patch_margin_top = 5
-patch_margin_right = 5
-patch_margin_bottom = 5
 
 [node name="MarginContainer" type="MarginContainer" parent="BoxContainer/BoxContainer/Window" unique_id=659312221]
 layout_mode = 1

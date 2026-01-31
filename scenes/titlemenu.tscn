@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://efimvbpv0tve" path="res://assets/textures/MenuItemBase.png" id="2_iulo1"]
 [ext_resource type="Texture2D" uid="uid://od1u57gk6mkk" path="res://assets/textures/Reset-Icon.png" id="3_q7ugu"]
 [ext_resource type="Texture2D" uid="uid://dg43sow8rqhiq" path="res://assets/textures/Flag-German.png" id="5_0io7f"]
-[ext_resource type="Texture2D" uid="uid://c2tcm85a4l0qm" path="res://assets/textures/UI-Scaleable.png" id="5_ttrsk"]
+[ext_resource type="PackedScene" uid="uid://5mbjetkkvlmv" path="res://scenes/prefabs/ui_background.tscn" id="5_ttrsk"]
 
 [node name="Titlemenu" type="Control" unique_id=2134614245]
 layout_mode = 3
@@ -98,16 +98,8 @@ vertical = true
 [node name="FlagSelector" type="MarginContainer" parent="HBoxContainer/HBoxContainerRight/VBoxContainer" unique_id=1624143593]
 layout_mode = 2
 
-[node name="FlagBackground" type="NinePatchRect" parent="HBoxContainer/HBoxContainerRight/VBoxContainer/FlagSelector" unique_id=1741255929]
-texture_filter = 1
-custom_minimum_size = Vector2(90, 63)
+[node name="UIBackground" parent="HBoxContainer/HBoxContainerRight/VBoxContainer/FlagSelector" unique_id=1493063387 instance=ExtResource("5_ttrsk")]
 layout_mode = 2
-texture = ExtResource("5_ttrsk")
-region_rect = Rect2(1, 1, 30, 30)
-patch_margin_left = 5
-patch_margin_top = 5
-patch_margin_right = 5
-patch_margin_bottom = 5
 
 [node name="FlagButton" type="Button" parent="HBoxContainer/HBoxContainerRight/VBoxContainer/FlagSelector" unique_id=100237864]
 custom_minimum_size = Vector2(85, 60)
@@ -122,21 +114,12 @@ visible = false
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="UIBackground" type="NinePatchRect" parent="HBoxContainer/HBoxContainerRight/VBoxContainer/FlagList" unique_id=55697774]
-texture_filter = 1
-custom_minimum_size = Vector2(90, 63)
+[node name="UIBackground" parent="HBoxContainer/HBoxContainerRight/VBoxContainer/FlagList" unique_id=1946221852 instance=ExtResource("5_ttrsk")]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("5_ttrsk")
-region_rect = Rect2(1, 1, 30, 30)
-patch_margin_left = 5
-patch_margin_top = 5
-patch_margin_right = 5
-patch_margin_bottom = 5
+offset_left = -5.0
+offset_top = -5.0
+offset_right = 5.0
+offset_bottom = 5.0
 
 [node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/HBoxContainerRight/VBoxContainer/FlagList" unique_id=1540288800]
 layout_mode = 1
