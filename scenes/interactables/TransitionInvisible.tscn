@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://b8q1x6tp5flbv"]
+
+[ext_resource type="Script" uid="uid://dby3o73x1hx50" path="res://scripts/interactables/LevelTransition.cs" id="1_qlo7g"]
+[ext_resource type="Material" uid="uid://ci8g4wskss784" path="res://assets/textures/architecture/door.tres" id="2_snl7d"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_gmvds"]
+radius = 1.4003906
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_80xtu"]
+size = Vector2(3.94, 4.89)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_myiuf"]
+height = 2.171875
+radius = 0.4946289
+
+[node name="LevelTransition" type="Area3D" unique_id=1584149579]
+script = ExtResource("1_qlo7g")
+InteractionText = "Leave Office"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=357662295]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CylinderShape3D_gmvds")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=59135560]
+transform = Transform3D(0.48, 0, 0, 0, -2.0981465e-08, -0.48, 0, 0.48, -2.0981465e-08, 0, 1.2074784, 0)
+material_override = ExtResource("2_snl7d")
+mesh = SubResource("PlaneMesh_80xtu")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=666548985]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1566675471]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.139655, 0)
+shape = SubResource("CylinderShape3D_myiuf")

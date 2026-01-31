@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://6rwf8fibydsl"]
+
+[ext_resource type="Texture2D" uid="uid://dwqmnjhdujyi6" path="res://assets/sprites/supermarket/car_old.png" id="1_8v844"]
+
+[resource]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_8v844")
+texture_repeat = false
+point_size = 105.1

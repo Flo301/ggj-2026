@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://6q6fbujqu28h"]
+
+[ext_resource type="Texture2D" uid="uid://dh4de24vje27g" path="res://assets/sprites/supermarket/building/pole_hound.png" id="1_4d1vx"]
+
+[resource]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_4d1vx")
+texture_repeat = false
+point_size = 105.1

@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://cucsrpjhcbq4s"]
+
+[ext_resource type="PackedScene" uid="uid://np5laepqvf8u" path="res://scenes/InGameUI.tscn" id="1_qbkdb"]
+[ext_resource type="PackedScene" uid="uid://bgbb7p4i3cbu6" path="res://scenes/interactables/TransitionDoor.tscn" id="3_ojv2i"]
+[ext_resource type="PackedScene" uid="uid://uqu4wcgixql7" path="res://scenes/props/supermarkt/bulding.tscn" id="7_o8hgf"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_731x5"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8rhdg"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2r08a"]
+albedo_texture = SubResource("CompressedTexture2D_8rhdg")
+uv1_scale = Vector3(6, 6, 6)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_8s0of"]
+material = SubResource("StandardMaterial3D_2r08a")
+size = Vector2(30, 30)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ut3x7"]
+size = Vector3(2, 0.01, 2)
+
+[node name="3dPlayground" type="Node3D" unique_id=1894997718]
+
+[node name="InGameUi" parent="." unique_id=432755473 instance=ExtResource("1_qbkdb")]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=183504690]
+transform = Transform3D(-0.63804245, 0.541395, -0.54753387, -2.9802322e-08, 0.7110818, 0.7031093, 0.77000123, 0.44861358, -0.45370036, 0, 3.5521686, 0)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1415309910]
+transform = Transform3D(0.87881714, -0.16476208, 0.4478102, 0, 0.9384931, 0.34529823, -0.4771588, -0.30345398, 0.8247637, 5.528, 5.545, 13.888)
+projection = 1
+current = true
+fov = 70.0
+size = 6.424
+near = 0.001
+
+[node name="Ground" type="StaticBody3D" parent="." unique_id=83004813]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 2.842325, 0, 7.0845575)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Ground" unique_id=1779877090]
+material_override = SubResource("StandardMaterial3D_731x5")
+mesh = SubResource("PlaneMesh_8s0of")
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground" unique_id=1886842643]
+shape = SubResource("BoxShape3D_ut3x7")
+metadata/_edit_lock_ = true
+
+[node name="LevelTransitionStreetA" parent="." unique_id=469549717 node_paths=PackedStringArray("SpawnPosition") instance=ExtResource("3_ojv2i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5092015, 0.050575256, 11.470682)
+SpawnPosition = NodePath("Spawn")
+TargetLevelPath = "res://scenes/levels/Office.tscn"
+InteractionText = "Enter Office"
+
+[node name="Spawn" type="Node3D" parent="LevelTransitionStreetA" unique_id=820280113]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0914073, 0.6856934, 0.92967236)
+
+[node name="LevelTransitionStreetB" parent="." unique_id=728121500 node_paths=PackedStringArray("SpawnPosition") instance=ExtResource("3_ojv2i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5455923, 0.049999714, 7.2174788)
+SpawnPosition = NodePath("Spawn")
+TargetLevelPath = "res://scenes/levels/Office.tscn"
+InteractionText = "Enter Office"
+
+[node name="Spawn" type="Node3D" parent="LevelTransitionStreetB" unique_id=332418699]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6856936, 1.6117578)
+
+[node name="Building" parent="." unique_id=1592237029 instance=ExtResource("7_o8hgf")]
+transform = Transform3D(0.645, 0, 0, 0, 0.645, 0, 0, 0, 0.645, 1.7003165, 1.2077551, 6.3300223)
+
+[node name="poleL" parent="Building" index="2" unique_id=364224654]
+transform = Transform3D(1.0535666, 0, 0, 0, -4.371138e-08, -1.3654294, 0, 0.9999998, -5.968481e-08, -5.298289, 2.575254, 2.999998)
+
+[node name="poleR" parent="Building" index="3" unique_id=858713087]
+transform = Transform3D(1.0535666, 0, 0, 0, -4.371138e-08, -1.3654294, 0, 0.9999998, -5.968481e-08, 6.1815815, 2.7524548, 2.999998)
+
+[editable path="Building"]

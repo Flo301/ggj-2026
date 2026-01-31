@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://orn0gapvppym"]
+
+[ext_resource type="Texture2D" uid="uid://cls3lt8l4oh1j" path="res://assets/sprites/supermarket/building/supermarket_without_street.png" id="1_j181m"]
+
+[resource]
+render_priority = -2
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_j181m")
+texture_repeat = false
+point_size = 105.1

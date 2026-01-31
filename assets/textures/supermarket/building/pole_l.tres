@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://c5brqbq2s6j1x"]
+
+[ext_resource type="Texture2D" uid="uid://b1twj3p40nmqv" path="res://assets/sprites/supermarket/building/pole_left.png" id="1_rwodi"]
+
+[resource]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_rwodi")
+texture_repeat = false
+point_size = 105.1

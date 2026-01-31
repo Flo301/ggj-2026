@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://np5laepqvf8u" path="res://scenes/InGameUI.tscn" id="1_8rhdg"]
 [ext_resource type="Material" uid="uid://cru6isnn2ffor" path="res://assets/textures/architecture/floor.tres" id="2_1uvqo"]
-[ext_resource type="PackedScene" uid="uid://bgbb7p4i3cbu6" path="res://scenes/interactables/Transition.tscn" id="4_ydf51"]
+[ext_resource type="PackedScene" uid="uid://bgbb7p4i3cbu6" path="res://scenes/interactables/TransitionDoor.tscn" id="4_ydf51"]
 [ext_resource type="PackedScene" uid="uid://dwytcgscm8ukm" path="res://scenes/props/office/Wall.tscn" id="5_2gnet"]
 [ext_resource type="PackedScene" uid="uid://bwmg6eb1x3uma" path="res://scenes/props/office/CoffeeMaschine.tscn" id="6_rgr8h"]
 [ext_resource type="PackedScene" uid="uid://oaajihjusq4q" path="res://scenes/props/office/Table.tscn" id="7_yd851"]
@@ -11,7 +11,6 @@
 [ext_resource type="PackedScene" uid="uid://3p476btw42pn" path="res://scenes/props/office/YogaMatt.tscn" id="10_ccje7"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8rhdg"]
-load_path = "res://.godot/imported/Teppichboden.png-650fe4c6033e69ced9ca3b9fdd87ff61.s3tc.ctex"
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2r08a"]
 albedo_texture = SubResource("CompressedTexture2D_8rhdg")
@@ -53,7 +52,7 @@ metadata/_edit_lock_ = true
 [node name="LevelTransitionStreet" parent="." unique_id=469549717 node_paths=PackedStringArray("SpawnPosition") instance=ExtResource("4_ydf51")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.3020234, 0.050575256, -1.2489219)
 SpawnPosition = NodePath("Spawn")
-TargetLevelPath = "res://scenes/levels/3D_Playground_2.tscn"
+TargetLevelPath = "res://scenes/levels/Supermarkt.tscn"
 
 [node name="Spawn" type="Node3D" parent="LevelTransitionStreet" unique_id=820280113]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0914073, 0.6856934, 0.92967236)
