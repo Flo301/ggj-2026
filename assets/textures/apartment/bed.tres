@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cqp7k0eq1sylu"]
+
+[ext_resource type="Texture2D" uid="uid://bjj0mdr1p7s7f" path="res://assets/sprites/apartment/bed.png" id="1_g3aon"]
+
+[resource]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_g3aon")
+texture_repeat = false
+point_size = 105.1

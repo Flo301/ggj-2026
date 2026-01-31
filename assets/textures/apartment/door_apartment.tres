@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://b4uf6o12s27au"]
+
+[ext_resource type="Texture2D" uid="uid://dd0iw345q7ry3" path="res://assets/sprites/apartment/door_appartement.png" id="1_v61dp"]
+
+[resource]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_v61dp")
+texture_repeat = false
+point_size = 105.1

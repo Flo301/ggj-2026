@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cjwcpmemsjonk"]
+
+[ext_resource type="Texture2D" uid="uid://3ys8xrnx6f8a" path="res://assets/sprites/apartment/coatrack.png" id="1_neinl"]
+
+[resource]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_neinl")
+texture_repeat = false
+point_size = 105.1

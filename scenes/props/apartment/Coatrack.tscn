@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://on4gr0rsheqw"]
+
+[ext_resource type="Material" uid="uid://cjwcpmemsjonk" path="res://assets/textures/apartment/coatrack.tres" id="1_0yb7r"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4irf3"]
+size = Vector3(0.5844233, 0.9051035, 0.09817505)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_1r28g"]
+size = Vector2(1.18, 1.66)
+
+[node name="Coatrack" type="StaticBody3D" unique_id=959571379]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1796003828]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.013134509, 0.4610518, 0.016121864)
+shape = SubResource("BoxShape3D_4irf3")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1625538107]
+transform = Transform3D(0.535, 0, 0, 0, -2.3385594e-08, -0.535, 0, 0.535, -2.3385594e-08, 0, 0.44848084, 0)
+material_override = ExtResource("1_0yb7r")
+mesh = SubResource("PlaneMesh_1r28g")

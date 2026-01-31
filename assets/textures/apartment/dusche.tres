@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cxadyld7uu8n4"]
+
+[ext_resource type="Texture2D" uid="uid://cpjhlqiq34o28" path="res://assets/sprites/apartment/douche.png" id="1_ifsu5"]
+
+[resource]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_ifsu5")
+texture_repeat = false
+point_size = 105.1

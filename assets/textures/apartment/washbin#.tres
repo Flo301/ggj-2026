@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://drge3ur5tccf2"]
+
+[ext_resource type="Texture2D" uid="uid://dae50rprviege" path="res://assets/sprites/apartment/washbasin.png" id="1_i1m0g"]
+
+[resource]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_i1m0g")
+texture_repeat = false
+point_size = 105.1
