@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dhcp7g2gmcac3"]
+
+[ext_resource type="Texture2D" uid="uid://bs72u7s52ddre" path="res://assets/sprites/supermarket/tree_dead_oak.png" id="1_qehn3"]
+
+[resource]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_qehn3")
+texture_repeat = false
+point_size = 105.1

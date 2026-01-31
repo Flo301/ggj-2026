@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://hfmmwo2wvov0"]
+
+[ext_resource type="Texture2D" uid="uid://imf1j5uphdr" path="res://assets/sprites/supermarket/tree_larch.png" id="1_tyv3d"]
+
+[resource]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_tyv3d")
+texture_repeat = false
+point_size = 105.1

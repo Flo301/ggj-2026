@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bpnte7ul3nsk3"]
+
+[ext_resource type="Texture2D" uid="uid://blhyoy47v1adk" path="res://assets/sprites/supermarket/garbage.png" id="1_i76ha"]
+
+[resource]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_i76ha")
+texture_repeat = false
+point_size = 105.1

@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://udbw0ukhxkq0"]
+
+[ext_resource type="Texture2D" uid="uid://b2aqio8xb64kd" path="res://assets/sprites/supermarket/car_carrier.png" id="1_v03lo"]
+
+[resource]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_v03lo")
+texture_repeat = false
+point_size = 105.1

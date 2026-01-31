@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dxror48so474g"]
+
+[ext_resource type="Texture2D" uid="uid://bpoyxlhckiwq4" path="res://assets/sprites/supermarket/tree_ash.png" id="1_600si"]
+
+[resource]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_600si")
+texture_repeat = false
+point_size = 105.1
