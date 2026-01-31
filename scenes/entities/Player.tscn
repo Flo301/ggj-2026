@@ -4,12 +4,14 @@
 [ext_resource type="Texture2D" uid="uid://bdjr0ijtr2ip5" path="res://assets/sprites/mainCharacter/main_character_no_emote_front.png" id="2_oboob"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_gmvds"]
+radius = 0.15576172
 
 [node name="Player" type="CharacterBody3D" unique_id=1100889597]
 transform = Transform3D(-0.9999999, 0, -8.742276e-08, 0, 1, 0, 8.742277e-08, 0, -0.9999998, 0, 0, 0)
 script = ExtResource("1_uifn6")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1588916921]
+transform = Transform3D(1, 0, -6.963319e-13, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("CapsuleShape3D_gmvds")
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="." unique_id=814434721]

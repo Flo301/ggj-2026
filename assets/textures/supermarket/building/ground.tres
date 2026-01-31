@@ -3,7 +3,6 @@
 [ext_resource type="Texture2D" uid="uid://cgol0l7uqiolm" path="res://assets/sprites/supermarket/building/street_in_front_of_supermarket.png" id="1_dwh0k"]
 
 [resource]
-render_priority = -1
 transparency = 1
 shading_mode = 0
 albedo_texture = ExtResource("1_dwh0k")

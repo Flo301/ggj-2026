@@ -2,7 +2,13 @@
 
 [ext_resource type="PackedScene" uid="uid://np5laepqvf8u" path="res://scenes/InGameUI.tscn" id="1_qbkdb"]
 [ext_resource type="PackedScene" uid="uid://bgbb7p4i3cbu6" path="res://scenes/interactables/TransitionDoor.tscn" id="3_ojv2i"]
-[ext_resource type="PackedScene" uid="uid://uqu4wcgixql7" path="res://scenes/props/supermarkt/bulding.tscn" id="7_o8hgf"]
+[ext_resource type="PackedScene" uid="uid://cwy64im38csj1" path="res://scenes/props/supermarkt/CarCarrier.tscn" id="3_oy4nh"]
+[ext_resource type="PackedScene" uid="uid://bovlsdxi75qsi" path="res://scenes/props/supermarkt/Building.tscn" id="3_qlsl0"]
+[ext_resource type="PackedScene" uid="uid://c1kubfxwm03fo" path="res://scenes/props/supermarkt/CarOld.tscn" id="4_o8hgf"]
+[ext_resource type="PackedScene" uid="uid://d3kkqoy37vt8d" path="res://scenes/props/supermarkt/Garbage.tscn" id="5_cy2gy"]
+[ext_resource type="PackedScene" uid="uid://dkfly0dv3ys7p" path="res://scenes/props/supermarkt/TreeAsh.tscn" id="6_qbkdb"]
+[ext_resource type="PackedScene" uid="uid://didy16rqouvv" path="res://scenes/props/supermarkt/TreeDeadOak.tscn" id="8_qbkdb"]
+[ext_resource type="PackedScene" uid="uid://d1bs4l3442f8p" path="res://scenes/props/supermarkt/TreeLarch.tscn" id="9_8840q"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_731x5"]
 
@@ -19,6 +25,9 @@ size = Vector2(30, 30)
 [sub_resource type="BoxShape3D" id="BoxShape3D_ut3x7"]
 size = Vector3(2, 0.01, 2)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_qbkdb"]
+size = Vector3(80, 10, 1)
+
 [node name="3dPlayground" type="Node3D" unique_id=1894997718]
 
 [node name="InGameUi" parent="." unique_id=432755473 instance=ExtResource("1_qbkdb")]
@@ -33,18 +42,6 @@ current = true
 fov = 70.0
 size = 6.424
 near = 0.001
-
-[node name="Ground" type="StaticBody3D" parent="." unique_id=83004813]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 2.842325, 0, 7.0845575)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Ground" unique_id=1779877090]
-material_override = SubResource("StandardMaterial3D_731x5")
-mesh = SubResource("PlaneMesh_8s0of")
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground" unique_id=1886842643]
-shape = SubResource("BoxShape3D_ut3x7")
-metadata/_edit_lock_ = true
 
 [node name="LevelTransitionStreetA" parent="." unique_id=469549717 node_paths=PackedStringArray("SpawnPosition") instance=ExtResource("3_ojv2i")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5092015, 0.050575256, 11.470682)
@@ -64,13 +61,66 @@ InteractionText = "Enter Office"
 [node name="Spawn" type="Node3D" parent="LevelTransitionStreetB" unique_id=332418699]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6856936, 1.6117578)
 
-[node name="Building" parent="." unique_id=1592237029 instance=ExtResource("7_o8hgf")]
-transform = Transform3D(0.645, 0, 0, 0, 0.645, 0, 0, 0, 0.645, 1.7003165, 1.2077551, 6.3300223)
+[node name="Props" type="Node3D" parent="." unique_id=255167590]
 
-[node name="poleL" parent="Building" index="2" unique_id=364224654]
-transform = Transform3D(1.0535666, 0, 0, 0, -4.371138e-08, -1.3654294, 0, 0.9999998, -5.968481e-08, -5.298289, 2.575254, 2.999998)
+[node name="Building" parent="Props" unique_id=1777529680 instance=ExtResource("3_qlsl0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.45742714, -0.12015486, 3.7040076)
 
-[node name="poleR" parent="Building" index="3" unique_id=858713087]
-transform = Transform3D(1.0535666, 0, 0, 0, -4.371138e-08, -1.3654294, 0, 0.9999998, -5.968481e-08, 6.1815815, 2.7524548, 2.999998)
+[node name="CarCarrier" parent="Props" unique_id=959571379 instance=ExtResource("3_oy4nh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.780034, -0.07013106, 4.1009507)
 
-[editable path="Building"]
+[node name="CarOld" parent="Props" unique_id=770997418 instance=ExtResource("4_o8hgf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2934732, 0.05000019, 11.164986)
+
+[node name="Garbage" parent="Props" unique_id=976785580 instance=ExtResource("5_cy2gy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6030169, 0.115386486, 2.2664905)
+
+[node name="Garbage2" parent="Props" unique_id=283885104 instance=ExtResource("5_cy2gy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.859693, 0.37818813, 1.9191604)
+
+[node name="TreeAsh" parent="Props" unique_id=1431183076 instance=ExtResource("6_qbkdb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.3714113, 0.27967215, 1.3276246)
+
+[node name="TreeDeadOak" parent="Props" unique_id=245502074 instance=ExtResource("8_qbkdb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.7040896, -0.14764977, 2.7169046)
+
+[node name="TreeLarch" parent="Props" unique_id=472357659 instance=ExtResource("9_8840q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.9272127, -0.4325943, 2.4158916)
+
+[node name="CarOld2" parent="Props" unique_id=1170605688 instance=ExtResource("4_o8hgf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7480211, 0.05000019, 11.2947645)
+
+[node name="Ground" type="StaticBody3D" parent="Props" unique_id=83004813]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 2.842325, 0, 7.0845575)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Props/Ground" unique_id=1779877090]
+material_override = SubResource("StandardMaterial3D_731x5")
+mesh = SubResource("PlaneMesh_8s0of")
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Props/Ground" unique_id=1886842643]
+shape = SubResource("BoxShape3D_ut3x7")
+metadata/_edit_lock_ = true
+
+[node name="Barriar" type="StaticBody3D" parent="." unique_id=2011151939]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Barriar" unique_id=1154578052]
+shape = SubResource("BoxShape3D_qbkdb")
+
+[node name="Barriar2" type="StaticBody3D" parent="." unique_id=229629192]
+transform = Transform3D(0.583527, 0, -0.81209373, 0, 1, 0, 0.81209373, 0, 0.583527, 5.0694647, 0, 1.7905874)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Barriar2" unique_id=1810550270]
+shape = SubResource("BoxShape3D_qbkdb")
+
+[node name="Barriar3" type="StaticBody3D" parent="." unique_id=1698010404]
+transform = Transform3D(0.18602669, 0, -0.9825447, 0, 1, 0, 0.9825447, 0, 0.18602669, -3.823566, 9.536743e-07, 5.9846363)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Barriar3" unique_id=2044096511]
+shape = SubResource("BoxShape3D_qbkdb")
+
+[node name="Barriar4" type="StaticBody3D" parent="." unique_id=423606901]
+transform = Transform3D(0.829915, 0, 0.55788994, 0, 1, 0, -0.55788994, 0, 0.829915, 4.845942, 9.536743e-07, 13.3513155)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Barriar4" unique_id=1372535286]
+shape = SubResource("BoxShape3D_qbkdb")
