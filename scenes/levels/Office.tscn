@@ -43,7 +43,6 @@ transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 2.842325, 0, 7.0845575)
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Ground" unique_id=1779877090]
 material_override = ExtResource("2_1uvqo")
 mesh = SubResource("PlaneMesh_8s0of")
-metadata/_edit_lock_ = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Ground" unique_id=1886842643]
 shape = SubResource("BoxShape3D_ut3x7")

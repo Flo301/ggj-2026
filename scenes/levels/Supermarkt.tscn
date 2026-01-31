@@ -47,6 +47,7 @@ near = 0.001
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09840751, 0.049999952, 13.027482)
 SpawnPosition = NodePath("Node3D")
 TargetLevelPath = "res://scenes/levels/Apartment.tscn"
+InteractionText = "Go to Apartment"
 
 [node name="Node3D" type="Node3D" parent="LevelTransitionApartment" unique_id=564140868]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6550076, 0)
@@ -55,6 +56,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6550076, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.8476324, 0.049999952, 8.612136)
 SpawnPosition = NodePath("Node3D")
 TargetLevelPath = "res://scenes/levels/Office.tscn"
+InteractionText = "Go to Office"
 
 [node name="Node3D" type="Node3D" parent="LevelTransitionOffice" unique_id=1403049586]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6550076, 0)

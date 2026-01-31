@@ -10,7 +10,6 @@
 [ext_resource type="PackedScene" uid="uid://dwytcgscm8ukm" path="res://scenes/props/office/Wall.tscn" id="10_cjje0"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8rhdg"]
-load_path = "res://.godot/imported/Teppichboden.png-650fe4c6033e69ced9ca3b9fdd87ff61.s3tc.ctex"
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2r08a"]
 albedo_texture = SubResource("CompressedTexture2D_8rhdg")

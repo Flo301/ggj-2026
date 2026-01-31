@@ -29,7 +29,12 @@ public partial class LevelTransition : Interactable
         {
             var player = playerScene.Instantiate<CharacterController>();
             GetTree().CurrentScene.CallDeferred("add_child", player);
-            player.GlobalPosition = SpawnPosition.GlobalPosition;
+            CallDeferred(MethodName.SetPlayerPosition, player);
         }
+    }
+
+    private void SetPlayerPosition(Node3D player)
+    {
+        player.GlobalPosition = SpawnPosition.GlobalPosition;
     }
 }
