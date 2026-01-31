@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://np5laepqvf8u" path="res://scenes/InGameUI.tscn" id="1_8rhdg"]
 [ext_resource type="Material" uid="uid://cru6isnn2ffor" path="res://assets/textures/architecture/floor.tres" id="2_1uvqo"]
-[ext_resource type="PackedScene" uid="uid://bgbb7p4i3cbu6" path="res://scenes/interactables/TransitionDoor.tscn" id="4_ydf51"]
+[ext_resource type="PackedScene" uid="uid://bgbb7p4i3cbu6" path="res://scenes/interactables/TransitionDoorOffice.tscn" id="4_ydf51"]
 [ext_resource type="PackedScene" uid="uid://dwytcgscm8ukm" path="res://scenes/props/office/Wall.tscn" id="5_2gnet"]
 [ext_resource type="PackedScene" uid="uid://bwmg6eb1x3uma" path="res://scenes/props/office/CoffeeMaschine.tscn" id="6_rgr8h"]
 [ext_resource type="PackedScene" uid="uid://oaajihjusq4q" path="res://scenes/props/office/Table.tscn" id="7_yd851"]
