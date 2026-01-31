@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cvki4vhg8agye"]
+
+[ext_resource type="Texture2D" uid="uid://dsmmn0725kkri" path="res://assets/sprites/apartment/bedside_table.png" id="1_ks48q"]
+
+[resource]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_ks48q")
+texture_repeat = false
+point_size = 105.1

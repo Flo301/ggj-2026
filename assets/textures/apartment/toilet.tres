@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cmr03718d84yj"]
+
+[ext_resource type="Texture2D" uid="uid://y4oho15iev35" path="res://assets/sprites/apartment/toilet.png" id="1_jwr0b"]
+
+[resource]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_jwr0b")
+texture_repeat = false
+point_size = 105.1

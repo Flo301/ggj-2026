@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dnja1hqaqwyj3"]
+
+[ext_resource type="Material" uid="uid://cvki4vhg8agye" path="res://assets/textures/apartment/bedside_table.tres" id="2_5y1bb"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4irf3"]
+size = Vector3(1.0027324, 0.7643086, 0.5443115)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_1r28g"]
+size = Vector2(1.54, 1.16)
+
+[node name="BedsideTable" type="StaticBody3D" unique_id=959571379]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1796003828]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0022216737, 0.39065433, -0.13440609)
+shape = SubResource("BoxShape3D_4irf3")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1625538107]
+transform = Transform3D(0.535, 0, 0, 0, -2.3385594e-08, -0.535, 0, 0.535, -2.3385594e-08, 0, 0.31153476, 0)
+material_override = ExtResource("2_5y1bb")
+mesh = SubResource("PlaneMesh_1r28g")

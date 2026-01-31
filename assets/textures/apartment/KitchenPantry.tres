@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bpyhiqe4lqo2x"]
+
+[ext_resource type="Texture2D" uid="uid://ctndbv5cbs07o" path="res://assets/sprites/apartment/kitchen_pantry.png" id="1_uumsn"]
+
+[resource]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_uumsn")
+texture_repeat = false
+point_size = 105.1

@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://pg1rk3q83q7g"]
+
+[ext_resource type="Texture2D" uid="uid://dyfo82m7v3jfj" path="res://assets/sprites/apartment/ventilation.png" id="1_pe6l8"]
+
+[resource]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_pe6l8")
+texture_repeat = false
+point_size = 105.1

@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://b0mdjvv5lh372"]
+
+[ext_resource type="Material" uid="uid://cxadyld7uu8n4" path="res://assets/textures/apartment/dusche.tres" id="1_fe0vi"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4irf3"]
+size = Vector3(0.7670715, 1.6955142, 0.85328674)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_1r28g"]
+size = Vector2(1.39, 3.16)
+
+[node name="Dusche" type="StaticBody3D" unique_id=959571379]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1796003828]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.009396225, 0.8562571, -0.36143398)
+shape = SubResource("BoxShape3D_4irf3")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1625538107]
+transform = Transform3D(0.535, 0, 0, 0, -2.3385594e-08, -0.535, 0, 0.535, -2.3385594e-08, 0, 0.8539413, 0)
+material_override = ExtResource("1_fe0vi")
+mesh = SubResource("PlaneMesh_1r28g")

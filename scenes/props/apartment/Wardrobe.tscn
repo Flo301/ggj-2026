@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bqui5ytwuj2j6"]
+
+[ext_resource type="Material" uid="uid://bpsxpecg3aa27" path="res://assets/textures/apartment/wardrobe.tres" id="1_naeyd"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4irf3"]
+size = Vector3(2.0033643, 1.781873, 0.7206745)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_1r28g"]
+size = Vector2(3.85, 3.33)
+
+[node name="Wardrobe" type="StaticBody3D" unique_id=959571379]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1796003828]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.044989616, 0.8994365, -0.29512787)
+shape = SubResource("BoxShape3D_4irf3")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1625538107]
+transform = Transform3D(0.535, 0, 0, 0, -2.3385594e-08, -0.535, 0, 0.535, -2.3385594e-08, 0, 0.89007723, 0)
+material_override = ExtResource("1_naeyd")
+mesh = SubResource("PlaneMesh_1r28g")

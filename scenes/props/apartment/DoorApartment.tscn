@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://b50h81o5yogww"]
+
+[ext_resource type="Material" uid="uid://b4uf6o12s27au" path="res://assets/textures/apartment/door_apartment.tres" id="1_r1f1x"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4irf3"]
+size = Vector3(1.0450926, 1.2797002, 0.09817505)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_1r28g"]
+size = Vector2(1.94, 2.4)
+
+[node name="DoorApartment" type="StaticBody3D" unique_id=959571379]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1796003828]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011242837, 0.6483501, 0.016121864)
+shape = SubResource("BoxShape3D_4irf3")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1625538107]
+transform = Transform3D(0.535, 0, 0, 0, -2.3385594e-08, -0.535, 0, 0.535, -2.3385594e-08, 0, 0.6409422, 0)
+material_override = ExtResource("1_r1f1x")
+mesh = SubResource("PlaneMesh_1r28g")

@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cjnlb23iy0t45"]
+
+[ext_resource type="Material" uid="uid://bpyhiqe4lqo2x" path="res://assets/textures/apartment/KitchenPantry.tres" id="1_unuq2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4irf3"]
+size = Vector3(1.296016, 1.6055696, 0.57801056)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_1r28g"]
+size = Vector2(2.45, 3.03)
+
+[node name="KitchenPantry" type="StaticBody3D" unique_id=959571379]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1796003828]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0061700046, 0.8112848, -0.22379589)
+shape = SubResource("BoxShape3D_4irf3")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1625538107]
+transform = Transform3D(0.535, 0, 0, 0, -2.3385594e-08, -0.535, 0, 0.535, -2.3385594e-08, 0, 0.8144835, 0)
+material_override = ExtResource("1_unuq2")
+mesh = SubResource("PlaneMesh_1r28g")

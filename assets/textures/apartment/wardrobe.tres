@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bpsxpecg3aa27"]
+
+[ext_resource type="Texture2D" uid="uid://ciwwwp7oiglwo" path="res://assets/sprites/apartment/wardrobe.png" id="1_5mpi6"]
+
+[resource]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_5mpi6")
+texture_repeat = false
+point_size = 105.1

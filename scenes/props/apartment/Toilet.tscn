@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bf2bramjwopfq"]
+
+[ext_resource type="Material" uid="uid://cmr03718d84yj" path="res://assets/textures/apartment/toilet.tres" id="1_pfeku"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4irf3"]
+size = Vector3(0.46853524, 0.7978768, 0.4315834)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_1r28g"]
+size = Vector2(0.88, 1.43)
+
+[node name="Toilet" type="StaticBody3D" unique_id=959571379]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1796003828]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0037029982, 0.40743837, -0.15058231)
+shape = SubResource("BoxShape3D_4irf3")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1625538107]
+transform = Transform3D(0.535, 0, 0, 0, -2.3385594e-08, -0.535, 0, 0.535, -2.3385594e-08, 0, 0.38896716, 0)
+material_override = ExtResource("1_pfeku")
+mesh = SubResource("PlaneMesh_1r28g")
