@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://b7nv0bewb4n14"]
+
+[ext_resource type="Texture2D" uid="uid://b6jgdsb3ldcxi" path="res://assets/sprites/office/clock.png" id="1_iwxtg"]
+
+[resource]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_iwxtg")
+texture_repeat = false
+point_size = 105.1

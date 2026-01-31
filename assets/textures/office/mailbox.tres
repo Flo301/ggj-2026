@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://daivpgl6d2njq"]
+
+[ext_resource type="Texture2D" uid="uid://jyjxpe8111i0" path="res://assets/sprites/office/mailbox.png" id="1_pochu"]
+
+[resource]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_pochu")
+texture_repeat = false
+point_size = 105.1

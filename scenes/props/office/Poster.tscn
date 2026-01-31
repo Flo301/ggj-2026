@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://f8l67qwkyx7y"]
+
+[ext_resource type="Material" uid="uid://dg64skq01gkfy" path="res://assets/textures/office/sign.tres" id="1_gosd2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4irf3"]
+size = Vector3(0, 0, 0)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_gtgwh"]
+size = Vector2(1.61, 1.79)
+
+[node name="Poster" type="StaticBody3D" unique_id=959571379]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1796003828]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0013427772, 0.426786, -0.054687504)
+shape = SubResource("BoxShape3D_4irf3")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1205841745]
+transform = Transform3D(0.495, 0, 0, 0, -2.1637137e-08, -0.495, 0, 0.495, -2.1637137e-08, 0, 0.49506605, 0)
+material_override = ExtResource("1_gosd2")
+mesh = SubResource("PlaneMesh_gtgwh")

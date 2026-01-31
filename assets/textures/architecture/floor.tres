@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cru6isnn2ffor"]
+
+[ext_resource type="Texture2D" uid="uid://ddpvc1w74p3ew" path="res://assets/sprites/architecture/floor.png" id="1_ogp6q"]
+
+[resource]
+render_priority = -2
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_ogp6q")
+uv1_scale = Vector3(3.5, 3.5, 3.5)
+point_size = 105.1

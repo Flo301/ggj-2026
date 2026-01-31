@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bwmg6eb1x3uma"]
+
+[ext_resource type="Material" uid="uid://dl2yy3mmrl2uf" path="res://assets/textures/office/coffeemachine.tres" id="1_yy4vs"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4irf3"]
+size = Vector3(1.0534668, 1.8010254, 0.90625)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_437lg"]
+size = Vector2(2.13, 3.7)
+
+[node name="CoffeeMaschine" type="StaticBody3D" unique_id=959571379]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1796003828]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.020385742, 0.9441607, -0.34375)
+shape = SubResource("BoxShape3D_4irf3")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1715480636]
+transform = Transform3D(0.495, 0, 0, 0, -2.1637137e-08, -0.495, 0, 0.495, -2.1637137e-08, 0, 0.95390785, 0)
+material_override = ExtResource("1_yy4vs")
+mesh = SubResource("PlaneMesh_437lg")

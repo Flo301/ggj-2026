@@ -1,7 +1,0 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://c0rlhcr4gttn6"]
-
-[ext_resource type="Texture2D" uid="uid://dele2sum53p3j" path="res://assets/sprites/office/Teppichboden.png" id="1_ss30d"]
-
-[resource]
-albedo_texture = ExtResource("1_ss30d")
-uv1_scale = Vector3(6, 6, 6)

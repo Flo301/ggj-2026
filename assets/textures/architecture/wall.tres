@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://baoi07ulkhd3n"]
+
+[ext_resource type="Texture2D" uid="uid://ciqutbknyeucy" path="res://assets/sprites/architecture/wall.png" id="1_f432l"]
+
+[resource]
+render_priority = -1
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_f432l")
+texture_repeat = false
+point_size = 105.1

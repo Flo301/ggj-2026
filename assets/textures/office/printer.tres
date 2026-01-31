@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bhcxecf8pth4c"]
+
+[ext_resource type="Texture2D" uid="uid://c0ab6u4u31uq3" path="res://assets/sprites/office/printer.png" id="1_40g1n"]
+
+[resource]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_40g1n")
+texture_repeat = false
+point_size = 105.1

@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dg64skq01gkfy"]
+
+[ext_resource type="Texture2D" uid="uid://ck8wskeiw4dv" path="res://assets/sprites/office/sign.png" id="1_e5w5w"]
+
+[resource]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_e5w5w")
+texture_repeat = false
+point_size = 105.1

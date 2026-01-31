@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://3p476btw42pn"]
+
+[ext_resource type="Material" uid="uid://foodfsoorkwy" path="res://assets/textures/office/yogamat.tres" id="1_g7jbp"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4irf3"]
+size = Vector3(1.0441265, 0.84472656, 0.68359375)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ep3qy"]
+size = Vector2(2.06, 1.64)
+
+[node name="Yoga" type="StaticBody3D" unique_id=959571379]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1796003828]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0062303543, 0.44275725, -0.054687504)
+shape = SubResource("BoxShape3D_4irf3")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1601851038]
+transform = Transform3D(0.535, 0, 0, 0, -2.3385594e-08, -0.535, 0, 0.535, -2.3385594e-08, 0, 0.50493383, 0)
+material_override = ExtResource("1_g7jbp")
+mesh = SubResource("PlaneMesh_ep3qy")

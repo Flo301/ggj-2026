@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://ci8g4wskss784"]
+
+[ext_resource type="Texture2D" uid="uid://blqsqpdurajqr" path="res://assets/sprites/architecture/door.png" id="1_c41f3"]
+
+[resource]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_c41f3")
+texture_repeat = false
+point_size = 105.1

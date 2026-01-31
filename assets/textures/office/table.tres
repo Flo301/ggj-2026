@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://d3g7mu6ltvlhj"]
+
+[ext_resource type="Texture2D" uid="uid://b5aftm3jmym3l" path="res://assets/sprites/office/table.png" id="1_i3uvr"]
+
+[resource]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_i3uvr")
+texture_repeat = false
+point_size = 105.1

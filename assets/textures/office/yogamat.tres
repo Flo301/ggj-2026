@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://foodfsoorkwy"]
+
+[ext_resource type="Texture2D" uid="uid://dffy7v2h3tapu" path="res://assets/sprites/office/yogamat.png" id="1_wys7w"]
+
+[resource]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_wys7w")
+texture_repeat = false
+point_size = 105.1

@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dl2yy3mmrl2uf"]
+
+[ext_resource type="Texture2D" uid="uid://ct0bcux0ioakt" path="res://assets/sprites/office/coffeemachine.png" id="1_gd47g"]
+
+[resource]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_gd47g")
+texture_repeat = false
+point_size = 105.1

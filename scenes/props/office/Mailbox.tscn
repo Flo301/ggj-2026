@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://k5njibnt0l2l"]
+
+[ext_resource type="Material" uid="uid://daivpgl6d2njq" path="res://assets/textures/office/mailbox.tres" id="1_24s3r"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4irf3"]
+size = Vector3(0.83535004, 0.5800171, 0.19763184)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_jo88q"]
+size = Vector2(1.67, 1.19)
+
+[node name="Mailbox" type="StaticBody3D" unique_id=959571379]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1796003828]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0023231506, 0.3093949, 0.0006713867)
+shape = SubResource("BoxShape3D_4irf3")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=198906143]
+transform = Transform3D(0.495, 0, 0, 0, -2.1637137e-08, -0.495, 0, 0.495, -2.1637137e-08, 0, 0.3305496, 0)
+material_override = ExtResource("1_24s3r")
+mesh = SubResource("PlaneMesh_jo88q")

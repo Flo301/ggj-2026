@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dwytcgscm8ukm"]
+
+[ext_resource type="Material" uid="uid://baoi07ulkhd3n" path="res://assets/textures/architecture/wall.tres" id="1_ujs8e"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4irf3"]
+size = Vector3(2.3908997, 2.670166, 0.25891113)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_fs3tg"]
+size = Vector2(4.26, 5.49)
+
+[node name="Wall" type="StaticBody3D" unique_id=959571379]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1796003828]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0021209717, 1.3809015, -0.020080566)
+shape = SubResource("BoxShape3D_4irf3")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=325686863]
+transform = Transform3D(0.535, 0, 0, 0, -2.3385594e-08, -0.535, 0, 0.535, -2.3385594e-08, 0, 1.4950662, 0)
+material_override = ExtResource("1_ujs8e")
+mesh = SubResource("PlaneMesh_fs3tg")
