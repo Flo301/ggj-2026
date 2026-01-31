@@ -1,18 +1,26 @@
 [gd_scene format=3 uid="uid://oaajihjusq4q"]
 
 [ext_resource type="Texture2D" uid="uid://bl16iuxh4w8ip" path="res://assets/sprites/office/Tisch mit Topfpflanze.png" id="1_4irf3"]
+[ext_resource type="Material" uid="uid://d3g7mu6ltvlhj" path="res://assets/textures/table.tres" id="2_sslsb"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4irf3"]
-size = Vector3(1.6696777, 1, 0.68359375)
+size = Vector3(2.5083008, 1.9711914, 1999.7603)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_1r28g"]
+size = Vector2(4.75, 3.72)
 
 [node name="Table" type="StaticBody3D" unique_id=959571379]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1796003828]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0013427772, 0, -0.054687504)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.025634766, 0.99380696, 999.48364)
 shape = SubResource("BoxShape3D_4irf3")
-metadata/_edit_lock_ = true
 
 [node name="Sprite3D" type="Sprite3D" parent="." unique_id=73377299]
+visible = false
 pixel_size = 0.004
 texture = ExtResource("1_4irf3")
-metadata/_edit_lock_ = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1625538107]
+transform = Transform3D(0.535, 0, 0, 0, -2.3385594e-08, -0.535, 0, 0.535, -2.3385594e-08, 0, 1, 0)
+material_override = ExtResource("2_sslsb")
+mesh = SubResource("PlaneMesh_1r28g")
