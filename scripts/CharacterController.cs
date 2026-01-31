@@ -10,7 +10,7 @@ public partial class CharacterController : CharacterBody3D
 
     public override void _Ready()
     {
-        Input.MouseMode = Input.MouseModeEnum.Captured;
+        Input.MouseMode = Input.MouseModeEnum.Visible;
     }
 
     public void SetInteractable(Interactable interactable)
@@ -30,6 +30,14 @@ public partial class CharacterController : CharacterBody3D
 
     public override void _PhysicsProcess(double delta)
     {
+        // If a dialog is open, prevent character movement
+        if (GlobalState.Instance.isDialogOpen)
+        {
+            Velocity = Vector3.Zero;
+            MoveAndSlide();
+            return;
+        }
+
         Vector3 velocity = Velocity;
 
         // Apply gravity
@@ -66,13 +74,7 @@ public partial class CharacterController : CharacterBody3D
     {
         if (@event is InputEventKey keyEvent && keyEvent.Pressed)
         {
-            if (keyEvent.Keycode == Key.Escape)
-            {
-                Input.MouseMode = Input.MouseMode == Input.MouseModeEnum.Captured
-                    ? Input.MouseModeEnum.Visible
-                    : Input.MouseModeEnum.Captured;
-            }
-            else if (keyEvent.Keycode == Key.E && _currentInteractable != null)
+            if (keyEvent.Keycode == Key.E && _currentInteractable != null)
             {
                 _currentInteractable.OnInteract();
             }

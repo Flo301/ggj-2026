@@ -1,0 +1,52 @@
+{
+  "startSection": "start",
+  "sections": [
+    {
+      "id": "start",
+      "lines": [
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769881180424_JRE32V"
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "text": "GGJ2026_DIALOG_KOPIERER_OPTION_1769881231444_XA4NR2",
+              "nextSection": "hit-printer"
+            },
+            {
+              "text": "GGJ2026_DIALOG_KOPIERER_OPTION_1769881246970_VW5FCV",
+              "nextSection": "ignore-printer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hit-printer",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769881268931_K2GHW4"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769881274713_U976KT"
+        }
+      ]
+    },
+    {
+      "id": "ignore-printer",
+      "lines": [
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769881302141_DM2KKF"
+        }
+      ]
+    }
+  ]
+}

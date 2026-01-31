@@ -1,0 +1,60 @@
+{
+  "startSection": "start",
+  "sections": [
+    {
+      "id": "start",
+      "lines": [
+        {
+          "type": "nextSection",
+          "nextSection": "wakeup"
+        }
+      ]
+    },
+    {
+      "id": "wakeup",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_WAKEUP_DIALOG_DIALOG_LINE_1769879845325_5LHVNK"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_WAKEUP_DIALOG_DIALOG_LINE_1769879940323_GS45LK"
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "text": "GGJ2026_DIALOG_WAKEUP_DIALOG_OPTION_1769880685564_V8P6NC",
+              "nextSection": "start"
+            },
+            {
+              "text": "GGJ2026_DIALOG_WAKEUP_DIALOG_OPTION_1769880722012_NOLYAT",
+              "nextSection": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "get-up",
+      "lines": []
+    },
+    {
+      "id": "continue-sleeping",
+      "lines": [
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_WAKEUP_DIALOG_DIALOG_LINE_1769880854882_Z4IZ8A"
+        },
+        {
+          "type": "event",
+          "name": "trigger",
+          "value": "restart-day"
+        }
+      ]
+    }
+  ]
+}
