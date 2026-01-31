@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bm0y1mwqf47nq"]
 
-[ext_resource type="PackedScene" uid="uid://np5laepqvf8u" path="res://scenes/InGameUI.tscn" id="1_yef4m"]
+[ext_resource type="PackedScene" uid="uid://dk677bmida20a" path="res://scenes/InGameUI.tscn" id="1_yef4m"]
 [ext_resource type="Material" uid="uid://cru6isnn2ffor" path="res://assets/textures/architecture/floor.tres" id="2_tmwjt"]
 [ext_resource type="PackedScene" uid="uid://dwytcgscm8ukm" path="res://scenes/props/office/Wall.tscn" id="4_4c6jp"]
 [ext_resource type="PackedScene" uid="uid://b1wiv5pxeb2wt" path="res://scenes/props/apartment/Bed.tscn" id="4_tmwjt"]
@@ -10,12 +10,12 @@
 [ext_resource type="PackedScene" uid="uid://cjnlb23iy0t45" path="res://scenes/props/apartment/KitchenPantry.tscn" id="8_l4ua8"]
 [ext_resource type="PackedScene" uid="uid://ny3qf5hsd5pw" path="res://scenes/props/apartment/Ventilation.tscn" id="9_xcwtv"]
 [ext_resource type="PackedScene" uid="uid://bqui5ytwuj2j6" path="res://scenes/props/apartment/Wardrobe.tscn" id="10_v1drk"]
-[ext_resource type="PackedScene" uid="uid://c4i3a8ljlca0l" path="res://scenes/interactables/TransitionDoorApartment.tscn" id="12_4c6jp"]
-[ext_resource type="PackedScene" uid="uid://ccblsmf6h4o68" path="res://scenes/props/apartment/TableDining.tscn" id="11_kseqt"]
-[ext_resource type="PackedScene" uid="uid://boaeujbh12rau" path="res://scenes/props/apartment/DeskComputer.tscn" id="12_4c6jp"]
-[ext_resource type="PackedScene" uid="uid://b8u2nvkiee4lc" path="res://scenes/props/apartment/ChairDiningBack.tscn" id="13_v8y3w"]
+[ext_resource type="PackedScene" uid="uid://b8u2nvkiee4lc" path="res://scenes/props/apartment/ChairDiningBack.tscn" id="11_v8y3w"]
+[ext_resource type="PackedScene" uid="uid://boaeujbh12rau" path="res://scenes/props/apartment/DeskComputer.tscn" id="12_l4ua8"]
+[ext_resource type="PackedScene" uid="uid://ccblsmf6h4o68" path="res://scenes/props/apartment/TableDining.tscn" id="13_xcwtv"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8rhdg"]
+load_path = "res://.godot/imported/Teppichboden.png-650fe4c6033e69ced9ca3b9fdd87ff61.s3tc.ctex"
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2r08a"]
 albedo_texture = SubResource("CompressedTexture2D_8rhdg")
@@ -27,7 +27,7 @@ material = SubResource("StandardMaterial3D_2r08a")
 [sub_resource type="BoxShape3D" id="BoxShape3D_ut3x7"]
 size = Vector3(2, 0.01, 2)
 
-[node name="Apartment" type="Node3D" unique_id=1894997718]
+[node name="3dPlayground" type="Node3D" unique_id=1894997718]
 
 [node name="InGameUi" parent="." unique_id=432755473 instance=ExtResource("1_yef4m")]
 
@@ -103,35 +103,31 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.946407, 0.049999952, -0.898
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.946407, 0.049999952, -0.8988012)
 
 [node name="Bed" parent="." unique_id=959571379 instance=ExtResource("4_tmwjt")]
-transform = Transform3D(1.1225882, 0.24959135, 0, -0.24959135, 1.1225882, 0, 0, 0, 1.15, -4.8039784, -4.7683716e-07, 1.2350111)
+transform = Transform3D(0.97616357, 0.21703595, 0, -0.21703595, 0.97616357, 0, 0, 0, 1, -4.8039784, -4.7683716e-07, 1.2350111)
 
 [node name="BedsideTable" parent="." unique_id=934667068 instance=ExtResource("5_kseqt")]
-transform = Transform3D(1.15, 0, 0, 0, 1.15, 0, 0, 0, 1.15, -3.872004, 0, -0.7338314)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.872004, 0, -0.7338314)
 
 [node name="Coatrack" parent="." unique_id=1239744796 instance=ExtResource("6_4c6jp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.39412403, 1.0717716, -1.3351067)
 
+[node name="DoorApartment" parent="." unique_id=1213572711 instance=ExtResource("7_v8y3w")]
+transform = Transform3D(1.595, 0, 0, 0, 1.595, 0, 0, 0, 1.595, 0.64439535, 0, -1.2446218)
+
 [node name="KitchenPantry" parent="." unique_id=149803553 instance=ExtResource("8_l4ua8")]
-transform = Transform3D(1.755, 0, 0, 0, 1.755, 0, 0, 0, 1.755, 2.8246167, 0, -0.5515847)
+transform = Transform3D(1.755, 0, 0, 0, 1.755, 0, 0, 0, 1.755, -1.7689893, 0, -0.5515847)
 
 [node name="Ventilation" parent="." unique_id=1413290926 instance=ExtResource("9_xcwtv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9011014, 2.718997, 0.014738083)
 
 [node name="Wardrobe" parent="." unique_id=620788087 instance=ExtResource("10_v1drk")]
-transform = Transform3D(1.165, 0, 0, 0, 1.165, 0, 0, 0, 1.165, -2.053627, 0, -0.92564774)
+transform = Transform3D(1.165, 0, 0, 0, 1.165, 0, 0, 0, 1.165, 2.651929, 0, -0.92564774)
 
-[node name="Table" parent="." unique_id=995753028 instance=ExtResource("6_l4ua8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.45133996, -4.7683716e-07, 6.7072973)
+[node name="ChairDiningBack" parent="." unique_id=572941604 instance=ExtResource("11_v8y3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.039203167, 0, 6.0858545)
 
-[node name="DoorApartment" parent="." unique_id=1213572711 instance=ExtResource("7_v8y3w")]
-transform = Transform3D(1.595, 0, 0, 0, 1.595, 0, 0, 0, 1.595, 0.64439535, 0, -1.2446218)
-visible = false
+[node name="DeskComputer" parent="." unique_id=1216217536 instance=ExtResource("12_l4ua8")]
+transform = Transform3D(0.935, 0, 0, 0, 0.935, 0, 0, 0, 0.935, 5.3982825, -4.7683716e-07, 5.1414375)
 
-[node name="LevelTransition" parent="." unique_id=1584149579 node_paths=PackedStringArray("SpawnPosition") instance=ExtResource("12_4c6jp")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6566274, 0.05000019, -1.2215395)
-SpawnPosition = NodePath("Node3D")
-TargetLevelPath = "res://scenes/levels/Supermarkt.tscn"
-InteractionText = "Leave Apartment"
-
-[node name="Node3D" type="Node3D" parent="LevelTransition" unique_id=917965892]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2111754, 1.3011745)
+[node name="TableDining" parent="." unique_id=1499629998 instance=ExtResource("13_xcwtv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.039203167, 0, 5.4829297)
