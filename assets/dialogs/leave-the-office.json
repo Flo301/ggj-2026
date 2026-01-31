@@ -1,0 +1,56 @@
+{
+  "startSection": "start",
+  "sections": [
+    {
+      "id": "start",
+      "lines": [
+        {
+          "type": "switch",
+          "condition": {
+            "type": "didDialog",
+            "value": "boss.start"
+          },
+          "nextSection": "leave"
+        },
+        {
+          "type": "nextSection",
+          "nextSection": "talk-to-boss"
+        }
+      ]
+    },
+    {
+      "id": "leave",
+      "lines": [
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_LEAVE_THE_OFFICE_DIALOG_LINE_1769881528422_WAJZJB"
+        },
+        {
+          "type": "event",
+          "name": "moveScene",
+          "value": "outdoors"
+        }
+      ]
+    },
+    {
+      "id": "talk-to-boss",
+      "lines": [
+        {
+          "type": "showBackground",
+          "background": "chefin open mouth"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_BOSS",
+          "text": "GGJ2026_DIALOG_LEAVE_THE_OFFICE_DIALOG_LINE_1769881479425_4NRUMM"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_LEAVE_THE_OFFICE_DIALOG_LINE_1769881493634_DX1TYO"
+        }
+      ]
+    }
+  ]
+}
