@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://oaajihjusq4q"]
 
-[ext_resource type="Texture2D" uid="uid://c6vkwoiusbgu7" path="res://assets/sprites/props/Table.png" id="1_4irf3"]
+[ext_resource type="Texture2D" uid="uid://bl16iuxh4w8ip" path="res://assets/sprites/office/Tisch mit Topfpflanze.png" id="1_4irf3"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4irf3"]
 size = Vector3(1.6696777, 1, 0.68359375)

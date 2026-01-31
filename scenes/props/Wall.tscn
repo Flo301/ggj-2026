@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dwytcgscm8ukm"]
+
+[ext_resource type="Texture2D" uid="uid://bdw6nlbdig1yi" path="res://assets/sprites/office/Wand.png" id="1_ujs8e"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4irf3"]
+size = Vector3(2.0767822, 2.670166, 0.25891113)
+
+[node name="Wall" type="StaticBody3D" unique_id=959571379]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1796003828]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.022155762, 1.3809015, -0.020080566)
+shape = SubResource("BoxShape3D_4irf3")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=73377299]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3893243, 0)
+pixel_size = 0.004
+texture = ExtResource("1_ujs8e")

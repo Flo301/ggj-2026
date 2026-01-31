@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://3p476btw42pn"]
+
+[ext_resource type="Texture2D" uid="uid://dl6q6kdnpxvv2" path="res://assets/sprites/office/Yoga-Matte.png" id="1_g7jbp"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4irf3"]
+size = Vector3(1.0441265, 0.84472656, 0.68359375)
+
+[node name="Yoga" type="StaticBody3D" unique_id=959571379]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1796003828]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0062303543, 0.44275725, -0.054687504)
+shape = SubResource("BoxShape3D_4irf3")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=73377299]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.39954436, 0)
+pixel_size = 0.004
+texture = ExtResource("1_g7jbp")
