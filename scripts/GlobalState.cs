@@ -10,6 +10,9 @@ partial class GlobalState : Node
     public string LastScene { get; internal set; }
 
     public List<string> doneDialogs = [];
+    public List<string> availableEmotions = ["happy"];
+
+    public bool isDialogOpen = false;
 
     public override void _Ready()
     {
@@ -24,15 +27,20 @@ partial class GlobalState : Node
         }
     }
 
-    public bool hasDoneDialog(string key)
-    {
-        return doneDialogs.Contains(key);
-    }
-    public void setDoneDialog(string key)
-    {
-        doneDialogs.Add(key);
-        GD.Print("Dialog done: " + key);
-        GD.Print(doneDialogs);
-    }
 
+    public void openDialog(string dialogName)
+    {
+        if (isDialogOpen)
+        {
+            return;
+        }
+
+        var dialog = DialogParser.LeadDialog(dialogName);
+
+        // load the dialog scene
+        var scene = GD.Load<PackedScene>("scenes/prefabs/dialogue_ui.tscn");
+        var instance = scene.Instantiate<DialogueUi>();
+        GetTree().Root.FindChild("InGameUi", true, false).AddChild(instance);
+        instance.Init(dialog);
+    }
 }

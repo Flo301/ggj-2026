@@ -34,13 +34,38 @@ public partial class DialogueUi : Control
 	public override void _Ready()
 	{
 		base._Ready();
-		clearMenuEntries();
+	}
+
+	public void setCharacterImage(string name)
+	{
+		GD.Print("setCharacterImage called with: " + name);
+		if (name == null)
+		{
+			CharacterTexture.Visible = false;
+			return;
+		}
+
+		var texture = GD.Load<Texture2D>("res://assets/sprites/dialogue/" + name + ".png");
+		if (texture == null)
+		{
+			CharacterTexture.Visible = false;
+			return;
+		}
+		CharacterTexture.Texture = texture;
+		CharacterTexture.Visible = true;
 	}
 
 	public override void _Input(InputEvent @event)
 	{
 		base._Input(@event);
-		if (@event is InputEventMouseButton mouseButtonEvent && mouseButtonEvent.ButtonIndex == Godot.MouseButton.Left && waitForNext)
+		if (
+			waitForNext && (
+				@event is InputEventMouseButton mouseButtonEvent && mouseButtonEvent.ButtonIndex == MouseButton.Left ||
+				@event is InputEventKey keyEvent && (
+					keyEvent.Keycode == Key.Enter || keyEvent.Keycode == Key.Space
+				)
+			)
+		)
 		{
 			activeLine++;
 			waitForNext = false;
@@ -62,13 +87,15 @@ public partial class DialogueUi : Control
 	public override void _ExitTree()
 	{
 		base._ExitTree();
-		Input.MouseMode = Input.MouseModeEnum.Captured;
+		GlobalState.Instance.isDialogOpen = false;
 	}
 
 	public override void _EnterTree()
 	{
 		base._ExitTree();
-		Input.MouseMode = Input.MouseModeEnum.Visible;
+		GlobalState.Instance.isDialogOpen = true;
+		clearMenuEntries();
+		setCharacterImage(null);
 	}
 
 
@@ -84,7 +111,6 @@ public partial class DialogueUi : Control
 	public async Task handleCurrentLine()
 	{
 		var line = getCurrentLine();
-		GD.Print(line);
 
 		// If we dont have any lines left we return and end the dialog!
 		if (line == null)
@@ -100,6 +126,39 @@ public partial class DialogueUi : Control
 		{
 			jumpToSection(nextSectionLine.NextSection);
 			return;
+		}
+
+		// Show background
+		if (line is ShowBackgroundLine showBackgroundLine)
+		{
+			setCharacterImage(showBackgroundLine.Background);
+		}
+
+		// Trigger event
+		if (line is EventLine eventLine)
+		{
+			switch (eventLine.Name)
+			{
+				case "getEmotion":
+					if (!GlobalState.Instance.availableEmotions.Contains(eventLine.Value))
+					{
+						GlobalState.Instance.availableEmotions.Add(eventLine.Value);
+					}
+					break;
+				default:
+					GD.PushError("Unknown event name: " + eventLine.Name);
+					break;
+			}
+		}
+
+		// handle switch line
+		if (line is SwitchLine switchLine)
+		{
+			if (isConditionMet(switchLine.Condition))
+			{
+				jumpToSection(switchLine.NextSection);
+				return;
+			}
 		}
 
 		// Show options
@@ -157,7 +216,11 @@ public partial class DialogueUi : Control
 
 	void jumpToSection(string name)
 	{
-		GlobalState.Instance.setDoneDialog(dialog.name + "." + name);
+		var dialogkey = dialog.name + "." + name;
+		if (!GlobalState.Instance.doneDialogs.Contains(dialogkey))
+		{
+			GlobalState.Instance.doneDialogs.Add(dialog.name + "." + name);
+		}
 		activeSection = dialog.getSectionById(name);
 		activeLine = 0;
 		_ = handleCurrentLine();
@@ -175,9 +238,12 @@ public partial class DialogueUi : Control
 		switch (condition.Type)
 		{
 			case "didDialog":
-				return GlobalState.Instance.hasDoneDialog(dialog.name + "." + condition.Value);
+				// Check if the player did the given dialog
+				return GlobalState.Instance.doneDialogs.Contains(condition.Value);
 			case "hasEmotion":
 				// Check if the player has the given emotion
+				return GlobalState.Instance.availableEmotions.Contains(condition.Value);
+			default:
 				break;
 		}
 		return false;
