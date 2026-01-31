@@ -11,13 +11,17 @@ config_version=5
 [application]
 
 config/name="GGJ-2026"
-run/main_scene="uid://bhi8mlxv4if6m"
+run/main_scene="uid://6lom8v86rjgx"
 config/features=PackedStringArray("4.6", "C#", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
 GlobalState="*uid://bs4xf6oc2vvcv"
+
+[display]
+
+window/stretch/mode="canvas_items"
 
 [dotnet]
 

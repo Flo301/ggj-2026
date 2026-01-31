@@ -1,5 +1,7 @@
 // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse);
 using System.Collections.Generic;
+using System.Data.Common;
+using System.Linq;
 using Newtonsoft.Json;
 
 public class Condition
@@ -61,7 +63,13 @@ public class Dialog
     public List<Section> Sections;
 
     [JsonProperty("startSection")]
-    public string StartSection;
+    public string StartSectionId;
+
+    public string name = "";
+
+    public Section StartSection => getSectionById(StartSectionId);
+
+    public Section getSectionById(string id) => Sections.FirstOrDefault(e => e.Id == id);
 }
 
 public class Section
@@ -72,4 +80,3 @@ public class Section
     [JsonProperty("lines")]
     public List<Line> Lines;
 }
-

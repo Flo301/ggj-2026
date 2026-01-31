@@ -8,19 +8,21 @@ public class DialogParser
     public static Dialog LeadDialog(string key)
     {
         string filePath = dialogAssetPath + key + ".json";
-        
+
         using var file = FileAccess.Open(filePath, FileAccess.ModeFlags.Read);
         if (file == null)
         {
             GD.PrintErr($"Failed to load dialog file: {filePath}");
             return null;
         }
-        
-        return LoadDialogFromJson(file.GetAsText());
+
+        return LoadDialogFromJson(file.GetAsText(), key);
     }
 
-    public static Dialog LoadDialogFromJson(string json)
+    public static Dialog LoadDialogFromJson(string json, string name)
     {
-        return JsonConvert.DeserializeObject<Dialog>(json);
+        var doc = JsonConvert.DeserializeObject<Dialog>(json);
+        doc.name = name;
+        return doc;
     }
 }

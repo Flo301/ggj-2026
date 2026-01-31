@@ -12,15 +12,21 @@ colors = PackedColorArray(1, 1, 1, 0.3137255, 1, 1, 1, 0)
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_7yr7v"]
 gradient = SubResource("Gradient_kllol")
 
-[node name="DialogueUI" type="Control" unique_id=1819580052 node_paths=PackedStringArray("DialogueTitle")]
+[node name="DialogueUI" type="Control" unique_id=1819580052 node_paths=PackedStringArray("DialogueTitle", "DialogueContent", "CharacterTexture", "OptionsContainer")]
+z_index = 2000
+z_as_relative = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 1
 script = ExtResource("1_cncga")
 DialogueTitle = NodePath("HBoxContainerUI/VBoxContainer/ContainerDialogue/MarginContainer/VBoxContainer/MarginContainer/RichTextDialogueTitle")
+DialogueContent = NodePath("HBoxContainerUI/VBoxContainer/ContainerDialogue/MarginContainer/VBoxContainer/RichTextDialogueContent")
+CharacterTexture = NodePath("HBoxContainerCharacters/ContainerGraphicLeft/TextureDialogueCharacter")
+OptionsContainer = NodePath("HBoxContainerUI/VBoxContainer/ContainerDialogueOptions/ContainerDialogueSelection/VBoxContainerOptions")
 
 [node name="Background" type="ColorRect" parent="." unique_id=452911920]
 layout_mode = 1
@@ -108,6 +114,7 @@ alignment = 2
 vertical = true
 
 [node name="ContainerOption" parent="HBoxContainerUI/VBoxContainer/ContainerDialogueOptions/ContainerDialogueSelection/VBoxContainerOptions" unique_id=349841877 instance=ExtResource("3_7yr7v")]
+z_index = 500
 layout_mode = 2
 
 [node name="ContainerOption2" parent="HBoxContainerUI/VBoxContainer/ContainerDialogueOptions/ContainerDialogueSelection/VBoxContainerOptions" unique_id=1601444125 instance=ExtResource("3_7yr7v")]
@@ -169,3 +176,5 @@ size_flags_vertical = 3
 bbcode_enabled = true
 text = "[DIALOGUE_CONTENT]"
 scroll_active = false
+
+[connection signal="gui_input" from="HBoxContainerUI/VBoxContainer/ContainerDialogue/MarginContainer/VBoxContainer/RichTextDialogueContent" to="." method="OnGuiInput"]

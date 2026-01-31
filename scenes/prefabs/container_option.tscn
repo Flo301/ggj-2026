@@ -57,4 +57,4 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_x1jng")
 text = "[OPTION_TEXT]"
 alignment = 0
 
-[connection signal="button_up" from="HBoxContainerOption/ButtonOption" to="." method="Selected"]
+[connection signal="button_up" from="HBoxContainerOption/ButtonOption" to="." method="WhenSelected"]
