@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://d1bs4l3442f8p"]
+
+[ext_resource type="Material" uid="uid://hfmmwo2wvov0" path="res://assets/textures/tree_larch.tres" id="1_ou02g"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ujs8e"]
+size = Vector2(1.67, 4.27)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4irf3"]
+size = Vector3(1.4341278, 2.046875, 0.25891113)
+
+[node name="TreeLarch" type="StaticBody3D" unique_id=959571379]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=566736612]
+transform = Transform3D(1.0535668, 0, 0, 0, -4.371139e-08, -1.3654296, 0, 1, -5.968482e-08, 0, 2.9264884, 5.976566e-08)
+mesh = SubResource("PlaneMesh_ujs8e")
+surface_material_override/0 = ExtResource("1_ou02g")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1796003828]
+transform = Transform3D(0.74, 0, 0, 0, 0.74, 0, 0, 0, 0.74, -0.3583171, 0.78537273, -0.020080566)
+shape = SubResource("BoxShape3D_4irf3")

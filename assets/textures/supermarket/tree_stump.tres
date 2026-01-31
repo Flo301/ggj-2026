@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://brio1fka375ey"]
+
+[ext_resource type="Texture2D" uid="uid://c122652c6o8us" path="res://assets/sprites/supermarket/tree_stump.png" id="1_3p041"]
+
+[resource]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_3p041")
+texture_repeat = false
+point_size = 105.1
