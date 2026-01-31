@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://od1u57gk6mkk"
-path="res://.godot/imported/Reset-Icon.png-e7a61ad50bda85744f225fb003fcc558.ctex"
+uid="uid://bvlq55j1dnhp5"
+path="res://.godot/imported/Mask-Placeholder.png-a56aae749a68cf6e871b48f3de5daea6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/textures/Reset-Icon.png"
-dest_files=["res://.godot/imported/Reset-Icon.png-e7a61ad50bda85744f225fb003fcc558.ctex"]
+source_file="res://assets/sprites/UI/Mask-Placeholder.png"
+dest_files=["res://.godot/imported/Mask-Placeholder.png-a56aae749a68cf6e871b48f3de5daea6.ctex"]
 
 [params]
 

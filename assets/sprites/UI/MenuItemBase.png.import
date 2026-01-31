@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dg43sow8rqhiq"
-path="res://.godot/imported/Flag-German.png-75d9fee920bf266830448bd9c6740065.ctex"
+uid="uid://efimvbpv0tve"
+path="res://.godot/imported/MenuItemBase.png-36e38f3e0b7dc8a65621cb3ed226f592.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/textures/Flag-German.png"
-dest_files=["res://.godot/imported/Flag-German.png-75d9fee920bf266830448bd9c6740065.ctex"]
+source_file="res://assets/sprites/UI/MenuItemBase.png"
+dest_files=["res://.godot/imported/MenuItemBase.png-36e38f3e0b7dc8a65621cb3ed226f592.ctex"]
 
 [params]
 

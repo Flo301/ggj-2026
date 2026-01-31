@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://don6j007y1u5l"
-path="res://.godot/imported/LWFH-BG.png-0ce6e55eb8c70050074a29cb2db488d8.ctex"
+uid="uid://od1u57gk6mkk"
+path="res://.godot/imported/Reset-Icon.png-894b2003f435bcc72917767192032d0b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/textures/LWFH-BG.png"
-dest_files=["res://.godot/imported/LWFH-BG.png-0ce6e55eb8c70050074a29cb2db488d8.ctex"]
+source_file="res://assets/sprites/UI/Reset-Icon.png"
+dest_files=["res://.godot/imported/Reset-Icon.png-894b2003f435bcc72917767192032d0b.ctex"]
 
 [params]
 
