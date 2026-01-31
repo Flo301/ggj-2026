@@ -5,6 +5,8 @@
 [ext_resource type="Script" uid="uid://w5gvduche184" path="res://scripts/CharacterController.cs" id="2_gmvds"]
 [ext_resource type="PackedScene" uid="uid://oaajihjusq4q" path="res://scenes/props/Table.tscn" id="4_gmvds"]
 [ext_resource type="Script" uid="uid://d3najwu2fpmnl" path="res://scripts/Example.cs" id="5_kr3au"]
+[ext_resource type="PackedScene" uid="uid://np5laepqvf8u" path="res://scenes/InGameUI.tscn" id="6_mvfah"]
+[ext_resource type="Texture2D" uid="uid://bo6ny4latuvvw" path="res://assets/sprites/props/door.png" id="6_st0ln"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_8s0of"]
 material = ExtResource("1_ut3x7")
@@ -42,7 +44,7 @@ fov = 70.0
 size = 5.4362597
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=1239343931]
-transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, -0.9501513, 0.718, 3.157639)
+transform = Transform3D(-0.9999999, 0, -8.742276e-08, 0, 1, 0, 8.742277e-08, 0, -0.9999998, -0.9501513, 0.718, 3.157639)
 script = ExtResource("2_gmvds")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=1864068806]
@@ -72,17 +74,20 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5453496, 0.90999997, 5.2206
 [node name="Example_Interactable" type="Area3D" parent="." unique_id=1080870953]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.660119, -4.7683716e-07, -0.88419914)
 script = ExtResource("5_kr3au")
+InteractionText = "Exit Game"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Example_Interactable" unique_id=824549991]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 shape = SubResource("CylinderShape3D_gmvds")
 
 [node name="Sprite3D" type="Sprite3D" parent="Example_Interactable" unique_id=2100916760]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.79309237, 0)
-pixel_size = 0.0014
-texture = ExtResource("1_x8laa")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0268207, 0)
+pixel_size = 0.002
+texture = ExtResource("6_st0ln")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Example_Interactable" unique_id=1604975564]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Example_Interactable/StaticBody3D" unique_id=2055742422]
 shape = SubResource("CapsuleShape3D_kr3au")
+
+[node name="InGameUi" parent="." unique_id=432755473 instance=ExtResource("6_mvfah")]

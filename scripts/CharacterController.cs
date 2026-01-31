@@ -16,15 +16,16 @@ public partial class CharacterController : CharacterBody3D
     public void SetInteractable(Interactable interactable)
     {
         _currentInteractable = interactable;
-        GD.Print("Interactable in range: " + interactable.InteractionText);
+        InGameUi.Instance.ShowInteractionText(interactable.InteractionText);
     }
 
     public void RemoveInteractable(Interactable interactable)
     {
         if (_currentInteractable == interactable)
+        {
             _currentInteractable = null;
-
-        GD.Print("Interactable out of range: " + interactable.InteractionText);
+            InGameUi.Instance.HideInteractionText();
+        }
     }
 
     public override void _PhysicsProcess(double delta)

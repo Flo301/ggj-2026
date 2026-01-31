@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://np5laepqvf8u"]
+
+[ext_resource type="Script" uid="uid://ckwxm31o7r8i4" path="res://scripts/InGameUi.cs" id="1_fsjve"]
+
+[node name="InGameUi" type="Control" unique_id=432755473]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fsjve")
+
+[node name="InteractLabel" type="Label" parent="." unique_id=1842279174]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -77.0
+offset_top = -23.0
+offset_right = 77.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Press \"E\" to interact"
