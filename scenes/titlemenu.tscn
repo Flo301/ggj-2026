@@ -1,0 +1,158 @@
+[gd_scene format=3 uid="uid://bhi8mlxv4if6m"]
+
+[ext_resource type="Texture2D" uid="uid://don6j007y1u5l" path="res://assets/sprites/UI/LWFH-BG.png" id="1_gpbvw"]
+[ext_resource type="Script" uid="uid://cvwuh0wy08q51" path="res://scripts/Titlemenu.cs" id="1_q7ugu"]
+[ext_resource type="Texture2D" uid="uid://efimvbpv0tve" path="res://assets/sprites/UI/MenuItemBase.png" id="2_iulo1"]
+[ext_resource type="Texture2D" uid="uid://od1u57gk6mkk" path="res://assets/sprites/UI/Reset-Icon.png" id="3_q7ugu"]
+[ext_resource type="Texture2D" uid="uid://dg43sow8rqhiq" path="res://assets/sprites/UI/Flag-German.png" id="5_0io7f"]
+[ext_resource type="PackedScene" uid="uid://5mbjetkkvlmv" path="res://scenes/prefabs/ui_background.tscn" id="5_ttrsk"]
+
+[node name="Titlemenu" type="Control" unique_id=2134614245]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_q7ugu")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1013399480]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_gpbvw")
+stretch_mode = 1
+
+[node name="HBoxContainer" type="BoxContainer" parent="." unique_id=747160938]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="VBoxContainerLeft" type="BoxContainer" parent="HBoxContainer" unique_id=1458031721]
+layout_mode = 2
+size_flags_horizontal = 3
+vertical = true
+
+[node name="VBoxContainer" type="BoxContainer" parent="HBoxContainer" unique_id=2112167542]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_constants/separation = 9
+vertical = true
+
+[node name="Control3" type="Control" parent="HBoxContainer/VBoxContainer" unique_id=1812215815]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="RichTextTitle" type="RichTextLabel" parent="HBoxContainer/VBoxContainer" unique_id=308525565]
+clip_contents = false
+layout_mode = 2
+bbcode_enabled = true
+text = "GGJ2026_MENU_TITELNAME"
+fit_content = true
+horizontal_alignment = 1
+
+[node name="TextureTitle" type="TextureRect" parent="HBoxContainer/VBoxContainer" unique_id=1903096057]
+layout_mode = 2
+
+[node name="ButtonStart" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=1700414469]
+layout_mode = 2
+text = "GGJ2026_MENU_START"
+icon = ExtResource("2_iulo1")
+
+[node name="ButtonLoad" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=397834150]
+layout_mode = 2
+text = "GGJ2026_MENU_LADEN"
+icon = ExtResource("2_iulo1")
+
+[node name="ButtonSettings" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=185815900]
+layout_mode = 2
+text = "GGJ2026_MENU_EINSTELLUNGEN"
+icon = ExtResource("2_iulo1")
+
+[node name="ButtonQuit" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=10166791]
+layout_mode = 2
+text = "GGJ2026_MENU_VERLASSEN"
+icon = ExtResource("3_q7ugu")
+
+[node name="Control2" type="Control" parent="HBoxContainer/VBoxContainer" unique_id=1940333743]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainerRight" type="BoxContainer" parent="HBoxContainer" unique_id=197626812]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 2
+
+[node name="VBoxContainer" type="BoxContainer" parent="HBoxContainer/HBoxContainerRight" unique_id=990349270]
+layout_mode = 2
+vertical = true
+
+[node name="FlagSelector" type="MarginContainer" parent="HBoxContainer/HBoxContainerRight/VBoxContainer" unique_id=1624143593]
+layout_mode = 2
+
+[node name="UIBackground" parent="HBoxContainer/HBoxContainerRight/VBoxContainer/FlagSelector" unique_id=1493063387 instance=ExtResource("5_ttrsk")]
+layout_mode = 2
+
+[node name="FlagButton" type="Button" parent="HBoxContainer/HBoxContainerRight/VBoxContainer/FlagSelector" unique_id=100237864]
+custom_minimum_size = Vector2(85, 60)
+layout_mode = 2
+icon = ExtResource("5_0io7f")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="FlagList" type="Control" parent="HBoxContainer/HBoxContainerRight/VBoxContainer" unique_id=716095498]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="UIBackground" parent="HBoxContainer/HBoxContainerRight/VBoxContainer/FlagList" unique_id=1946221852 instance=ExtResource("5_ttrsk")]
+layout_mode = 1
+offset_left = -5.0
+offset_top = -5.0
+offset_right = 5.0
+offset_bottom = 5.0
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/HBoxContainerRight/VBoxContainer/FlagList" unique_id=1540288800]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -42.5
+offset_top = -63.0
+offset_right = 42.5
+offset_bottom = 63.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_top = 2
+
+[node name="FlagList" type="GridContainer" parent="HBoxContainer/HBoxContainerRight/VBoxContainer/FlagList/MarginContainer" unique_id=1495274862]
+layout_mode = 2
+
+[node name="FlagButton" type="Button" parent="HBoxContainer/HBoxContainerRight/VBoxContainer/FlagList/MarginContainer/FlagList" unique_id=1920650583]
+custom_minimum_size = Vector2(85, 60)
+layout_mode = 2
+icon = ExtResource("5_0io7f")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="FlagButton2" type="Button" parent="HBoxContainer/HBoxContainerRight/VBoxContainer/FlagList/MarginContainer/FlagList" unique_id=1611419573]
+custom_minimum_size = Vector2(85, 60)
+layout_mode = 2
+icon = ExtResource("5_0io7f")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[connection signal="button_up" from="HBoxContainer/VBoxContainer/ButtonStart" to="." method="StartGame"]
+[connection signal="button_up" from="HBoxContainer/VBoxContainer/ButtonLoad" to="." method="LoadSave"]
+[connection signal="button_up" from="HBoxContainer/VBoxContainer/ButtonSettings" to="." method="OpenSettings"]
+[connection signal="button_up" from="HBoxContainer/VBoxContainer/ButtonQuit" to="." method="QuitGame"]
