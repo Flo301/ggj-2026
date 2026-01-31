@@ -23,10 +23,10 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
 script = ExtResource("1_cncga")
-DialogueTitle = NodePath("HBoxContainerUI/VBoxContainer/ContainerDialogue/MarginContainer/VBoxContainer/MarginContainer/RichTextDialogueTitle")
-DialogueContent = NodePath("HBoxContainerUI/VBoxContainer/ContainerDialogue/MarginContainer/VBoxContainer/RichTextDialogueContent")
-CharacterTexture = NodePath("HBoxContainerCharacters/ContainerGraphicLeft/TextureDialogueCharacter")
-OptionsContainer = NodePath("HBoxContainerUI/VBoxContainer/ContainerDialogueOptions/ContainerDialogueSelection/VBoxContainerOptions")
+DialogueTitle = NodePath("MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogue/MarginContainer/VBoxContainer/MarginContainer/RichTextDialogueTitle")
+DialogueContent = NodePath("MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogue/MarginContainer/VBoxContainer/RichTextDialogueContent")
+CharacterTexture = NodePath("MarginContainer/HBoxContainerCharacters/ContainerGraphicLeft/TextureDialogueCharacter")
+OptionsContainer = NodePath("MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogueOptions/ContainerDialogueSelection/VBoxContainerOptions")
 
 [node name="Background" type="ColorRect" parent="." unique_id=452911920]
 layout_mode = 1
@@ -37,19 +37,26 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 0.21568628)
 
-[node name="HBoxContainerCharacters" type="BoxContainer" parent="." unique_id=603323213]
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1067322165]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 10
 
-[node name="ContainerGraphicLeft" type="Control" parent="HBoxContainerCharacters" unique_id=12812028]
+[node name="HBoxContainerCharacters" type="BoxContainer" parent="MarginContainer" unique_id=603323213]
+layout_mode = 2
+
+[node name="ContainerGraphicLeft" type="Control" parent="MarginContainer/HBoxContainerCharacters" unique_id=12812028]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="TextureDialogueCharacter" type="TextureRect" parent="HBoxContainerCharacters/ContainerGraphicLeft" unique_id=923860804]
+[node name="TextureDialogueCharacter" type="TextureRect" parent="MarginContainer/HBoxContainerCharacters/ContainerGraphicLeft" unique_id=923860804]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 15
@@ -61,41 +68,36 @@ texture = ExtResource("1_kllol")
 expand_mode = 4
 stretch_mode = 4
 
-[node name="ContainerGraphicRight" type="Control" parent="HBoxContainerCharacters" unique_id=1644138963]
+[node name="ContainerGraphicRight" type="Control" parent="MarginContainer/HBoxContainerCharacters" unique_id=1644138963]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="HBoxContainerUI" type="BoxContainer" parent="." unique_id=1694694330]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="HBoxContainerUI" type="BoxContainer" parent="MarginContainer" unique_id=1694694330]
+layout_mode = 2
 size_flags_vertical = 3
 
-[node name="VBoxContainer" type="BoxContainer" parent="HBoxContainerUI" unique_id=139051404]
+[node name="VBoxContainer" type="BoxContainer" parent="MarginContainer/HBoxContainerUI" unique_id=139051404]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/separation = 0
 vertical = true
 
-[node name="Control" type="Control" parent="HBoxContainerUI/VBoxContainer" unique_id=626635893]
+[node name="Control" type="Control" parent="MarginContainer/HBoxContainerUI/VBoxContainer" unique_id=626635893]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="ContainerDialogueOptions" type="BoxContainer" parent="HBoxContainerUI/VBoxContainer" unique_id=1266116989]
+[node name="ContainerDialogueOptions" type="BoxContainer" parent="MarginContainer/HBoxContainerUI/VBoxContainer" unique_id=1266116989]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 alignment = 2
 
-[node name="Control" type="Control" parent="HBoxContainerUI/VBoxContainer/ContainerDialogueOptions" unique_id=1574048735]
+[node name="Control" type="Control" parent="MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogueOptions" unique_id=1574048735]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="ContainerDialogueSelection" type="MarginContainer" parent="HBoxContainerUI/VBoxContainer/ContainerDialogueOptions" unique_id=2125427363]
+[node name="ContainerDialogueSelection" type="MarginContainer" parent="MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogueOptions" unique_id=2125427363]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.6
@@ -104,37 +106,37 @@ theme_override_constants/margin_top = 7
 theme_override_constants/margin_right = 7
 theme_override_constants/margin_bottom = 7
 
-[node name="UIBackground" parent="HBoxContainerUI/VBoxContainer/ContainerDialogueOptions/ContainerDialogueSelection" unique_id=1493063387 instance=ExtResource("1_dxd25")]
+[node name="UIBackground" parent="MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogueOptions/ContainerDialogueSelection" unique_id=1493063387 instance=ExtResource("1_dxd25")]
 visible = false
 layout_mode = 2
 
-[node name="VBoxContainerOptions" type="BoxContainer" parent="HBoxContainerUI/VBoxContainer/ContainerDialogueOptions/ContainerDialogueSelection" unique_id=315614932]
+[node name="VBoxContainerOptions" type="BoxContainer" parent="MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogueOptions/ContainerDialogueSelection" unique_id=315614932]
 layout_mode = 2
 alignment = 2
 vertical = true
 
-[node name="ContainerOption" parent="HBoxContainerUI/VBoxContainer/ContainerDialogueOptions/ContainerDialogueSelection/VBoxContainerOptions" unique_id=349841877 instance=ExtResource("3_7yr7v")]
+[node name="ContainerOption" parent="MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogueOptions/ContainerDialogueSelection/VBoxContainerOptions" unique_id=349841877 instance=ExtResource("3_7yr7v")]
 z_index = 500
 layout_mode = 2
 
-[node name="ContainerOption2" parent="HBoxContainerUI/VBoxContainer/ContainerDialogueOptions/ContainerDialogueSelection/VBoxContainerOptions" unique_id=1601444125 instance=ExtResource("3_7yr7v")]
+[node name="ContainerOption2" parent="MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogueOptions/ContainerDialogueSelection/VBoxContainerOptions" unique_id=1601444125 instance=ExtResource("3_7yr7v")]
 layout_mode = 2
 
-[node name="ContainerOption3" parent="HBoxContainerUI/VBoxContainer/ContainerDialogueOptions/ContainerDialogueSelection/VBoxContainerOptions" unique_id=1648665016 instance=ExtResource("3_7yr7v")]
+[node name="ContainerOption3" parent="MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogueOptions/ContainerDialogueSelection/VBoxContainerOptions" unique_id=1648665016 instance=ExtResource("3_7yr7v")]
 layout_mode = 2
 
-[node name="ContainerOption4" parent="HBoxContainerUI/VBoxContainer/ContainerDialogueOptions/ContainerDialogueSelection/VBoxContainerOptions" unique_id=841471587 instance=ExtResource("3_7yr7v")]
+[node name="ContainerOption4" parent="MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogueOptions/ContainerDialogueSelection/VBoxContainerOptions" unique_id=841471587 instance=ExtResource("3_7yr7v")]
 layout_mode = 2
 
-[node name="ContainerDialogue" type="Control" parent="HBoxContainerUI/VBoxContainer" unique_id=1716508218]
+[node name="ContainerDialogue" type="Control" parent="MarginContainer/HBoxContainerUI/VBoxContainer" unique_id=1716508218]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="UIBackground" parent="HBoxContainerUI/VBoxContainer/ContainerDialogue" unique_id=970511716 instance=ExtResource("1_dxd25")]
+[node name="UIBackground" parent="MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogue" unique_id=970511716 instance=ExtResource("1_dxd25")]
 layout_mode = 1
 
-[node name="MarginContainer" type="MarginContainer" parent="HBoxContainerUI/VBoxContainer/ContainerDialogue" unique_id=658372150]
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogue" unique_id=658372150]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -146,19 +148,19 @@ theme_override_constants/margin_top = 7
 theme_override_constants/margin_right = 7
 theme_override_constants/margin_bottom = 7
 
-[node name="VBoxContainer" type="BoxContainer" parent="HBoxContainerUI/VBoxContainer/ContainerDialogue/MarginContainer" unique_id=1384013712]
+[node name="VBoxContainer" type="BoxContainer" parent="MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogue/MarginContainer" unique_id=1384013712]
 layout_mode = 2
 vertical = true
 
-[node name="MarginContainer" type="MarginContainer" parent="HBoxContainerUI/VBoxContainer/ContainerDialogue/MarginContainer/VBoxContainer" unique_id=1284490009]
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogue/MarginContainer/VBoxContainer" unique_id=1284490009]
 layout_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="HBoxContainerUI/VBoxContainer/ContainerDialogue/MarginContainer/VBoxContainer/MarginContainer" unique_id=1626645678]
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogue/MarginContainer/VBoxContainer/MarginContainer" unique_id=1626645678]
 layout_mode = 2
 texture = SubResource("GradientTexture2D_7yr7v")
 expand_mode = 1
 
-[node name="RichTextDialogueTitle" type="RichTextLabel" parent="HBoxContainerUI/VBoxContainer/ContainerDialogue/MarginContainer/VBoxContainer/MarginContainer" unique_id=407890723]
+[node name="RichTextDialogueTitle" type="RichTextLabel" parent="MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogue/MarginContainer/VBoxContainer/MarginContainer" unique_id=407890723]
 unique_name_in_owner = true
 layout_mode = 2
 theme_override_constants/line_separation = 3
@@ -169,7 +171,7 @@ scroll_active = false
 autowrap_mode = 0
 vertical_alignment = 1
 
-[node name="RichTextDialogueContent" type="RichTextLabel" parent="HBoxContainerUI/VBoxContainer/ContainerDialogue/MarginContainer/VBoxContainer" unique_id=681605945]
+[node name="RichTextDialogueContent" type="RichTextLabel" parent="MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogue/MarginContainer/VBoxContainer" unique_id=681605945]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
@@ -177,4 +179,4 @@ bbcode_enabled = true
 text = "[DIALOGUE_CONTENT]"
 scroll_active = false
 
-[connection signal="gui_input" from="HBoxContainerUI/VBoxContainer/ContainerDialogue/MarginContainer/VBoxContainer/RichTextDialogueContent" to="." method="OnGuiInput"]
+[connection signal="gui_input" from="MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogue/MarginContainer/VBoxContainer/RichTextDialogueContent" to="." method="OnGuiInput"]

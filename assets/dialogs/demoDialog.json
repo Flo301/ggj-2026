@@ -7,9 +7,17 @@
                     "type": "switch",
                     "condition": {
                         "type": "didDialog",
-                        "value": "demoDialog.prologue"
+                        "value": "demoDialog.badEnding"
                     },
-                    "nextSection": "end"
+                    "nextSection": "endBadEnding"
+                },
+                {
+                    "type": "switch",
+                    "condition": {
+                        "type": "didDialog",
+                        "value": "demoDialog.goodEnding"
+                    },
+                    "nextSection": "endGoodEnding"
                 },
                 {
                     "type": "nextSection",
@@ -22,7 +30,7 @@
             "lines": [
                 {
                     "type": "showBackground",
-                    "background": "OldLady"
+                    "background": "chefin"
                 },
                 {
                     "type": "dialog",
@@ -33,10 +41,6 @@
                     "type": "dialog",
                     "speaker": "Hero",
                     "text": "Hello there!"
-                },
-                {
-                    "type": "showBackground",
-                    "background": "OldLadyBlink"
                 },
                 {
                     "type": "event",
@@ -55,7 +59,7 @@
                             "nextSection": "goodEnding"
                         },
                         {
-                            "text": "Fick dich!",
+                            "text": "*Ignorieren*",
                             "nextSection": "badEnding"
                         }
                     ]
@@ -76,6 +80,10 @@
             "id": "badEnding",
             "lines": [
                 {
+                    "type": "showBackground",
+                    "background": "chefin open mouth"
+                },
+                {
                     "type": "dialog",
                     "speaker": "Narrator",
                     "text": "Stop ignoring me!"
@@ -83,12 +91,30 @@
             ]
         },
         {
-            "id": "end",
+            "id": "endBadEnding",
             "lines": [
+                {
+                    "type": "showBackground",
+                    "background": "chefin open mouth"
+                },
                 {
                     "type": "dialog",
                     "speaker": "Narrator",
-                    "text": "The End."
+                    "text": "If you ignore me, I ignore you!"
+                }
+            ]
+        },
+        {
+            "id": "endGoodEnding",
+            "lines": [
+                {
+                    "type": "showBackground",
+                    "background": "chefin"
+                },
+                {
+                    "type": "dialog",
+                    "speaker": "Narrator",
+                    "text": "Thank you for being polite!"
                 }
             ]
         }
