@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://boaeujbh12rau"]
+
+[ext_resource type="Material" uid="uid://crmws41kaewg2" path="res://assets/textures/apartment/desk:computer.tres" id="1_duvb1"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4irf3"]
+size = Vector3(2.2629056, 2.6269698, 2.177239)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_1r28g"]
+size = Vector2(4.26, 4.36)
+
+[node name="DeskComputer" type="StaticBody3D" unique_id=959571379]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1796003828]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0014683902, 1.3219849, -1.0234101)
+shape = SubResource("BoxShape3D_4irf3")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1625538107]
+transform = Transform3D(0.535, 0, 0, 0, -2.3385594e-08, -0.535, 0, 0.535, -2.3385594e-08, 0, 1.1736045, 0)
+material_override = ExtResource("1_duvb1")
+mesh = SubResource("PlaneMesh_1r28g")

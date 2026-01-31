@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://crmws41kaewg2"]
+
+[ext_resource type="Texture2D" uid="uid://5kqg5bo3io6d" path="res://assets/sprites/apartment/desk_computer.png" id="1_dfvjs"]
+
+[resource]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_dfvjs")
+texture_repeat = false
+point_size = 105.1

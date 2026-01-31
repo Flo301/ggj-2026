@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://yd4uvxnr0skj"]
+
+[ext_resource type="Texture2D" uid="uid://c7pun6ttaqwa" path="res://assets/sprites/apartment/table_dining.png" id="1_oetmd"]
+
+[resource]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_oetmd")
+texture_repeat = false
+point_size = 105.1

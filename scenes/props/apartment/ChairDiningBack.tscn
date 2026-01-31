@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://b8u2nvkiee4lc"]
+
+[ext_resource type="Texture2D" uid="uid://doeeehr8kgps1" path="res://assets/sprites/apartment/chair_dining_back.png" id="1_o70g4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4irf3"]
+size = Vector3(0.8337928, 1.1264732, 0.7888148)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i6d7e"]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_o70g4")
+texture_repeat = false
+point_size = 105.1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_1r28g"]
+size = Vector2(1.55, 2.06)
+
+[node name="ChairDiningBack" type="StaticBody3D" unique_id=959571379]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1796003828]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03945145, 0.5717366, -0.329198)
+shape = SubResource("BoxShape3D_4irf3")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1625538107]
+transform = Transform3D(0.535, 0, 0, 0, -2.3385594e-08, -0.535, 0, 0.535, -2.3385594e-08, 0, 0.5572798, 0)
+material_override = SubResource("StandardMaterial3D_i6d7e")
+mesh = SubResource("PlaneMesh_1r28g")
