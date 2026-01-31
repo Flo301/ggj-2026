@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://st1sdcpnug8l"]
+
+[ext_resource type="Script" uid="uid://jaedl8e3ygxw" path="res://scripts/SettingRow.cs" id="1_3runt"]
+
+[node name="SettingRow" type="BoxContainer" unique_id=1871728949]
+script = ExtResource("1_3runt")
+
+[node name="LabelSetting" type="Label" parent="." unique_id=434831280]
+layout_mode = 2
+text = "[SETTING_NAME]"
+
+[node name="Control" type="Control" parent="." unique_id=1484616443]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ToggleSetting" type="CheckButton" parent="." unique_id=433115927]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/button_checked_color = Color(0.34208122, 0.6200614, 0, 1)
+theme_override_colors/button_unchecked_color = Color(1, 0, 0, 1)
+
+[node name="SliderSetting" type="HSlider" parent="." unique_id=477800202]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+rounded = true
+
+[node name="OptionSetting" type="OptionButton" parent="." unique_id=796925527]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+selected = 0
+item_count = 1
+popup/item_0/text = "[DEMO_SELECT]"
+popup/item_0/id = 0

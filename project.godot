@@ -24,6 +24,10 @@ project/assembly_name="GGJ-2026"
 version_control/plugin_name="GitPlugin"
 version_control/autoload_on_startup=true
 
+[internationalization]
+
+locale/translations=PackedStringArray("res://assets/translations/GGJ2026.de.translation", "res://assets/translations/GGJ2026.en.translation")
+
 [physics]
 
 3d/physics_engine="Jolt Physics"

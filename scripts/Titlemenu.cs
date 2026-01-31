@@ -5,17 +5,24 @@ public partial class Titlemenu : Control
 {
 	public void StartGame()
 	{
-		
+		PackedScene newScene = GD.Load<PackedScene>("res://scenes/prefabs/dialogue_ui.tscn");
+		var newSceneInstance = newScene.Instantiate();
+		GetParent().AddChild(newSceneInstance);
+		this.QueueFree();
 	}
 	
 	public void LoadSave()
 	{
-		
+		StartGame();
 	}
 	
 	public void OpenSettings()
 	{
-		
+		PackedScene settingsWindow = GD.Load<PackedScene>("res://scenes/prefabs/settings_screen.tscn");
+		var settingsWindowInstance = settingsWindow.Instantiate<SettingsScreen>();
+		//ToDo: Add Settings
+		settingsWindowInstance.Init();
+		AddChild(settingsWindowInstance);
 	}
 	
 	public void QuitGame()
@@ -23,7 +30,7 @@ public partial class Titlemenu : Control
 		PackedScene popupWindow = GD.Load<PackedScene>("res://scenes/prefabs/popup_screen.tscn");
 		var popupWindowInstance = popupWindow.Instantiate<PopupScreen>();
 		//ToDo: Add Translation text
-		popupWindowInstance.Init("[color=red]WEEEE [color=yellow]WOOO [color=red]WEEE [color=yellow]WOOO", "You are currently trying to quit this awesome and super interesting game that you have right in front of you, are you sure that you REALLY REALLY want to leave us all alone??", "Yes", "No...", () => {GetTree().Quit();});
+		popupWindowInstance.Init("GGJ2026_MENU_VERLASSEN_TITEL", "GGJ2026_MENU_VERLASSEN_INHALT", "GGJ2026_MENU_JA", "GGJ2026_MENU_NEIN", () => {GetTree().Quit();});
 		AddChild(popupWindowInstance);
 	}
 }

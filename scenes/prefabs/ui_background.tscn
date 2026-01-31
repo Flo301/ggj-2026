@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://5mbjetkkvlmv"]
 
-[ext_resource type="Texture2D" uid="uid://c2tcm85a4l0qm" path="res://assets/textures/UI-Scaleable.png" id="1_6kcy7"]
+[ext_resource type="Texture2D" uid="uid://c2tcm85a4l0qm" path="res://assets/sprites/UI/UI-Scaleable.png" id="1_6kcy7"]
 
 [node name="UIBackground" type="NinePatchRect" unique_id=1493063387]
 texture_filter = 1

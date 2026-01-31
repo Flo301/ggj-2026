@@ -1,13 +1,29 @@
 [gd_scene format=3 uid="uid://do68o4lg40ipu"]
 
+[ext_resource type="Script" uid="uid://dy017y6g5n52h" path="res://scripts/ContainerOption.cs" id="1_uwldx"]
+[ext_resource type="Texture2D" uid="uid://bvlq55j1dnhp5" path="res://assets/sprites/UI/Mask-Placeholder.png" id="2_ccfao"]
+
 [sub_resource type="Gradient" id="Gradient_kllol"]
-offsets = PackedFloat32Array(0, 0.29752067)
+offsets = PackedFloat32Array(0, 0.5206612)
 colors = PackedColorArray(1, 1, 1, 0.3137255, 1, 1, 1, 0)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_7yr7v"]
 gradient = SubResource("Gradient_kllol")
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x1jng"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.1, 0.1, 0.1, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
 [node name="ContainerOption" type="MarginContainer" unique_id=349841877]
+script = ExtResource("1_uwldx")
 
 [node name="Background" type="TextureRect" parent="." unique_id=537805067]
 layout_mode = 2
@@ -21,6 +37,7 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="LabelOptionNumber" type="RichTextLabel" parent="HBoxContainerOption" unique_id=1364159723]
+visible = false
 layout_mode = 2
 text = "[NR]"
 fit_content = true
@@ -28,8 +45,16 @@ scroll_active = false
 autowrap_mode = 0
 vertical_alignment = 1
 
+[node name="TextureEmotionMask" type="TextureRect" parent="HBoxContainerOption" unique_id=1442529343]
+layout_mode = 2
+texture = ExtResource("2_ccfao")
+expand_mode = 2
+
 [node name="ButtonOption" type="Button" parent="HBoxContainerOption" unique_id=891022664]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_x1jng")
 text = "[OPTION_TEXT]"
 alignment = 0
+
+[connection signal="button_up" from="HBoxContainerOption/ButtonOption" to="." method="Selected"]

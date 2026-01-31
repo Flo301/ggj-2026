@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://iq1qtiajjh8j"]
 
+[ext_resource type="Script" uid="uid://bq0jx3684ndaj" path="res://scripts/DialogueUi.cs" id="1_cncga"]
 [ext_resource type="PackedScene" uid="uid://5mbjetkkvlmv" path="res://scenes/prefabs/ui_background.tscn" id="1_dxd25"]
 [ext_resource type="Texture2D" uid="uid://c2bw3adspihyg" path="res://assets/sprites/dialogue/Babyman.png" id="1_kllol"]
 [ext_resource type="PackedScene" uid="uid://do68o4lg40ipu" path="res://scenes/prefabs/container_option.tscn" id="3_7yr7v"]
@@ -11,13 +12,15 @@ colors = PackedColorArray(1, 1, 1, 0.3137255, 1, 1, 1, 0)
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_7yr7v"]
 gradient = SubResource("Gradient_kllol")
 
-[node name="DialogueUI" type="Control" unique_id=1819580052]
+[node name="DialogueUI" type="Control" unique_id=1819580052 node_paths=PackedStringArray("DialogueTitle")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_cncga")
+DialogueTitle = NodePath("HBoxContainerUI/VBoxContainer/ContainerDialogue/MarginContainer/VBoxContainer/MarginContainer/RichTextDialogueTitle")
 
 [node name="Background" type="ColorRect" parent="." unique_id=452911920]
 layout_mode = 1

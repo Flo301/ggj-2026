@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://dcmqf4uipy2xc"
+
+[deps]
+
+files=["res://assets/translations/GGJ2026.en.translation", "res://assets/translations/GGJ2026.de.translation"]
+
+source_file="res://assets/translations/GGJ2026.csv"
+dest_files=["res://assets/translations/GGJ2026.en.translation", "res://assets/translations/GGJ2026.de.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

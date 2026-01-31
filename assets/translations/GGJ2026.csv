@@ -1,0 +1,32 @@
+keys,en,de
+GGJ2026_MENU_ANWENDEN,Apply,Anwenden
+GGJ2026_MENU_EINSTELLUNGEN,Settings,Einstellungen
+GGJ2026_MENU_JA,Yes,Ja
+GGJ2026_MENU_LADEN,Load,Laden
+GGJ2026_MENU_NEIN,No,Nein
+GGJ2026_MENU_SCHLIESSEN,Close,Schließen
+GGJ2026_MENU_START,Start,Start
+GGJ2026_MENU_TITELNAME,"[font_size=32][color=green][outline_size=2][outline_color=black]Game Title
+[/outline_color][/outline_size][/color][/font_size]","[font_size=32][color=green][outline_size=2][outline_color=black]Spiel Titel
+[/outline_color][/outline_size][/color][/font_size]"
+GGJ2026_MENU_VERLASSEN,Quit,Verlassen
+GGJ2026_MENU_VERLASSEN_INHALT,"You are currently trying to quit this awesome and super interesting game that you have right in front of you, are you sure that you REALLY REALLY want to leave us all alone??","Du versuchst gerade dieses wunderschöne und superinteressante Spiel vor dir zu Verlassen, bist du dir WIRKLICH sicher das du uns alleine lassen willst?"
+GGJ2026_MENU_VERLASSEN_TITEL,[color=red]WEEEE [color=yellow]WOOO [color=red]WEEE [color=yellow]WOOO,[color=red]WEEEE [color=yellow]WOOO [color=red]WEEE [color=yellow]WOOO
+GGJ2026_DIALOG_DIALOG1_0FE79FF4_03D0_4B8A_B3FB_B3013A42DB20,I want to leave.,
+GGJ2026_DIALOG_DIALOG1_69FDBC17_B758_4A8C_9CCD_F9903271514A,I want more!,
+GGJ2026_DIALOG_DIALOG1_A0AF9838_C518_4DE6_8AC5_22CCCD0B0F59,Seems to work nice. asd asd ,
+GGJ2026_DIALOG_DIALOG1_D17E9FD7_B946_4CFF_B819_008720A516DD,test 123 asd asd  asd asd sad ,
+GGJ2026_DIALOG_DIALOG1_DIALOG1_1769806122475,This is so fun! Lets see how this works. asd asd asd,
+GGJ2026_SPEAKER_OPA,Grandpa,Opa
+GGJ2026_SPEAKER_PLAYER,Player,Spieler
+GGJ2026_DIALOG_TESTDIALOG_0287FAB8_6676_4600_88C9_611F71AD445B,WelcomeBack,
+GGJ2026_DIALOG_TESTDIALOG_1B00EFA5_6E49_4973_A3A2_B86A2C134E3D,Welcome back!,Willkommen zurück!
+GGJ2026_DIALOG_TESTDIALOG_24D92561_0024_4779_A0F1_49CE9E75B9FC,I hope you are well.,
+GGJ2026_DIALOG_TESTDIALOG_448E9BF4_7FB9_4915_8026_B3257F70E356,How have you been?,
+GGJ2026_DIALOG_TESTDIALOG_4F89182C_6255_4AFF_94E0_D51EB3C83F0E,See You later!,
+GGJ2026_DIALOG_TESTDIALOG_694B4E14_563F_43D1_BB26_F08E402729A1,"Hello, Nice to meet you!",
+GGJ2026_DIALOG_TESTDIALOG_8543CD59_DC2C_42B3_AD62_F37F4E3EAA1E,See you later!,
+GGJ2026_DIALOG_TESTDIALOG_8B771126_19AC_4868_9BA4_1A73EBC06201,Welcome back,
+GGJ2026_DIALOG_TESTDIALOG_918FC0E9_C1A1_4244_B4F5_D5F09482AC4E,"Hello, Nice to meet you!",
+GGJ2026_DIALOG_TESTDIALOG_FA6D968B_BE76_47A5_8F08_308940F993EE,How have you been,
+GGJ2026_DIALOG_TESTDIALOG_FD55AB90_C1D6_4FBE_A95D_3F3102C1AED6,I hope you are well. asd asd sad asd ,
