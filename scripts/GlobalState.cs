@@ -61,7 +61,7 @@ partial class GlobalState : Node
 		// load EndDayScreen
 		var scene = GD.Load<PackedScene>("res://scenes/prefabs/end_day_screen.tscn");
 		var instance = scene.Instantiate<EndDayScreen>();
-		GetTree().Root.FindChild("InGameUi", true, false).AddChild(instance);
+		GetTree().GetCurrentScene().AddChild(instance);
 		instance.Init(newEmotions, () => resetDay());
 	}
 
@@ -73,7 +73,7 @@ partial class GlobalState : Node
 		{
 			availableEmotions.Add(emotion);
 		}
-		var scene = GD.Load<PackedScene>("res://scenes/levels/Apartment.tscn");
+		GetTree().ChangeSceneToFile("res://scenes/levels/Apartment.tscn");
 	}
 
 	public void AddDialogDone(string dialogName)

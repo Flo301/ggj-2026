@@ -82,6 +82,7 @@ public partial class DialogueUi : Control
 
 	void clearMenuEntries()
 	{
+		GetNode<MarginContainer>("%ContainerDialogueSelection").Visible = false;
 		var children = OptionsContainer.GetChildren();
 		foreach (var child in children)
 		{
@@ -183,7 +184,7 @@ public partial class DialogueUi : Control
 					jumpToSection(option.NextSection);
 				};
 			}
-
+			GetNode<MarginContainer>("%ContainerDialogueSelection").Visible = true;
 			return;
 		}
 
