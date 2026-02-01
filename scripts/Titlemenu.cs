@@ -3,12 +3,12 @@ using System;
 
 public partial class Titlemenu : Control
 {
+	[Export]
+	PackedScene StartScene;
+	
 	public void StartGame()
 	{
-		PackedScene newScene = GD.Load<PackedScene>("res://scenes/prefabs/dialogue_ui.tscn");
-		var newSceneInstance = newScene.Instantiate();
-		GetParent().AddChild(newSceneInstance);
-		this.QueueFree();
+		GetTree().ChangeSceneToPacked(StartScene);
 	}
 	
 	public void LoadSave()
