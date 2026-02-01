@@ -193,9 +193,17 @@ public partial class DialogueUi : Control
 		{
 			DialogueTitle.Text = dialogLine.Speaker;
 			DialogueContent.Text = dialogLine.Text;
-			DialogueContent.VisibleCharacters = 0;
-			_ = updateCurrentVisibleCharacters();
-			return;
+			if (!GlobalState.Instance.showTextDirectly)
+			{
+				DialogueContent.VisibleCharacters = 0;
+				_ = updateCurrentVisibleCharacters();
+				return;
+			}
+			else
+			{
+				waitForNext = true;
+				return;
+			}
 		}
 
 		activeLine++;

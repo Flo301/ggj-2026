@@ -21,6 +21,8 @@ partial class GlobalState : Node
 
 	public bool isDialogOpen = false;
 
+	public bool showTextDirectly = true;
+
 	public override void _Ready()
 	{
 		base._Ready();
