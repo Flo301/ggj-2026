@@ -1,12 +1,136 @@
 [gd_scene format=3 uid="uid://bhi8mlxv4if6m"]
 
-[ext_resource type="Texture2D" uid="uid://don6j007y1u5l" path="res://assets/sprites/UI/LWFH-BG.png" id="1_gpbvw"]
 [ext_resource type="Script" uid="uid://cvwuh0wy08q51" path="res://scripts/Titlemenu.cs" id="1_q7ugu"]
 [ext_resource type="PackedScene" uid="uid://bm0y1mwqf47nq" path="res://scenes/levels/Apartment.tscn" id="2_bi0dk"]
 [ext_resource type="Texture2D" uid="uid://efimvbpv0tve" path="res://assets/sprites/UI/MenuItemBase.png" id="2_iulo1"]
+[ext_resource type="Texture2D" uid="uid://tqbi1ffs8g36" path="res://assets/sprites/masks/mask afraid.png" id="3_oe3fa"]
 [ext_resource type="Texture2D" uid="uid://od1u57gk6mkk" path="res://assets/sprites/UI/Reset-Icon.png" id="3_q7ugu"]
+[ext_resource type="Texture2D" uid="uid://cyeylf26lb0ox" path="res://assets/sprites/masks/mask angry.png" id="4_8qrc6"]
 [ext_resource type="Texture2D" uid="uid://dg43sow8rqhiq" path="res://assets/sprites/UI/Flag-German.png" id="5_0io7f"]
+[ext_resource type="Texture2D" uid="uid://dpi3mc6273wm7" path="res://assets/sprites/masks/mask happy.png" id="5_6nbsx"]
 [ext_resource type="PackedScene" uid="uid://5mbjetkkvlmv" path="res://scenes/prefabs/ui_background.tscn" id="5_ttrsk"]
+[ext_resource type="Texture2D" uid="uid://cq5kosg6u3oue" path="res://assets/sprites/masks/mask loving.png" id="6_f28d6"]
+[ext_resource type="Texture2D" uid="uid://cmm07j7nymmc1" path="res://assets/sprites/masks/mask sad.png" id="7_0kbsn"]
+[ext_resource type="Texture2D" uid="uid://s355w6a3ne1s" path="res://assets/sprites/masks/mask surprised.png" id="8_cerxx"]
+[ext_resource type="Texture2D" uid="uid://cbstoe7ijlvf7" path="res://assets/sprites/masks/mask thankful.png" id="9_3ypwk"]
+
+[sub_resource type="Gradient" id="Gradient_l3u0h"]
+colors = PackedColorArray(0, 0, 0, 0, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_7va68"]
+gradient = SubResource("Gradient_l3u0h")
+fill = 1
+fill_from = Vector2(0.5, 0.7)
+
+[sub_resource type="Animation" id="Animation_oe3fa"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background/TextureRect:offset_top")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-170.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Background/TextureRect:offset_bottom")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-25.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Background/TextureRect2:offset_top")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-187.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Background/TextureRect2:offset_bottom")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-42.0]
+}
+
+[sub_resource type="Animation" id="Animation_8qrc6"]
+resource_name = "idle"
+length = 10.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background/TextureRect:offset_top")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 5, 10),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-170.0, -189.0, -170.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Background/TextureRect:offset_bottom")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 5, 10),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-25.0, -44.0, -25.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Background/TextureRect2:offset_top")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.01, 2.72, 7.55, 10),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [-187.0, -147.0, -206.0, -187.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Background/TextureRect2:offset_bottom")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.01, 2.72, 7.55, 10),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [-42.0, -2.0, -61.0, -42.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6nbsx"]
+_data = {
+&"RESET": SubResource("Animation_oe3fa"),
+&"idle": SubResource("Animation_8qrc6")
+}
 
 [node name="Titlemenu" type="Control" unique_id=2134614245]
 layout_mode = 3
@@ -25,8 +149,105 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_gpbvw")
-stretch_mode = 1
+texture = SubResource("GradientTexture2D_7va68")
+
+[node name="TextureRect" type="TextureRect" parent="Background" unique_id=2124494897]
+z_index = -1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -361.0
+offset_top = -170.0
+offset_right = -211.0
+offset_bottom = -25.0
+texture = ExtResource("3_oe3fa")
+
+[node name="TextureRect2" type="TextureRect" parent="Background" unique_id=1899163502]
+z_index = -1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 259.0
+offset_top = -187.0
+offset_right = 409.0
+offset_bottom = -42.0
+texture = ExtResource("4_8qrc6")
+
+[node name="TextureRect3" type="TextureRect" parent="Background" unique_id=1384032712]
+z_index = -1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -278.0
+offset_right = 100.0
+offset_bottom = -133.0
+texture = ExtResource("5_6nbsx")
+
+[node name="TextureRect4" type="TextureRect" parent="Background" unique_id=1360660049]
+z_index = -1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -367.0
+offset_top = 41.0
+offset_right = -217.0
+offset_bottom = 186.0
+texture = ExtResource("6_f28d6")
+
+[node name="TextureRect5" type="TextureRect" parent="Background" unique_id=897200159]
+z_index = -1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 232.0
+offset_top = 63.0
+offset_right = 382.0
+offset_bottom = 208.0
+texture = ExtResource("7_0kbsn")
+
+[node name="TextureRect6" type="TextureRect" parent="Background" unique_id=1409365180]
+z_index = -1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 75.0
+offset_top = 158.0
+offset_right = 225.0
+offset_bottom = 303.0
+texture = ExtResource("8_cerxx")
+
+[node name="TextureRect7" type="TextureRect" parent="Background" unique_id=404157031]
+z_index = -1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -183.0
+offset_top = 152.0
+offset_right = -33.0
+offset_bottom = 297.0
+texture = ExtResource("9_3ypwk")
 
 [node name="HBoxContainer" type="BoxContainer" parent="." unique_id=747160938]
 layout_mode = 1
@@ -154,6 +375,10 @@ icon = ExtResource("5_0io7f")
 flat = true
 icon_alignment = 1
 expand_icon = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=712362700]
+libraries/ = SubResource("AnimationLibrary_6nbsx")
+autoplay = &"idle"
 
 [connection signal="button_up" from="HBoxContainer/VBoxContainer/ButtonStart" to="." method="StartGame"]
 [connection signal="button_up" from="HBoxContainer/VBoxContainer/ButtonLoad" to="." method="LoadSave"]
