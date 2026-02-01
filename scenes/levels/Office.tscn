@@ -216,6 +216,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3982103, 0.049999714, 7.64
 script = ExtResource("19_cw3g0")
 DoHideWhenFlags = PackedStringArray("wakeup-dialog.start")
 DontHideWhenFlags = PackedStringArray("desk.start")
+DoSuperHideWhenFlags = PackedStringArray("desk.finish-work")
 
 [node name="Boss" parent="Boss_during_work" unique_id=1937297486 instance=ExtResource("18_28jjv")]
 Dialog = "boss-during-work"
@@ -224,7 +225,7 @@ Dialog = "boss-during-work"
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.279175, 0.049999237, -0.5918555)
 script = ExtResource("19_cw3g0")
 DoHideWhenFlags = PackedStringArray("wakeup-dialog.start")
-DontHideWhenFlags = PackedStringArray("desk.after-work")
+DontHideWhenFlags = PackedStringArray("desk.finish-work")
 
 [node name="Boss" parent="Boss_after_work" unique_id=1256646184 instance=ExtResource("18_28jjv")]
 Dialog = "boss-post-work"

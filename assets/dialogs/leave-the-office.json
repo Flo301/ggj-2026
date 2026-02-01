@@ -8,6 +8,14 @@
           "type": "switch",
           "condition": {
             "type": "didDialog",
+            "value": "desk.finish-work"
+          },
+          "nextSection": "leave"
+        },
+        {
+          "type": "switch",
+          "condition": {
+            "type": "didDialog",
             "value": "leave-the-office.leave-message"
           },
           "nextSection": "leave"
