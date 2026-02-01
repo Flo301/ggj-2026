@@ -125,115 +125,116 @@ GGJ2026_DIALOG_GRANDMA_PRE_WORK_DIALOG_LINE_1769939358644_FVWMY2,"You walk on in
 GGJ2026_DIALOG_GRANDMA_PRE_WORK_OPTION_1769938431650_V5XO2I,Nothing you can do other than wait.,Du kannst nichts tun außer warten.
 GGJ2026_DIALOG_GRANDMA_PRE_WORK_OPTION_1769938486788_NEZOPS,Shoulder past her.,Quetsch dich trotzdem vorbei.
 GGJ2026_DIALOG_GRANDMA_PRE_WORK_OPTION_1769938506297_7HDO0P,Offer to help her.,Biete ihr Hilfe an.
-GGJ2026_DIALOG_DESK_DIALOG_LINE_1769938320214_OU9VE8,Your desk looks as uninspiring as always.,
-GGJ2026_DIALOG_DESK_DIALOG_LINE_1769946334963_VXGTL9,Your work day continues...,
-GGJ2026_DIALOG_DESK_DIALOG_LINE_1769946468247_ZL83BN,You power up your work computer.,
-GGJ2026_DIALOG_DESK_DIALOG_LINE_1769946691928_M7TC9I,You knew you should have gotten a coffee. You're not able to concentrate at all.,
-GGJ2026_DIALOG_DESK_DIALOG_LINE_1769946923139_7EEJME,"You may do mediocre work today, but you don't feel like getting up...",
-GGJ2026_DIALOG_DESK_DIALOG_LINE_1769951035571_BZZIYU,Your working hours have ended.,
-GGJ2026_DIALOG_DESK_DIALOG_LINE_1769951057440_0I0PSU,Do unpaid overtime?,
-GGJ2026_DIALOG_DESK_OPTION_1769938364275_VRCL0B,Sit down.,
-GGJ2026_DIALOG_DESK_OPTION_1769938435312_IJG55F,Stay standing in front of your desk.,
+GGJ2026_DIALOG_DESK_DIALOG_LINE_1769938320214_OU9VE8,Your desk looks as uninspiring as always.,Dein Schreibtisch sieht so wenig inspirierend aus wie eh und je.
+GGJ2026_DIALOG_DESK_DIALOG_LINE_1769946334963_VXGTL9,Your work day continues...,Dein Arbeitstag geht weiter...
+GGJ2026_DIALOG_DESK_DIALOG_LINE_1769946468247_ZL83BN,You power up your work computer.,Du startest deinen Arbeitscomputer.
+GGJ2026_DIALOG_DESK_DIALOG_LINE_1769946691928_M7TC9I,You knew you should have gotten a coffee. You're not able to concentrate at all.,"Du wusstest doch, dass du dir einen Kaffee hättest holen sollen. Du kannst dich überhaupt nicht konzentrieren."
+GGJ2026_DIALOG_DESK_DIALOG_LINE_1769946923139_7EEJME,"You may do mediocre work today, but you don't feel like getting up...","Deine Arbeit heute wird vielleicht nicht die beste, effizienteste deiner Laufbahn, aber du hast wirklich keine Lust, aufzustehen."
+GGJ2026_DIALOG_DESK_DIALOG_LINE_1769951035571_BZZIYU,Your working hours have ended.,Es ist Feierabend.
+GGJ2026_DIALOG_DESK_DIALOG_LINE_1769951057440_0I0PSU,Do unpaid overtime?,Willst du unbezahlte Überstunden leisten?
+GGJ2026_DIALOG_DESK_DIALOG_LINE_1769955729751_HF36NO,You finish the work. after hours you are finaly done!,
+GGJ2026_DIALOG_DESK_OPTION_1769938364275_VRCL0B,Sit down.,Setz dich.
+GGJ2026_DIALOG_DESK_OPTION_1769938435312_IJG55F,Stay standing in front of your desk.,Bleib vor deinem Schreibtisch stehen.
 GGJ2026_DIALOG_DESK_OPTION_1769946373183_XGXT5O,,
-GGJ2026_DIALOG_DESK_OPTION_1769946534502_RWSDS6,You check your emails.,
-GGJ2026_DIALOG_DESK_OPTION_1769946548361_H963N1,You continue where you left off the previous day.,
-GGJ2026_DIALOG_DESK_OPTION_1769946597194_NWA83D,"You stare at the screen, unable to concentrate.",
-GGJ2026_DIALOG_DESK_OPTION_1769946770676_9KP3UE,Go to the office kitchen for coffee.,
-GGJ2026_DIALOG_DESK_OPTION_1769946859800_0BZO8U,Try to concentrate.,
-GGJ2026_DIALOG_DESK_OPTION_1769951067187_9OKN3N,No.,
-GGJ2026_DIALOG_WRONG_DESK_DIALOG_LINE_1769938794759_K4MBKC,Yes?,
-GGJ2026_DIALOG_WRONG_DESK_DIALOG_LINE_1769938801485_GAQEVM,Did you need something?,
-GGJ2026_DIALOG_WRONG_DESK_DIALOG_LINE_1769938816777_0I48OR,You're bothering me.,
-GGJ2026_DIALOG_WRONG_DESK_DIALOG_LINE_1769938824050_KAVO5X,Please go stand at your own desk.,
-GGJ2026_DIALOG_WRONG_DESK_DIALOG_LINE_1769938918740_HECO3O,Good morning.,
-GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_DIALOG_LINE_1769939295674_PJAE8V,...,
-GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_DIALOG_LINE_1769939303360_CB1KSO,He's not looking at you.,
-GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_DIALOG_LINE_1769939357200_F5SU9P,You stare at him until he looks at you.,
-GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_DIALOG_LINE_1769939376836_W1HAE2,Y-yes?,
-GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_DIALOG_LINE_1769939610990_G2EWPR,...,
-GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_DIALOG_LINE_1769939622335_G57IVS,...,
-GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_DIALOG_LINE_1769939634395_ICI18F,You stare at each other awkwardly.,
-GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_DIALOG_LINE_1769939674888_3SI3MY,Good morning.,
-GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_DIALOG_LINE_1769939682779_LV5B18,"Err, good morning.",
-GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_DIALOG_LINE_1769939834780_JHCP9A,Idiot.,
-GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_DIALOG_LINE_1769939844777_IRRU4N,"Your colleague looks taken aback for a moment, then he turns away from you.",
-GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_DIALOG_LINE_1769939988966_W46WC7,He doesn't look at you,
-GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_OPTION_1769939405946_TK9J7U,Ignore him.,
-GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_OPTION_1769939417375_Z53INA,Greet him.,
-GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_OPTION_1769939444184_Z3CIP4,Insult him.,
-GGJ2026_DIALOG_DOG_DIALOG_LINE_1769939589986_XDGL6B,A dog is lying on the ground in front of the supermarket.,
-GGJ2026_DIALOG_DOG_DIALOG_LINE_1769939731924_7J9VMS,You ignore the dog. So does the dog.,
-GGJ2026_DIALOG_DOG_DIALOG_LINE_1769939791268_APMDIE,A non verbal mutal agreement.,
-GGJ2026_DIALOG_DOG_DIALOG_LINE_1769939826631_YZG126,You stop.,
-GGJ2026_DIALOG_DOG_DIALOG_LINE_1769939834044_80JPE6,You wonder why this dog sits here.,
-GGJ2026_DIALOG_DOG_DIALOG_LINE_1769939927744_90CJEH,No sight of anyone caring for the dog.,
-GGJ2026_DIALOG_DOG_DIALOG_LINE_1769939944446_75EN61,The dog returns your look.,
-GGJ2026_DIALOG_DOG_DIALOG_LINE_1769939970715_V9V6BP,It may have been a long time since someone realy noticed the poor thing.,
-GGJ2026_DIALOG_DOG_DIALOG_LINE_1769940044570_Z4LOQ7,It sits here day in day out. Is it waiting for something?,
-GGJ2026_DIALOG_DOG_DIALOG_LINE_1769940225015_1XEYV2,I realy can relate..,
-GGJ2026_DIALOG_DOG_DIALOG_LINE_1769940243069_AQ3MAU,You slowly get closer to the dog. Finaly you put forth you hand and offer your empty hand to the dog.,
-GGJ2026_DIALOG_DOG_DIALOG_LINE_1769940361466_FFXUML,"The dog looks at you hand. After some hesitation, it sniffs your hand.",
-GGJ2026_DIALOG_DOG_DIALOG_LINE_1769940758638_FQ97DL,Happily it accepts your pets.,
-GGJ2026_DIALOG_DOG_DIALOG_LINE_1769940867676_WOPL8D,*Woof*,
-GGJ2026_DIALOG_DOG_DIALOG_LINE_1769940915168_EPX4A3,You are a good dog!,
-GGJ2026_DIALOG_DOG_DIALOG_LINE_1769941452845_VBQ9EP,The dog still looks happy.,
-GGJ2026_DIALOG_DOG_OPTION_1769939629612_MCTNXR,Ignore the dog.,
-GGJ2026_DIALOG_DOG_OPTION_1769939671033_UHKZ4S,Pet the dog.,
-GGJ2026_DIALOG_DOG_OPTION_1769939696299_IEV4HC,wonder,
-GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769940949604_DKM0AD,Did you finish your report? I want it tomorrow morning on my desk!,
-GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769941273875_9RS9NW,I'm not paying you to chit-chat!,
-GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769941284905_41GNCR,Back to work!,
-GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769941337719_I0ME50,Is that attitude you're giving me?,
-GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769941373522_MZQE8Y,I fixed that problem we've been having with the printer.,
-GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769941391311_H6PFCX,Now that's unexpected!,
-GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769941541748_QRHJ66,"Why, I'll never!",
-GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769941556634_E3YDM3,You are not putting in the work I expect of you. You keep coming in late and your work mentality lately is abysmal!,
-GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769941727305_KPMSFK,Show some spite! Put in some effort!,
-GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769941737230_19NOJS,"If you allow yourself one more plunder, that's it!",
-GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769942118109_1JDXY7,Now that's more like it. Keep it up!,
-GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769942497368_DTJC8Z,"Oh, I've had it with you!",
-GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769942511669_3S6I9M,Pack your things and get your sorry self out of my sight!,
-GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769942521862_NKA4BA,And don't come back!,
-GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769942747730_QRB158,Now get to work on that report!,
-GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769944181685_T7EJAD,"Well, good job! About time you showed some initiative!",
-GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769945275749_RWRNYE,Do you have any idea how much work I'm putting in?,
-GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769945294170_UFOKOE,Just getting to work each day takes some real effort of will with how boring and tedious this job is!,
-GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769945320648_DTYAUC,"Maybe you're the one who needs to change, not me!",
-GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769945358538_N7YK5O,"You're just getting started, but your boss doesn't let you finish.",
-GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769945396520_AE3WW9," Why, never in all my days have I had to endure such disrespect!",
-GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769945838437_D7K8MR,I've had it with you!,
-GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769945851934_TA0VZ2,Get your sorry self out of my sight!,
-GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769945901938_VX6042,And don't think you need to come back! You're fired!,
-GGJ2026_DIALOG_BOSS_DURING_WORK_OPTION_1769941029771_30XMDE,...,
-GGJ2026_DIALOG_BOSS_DURING_WORK_OPTION_1769941086049_96VLS0,About that printer...,
-GGJ2026_DIALOG_BOSS_DURING_WORK_OPTION_1769945222243_TB7FSE,Vent your frustrations.,
-GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942004374_64MJDS,"The coffee mashine looks like a christmas tree.
-Lights blinking constantly.",
-GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942034536_PK531Y,Realy? Someone has to do something about this!,
-GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942062079_JYHWVE,This mashine just gave up.,
-GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942154735_ZARYN0,I don't need another coffee.,
-GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942434774_CGQSTI,Nothing I can do about it. Hopefully someone will fix it.,
-GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942498102_DHQTJQ,Thats it! I had enough!,
-GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942511999_RJK4DB,You take your phone and call the support hotline.,
-GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942526912_LVLGFD,The callcenter supporter never had a chance..,
-GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942547509_AWSLJY,You scream into your phone. Anger burning in your heart.,
-GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942587750_NB3D1S,After some time you let it all out. The flames boil down.,
-GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942614075_SGY7DM,On the other end of the line is just silence.,
-GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942645448_A3GT3V,You end the call and return to more important matters.,
-GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942684590_R65BPW,And a silent sob...,
-GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942696973_JHKOAE,I will take care now.,
-GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942712806_EBPMP8,You call the support hotline.,
-GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942724997_3OX8DG,Calmly you explain the problem with the mashine to the support.,
-GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942764341_00AQU1,Together you identify the problem. The support manager gives you detailed instructions of what to do.,
-GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942815329_G6CDQ7,after some minutes of tinkering witht he mashine it roars to life and starts the cleaning process.,
-GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942851711_6DRCKA,You did it! What a relief!,
-GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942899337_K6C2A7,In the end you get your coffee.,
-GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769943414970_9ATG5C,A warm feeling of being helpfull stirs inside you.,
-GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769943442538_BKL0N8,You anger stirs up again just by seeing the blinking lights.,
-GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_OPTION_1769942339253_4A6QH7,Just leave.,
-GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_OPTION_1769942351479_TZNXHW,Complain angrily.,
-GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_OPTION_1769942371967_MK9NWG,I will contact the support.,
-GGJ2026_INTERACTION_GO_TO_APARTMENT,Go to home,Nach Hause gehen
+GGJ2026_DIALOG_DESK_OPTION_1769946534502_RWSDS6,You check your emails.,Du prüfst deine Emails.
+GGJ2026_DIALOG_DESK_OPTION_1769946548361_H963N1,You continue where you left off the previous day.,"Du machst da weiter, wo du gestern aufgehört hast."
+GGJ2026_DIALOG_DESK_OPTION_1769946597194_NWA83D,"You stare at the screen, unable to focus.","Du starrst auf den Bildschirm, aber es kommt nichts an."
+GGJ2026_DIALOG_DESK_OPTION_1769946770676_9KP3UE,Go to the office kitchen for coffee.,Du holst dir einen Kaffee in der Büroküche.
+GGJ2026_DIALOG_DESK_OPTION_1769946859800_0BZO8U,Try to concentrate.,"Du versuchst, dich zu konzentrieren."
+GGJ2026_DIALOG_DESK_OPTION_1769951067187_9OKN3N,No?,Nein?
+GGJ2026_DIALOG_WRONG_DESK_DIALOG_LINE_1769938794759_K4MBKC,Yes?,Ja?
+GGJ2026_DIALOG_WRONG_DESK_DIALOG_LINE_1769938801485_GAQEVM,Did you need something?,Brauchst du was?
+GGJ2026_DIALOG_WRONG_DESK_DIALOG_LINE_1769938816777_0I48OR,You're bothering me.,Du störst.
+GGJ2026_DIALOG_WRONG_DESK_DIALOG_LINE_1769938824050_KAVO5X,Please go stand at your own desk.,Kannst du bitte bei deinem eigenen Schreibtisch rumstehen?
+GGJ2026_DIALOG_WRONG_DESK_DIALOG_LINE_1769938918740_HECO3O,Good morning.,Guten Morgen.
+GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_DIALOG_LINE_1769939295674_PJAE8V,...,...
+GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_DIALOG_LINE_1769939303360_CB1KSO,He's not looking at you.,Er schaut nicht zu dir.
+GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_DIALOG_LINE_1769939357200_F5SU9P,You stare at him until he looks at you.,"Du starrst ihn an, bis er dich ansieht."
+GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_DIALOG_LINE_1769939376836_W1HAE2,Y-yes?,J-ja?
+GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_DIALOG_LINE_1769939610990_G2EWPR,...,...
+GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_DIALOG_LINE_1769939622335_G57IVS,...,...
+GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_DIALOG_LINE_1769939634395_ICI18F,You stare at each other awkwardly.,Ihr starrt euch schweigend an.
+GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_DIALOG_LINE_1769939674888_3SI3MY,Good morning.,Guten Morgen.
+GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_DIALOG_LINE_1769939682779_LV5B18,"Err, good morning.","Ähm, Guten Morgen."
+GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_DIALOG_LINE_1769939834780_JHCP9A,Idiot.,Idiot.
+GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_DIALOG_LINE_1769939844777_IRRU4N,"Your colleague looks taken aback for a moment, then he turns away from you.","Dein Kollege sieht etwas vor den Kopf gestoßen aus, dann dreht er sich weg."
+GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_DIALOG_LINE_1769939988966_W46WC7,He doesn't look at you anymore.,Er schaut dich nicht mehr an.
+GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_OPTION_1769939405946_TK9J7U,Ignore him.,Ignorier ihn.
+GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_OPTION_1769939417375_Z53INA,Greet him.,Grüße ihn.
+GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_OPTION_1769939444184_Z3CIP4,Insult him.,Beleidige ihn.
+GGJ2026_DIALOG_DOG_DIALOG_LINE_1769939589986_XDGL6B,A dog is lying on the ground in front of the store.,Vor dem Laden liegt ein Hund.
+GGJ2026_DIALOG_DOG_DIALOG_LINE_1769939731924_7J9VMS,You ignore the dog. The dog ignores you too.,Du ignorierst den Hund. Der Hund ignoriert dich auch.
+GGJ2026_DIALOG_DOG_DIALOG_LINE_1769939791268_APMDIE,A non verbal mutal agreement.,In stillem Einverständnis ignoriert ihr euch gegenseitig.
+GGJ2026_DIALOG_DOG_DIALOG_LINE_1769939826631_YZG126,You stop.,Du stockst.
+GGJ2026_DIALOG_DOG_DIALOG_LINE_1769939834044_80JPE6,You wonder why this dog is here.,"Du fragst dich, warum dieser Hund hier ist."
+GGJ2026_DIALOG_DOG_DIALOG_LINE_1769939927744_90CJEH,There's no sign of anyone caring for the dog.,"Es sieht nicht so aus, als würde sich jemand um ihn kümmern."
+GGJ2026_DIALOG_DOG_DIALOG_LINE_1769939944446_75EN61,The dog returns your look.,Der Hund blickt zurück.
+GGJ2026_DIALOG_DOG_DIALOG_LINE_1769939970715_V9V6BP,It may have been a long time since someone really noticed the poor thing.,"Es ist vielleicht schon lange her, dass jemand dem armen Tier wirklich Aufmerksamkeit geschenkt hat."
+GGJ2026_DIALOG_DOG_DIALOG_LINE_1769940044570_Z4LOQ7,It sits here day after day. Is it waiting for something? Or someone?,"Er sitzt hier Tag ein, Tag aus. Wartet er auf etwas? Oder jemanden?"
+GGJ2026_DIALOG_DOG_DIALOG_LINE_1769940225015_1XEYV2,I can really relate..,"Ich weiß, wie sich das anfühlt."
+GGJ2026_DIALOG_DOG_DIALOG_LINE_1769940243069_AQ3MAU,You gradually approach the dog. Slowly you stretch out your arm and offer your empty hand to the dog.,Du näherst dich dem Hund langsam. Vorsichtig streckst du die Hand aus und zeigst sie ihm.
+GGJ2026_DIALOG_DOG_DIALOG_LINE_1769940361466_FFXUML,"The dog looks at your hand. It hesitates, then it sniffs it.","Der Hund schaut deine Hand an. Er zögert kurz, dann schnuppert er daran."
+GGJ2026_DIALOG_DOG_DIALOG_LINE_1769940758638_FQ97DL,Happily it accepts your pets.,Er lässt deine Streicheleinheiten glücklich zu.
+GGJ2026_DIALOG_DOG_DIALOG_LINE_1769940867676_WOPL8D,*Woof*,*Wuff*
+GGJ2026_DIALOG_DOG_DIALOG_LINE_1769940915168_EPX4A3,You are a good dog!,So ein guter Hund!
+GGJ2026_DIALOG_DOG_DIALOG_LINE_1769941452845_VBQ9EP,The dog still looks happy.,Der Hund sieht immer noch glücklich aus.
+GGJ2026_DIALOG_DOG_OPTION_1769939629612_MCTNXR,Ignore the dog.,Ignorier ihn.
+GGJ2026_DIALOG_DOG_OPTION_1769939671033_UHKZ4S,Pet the dog.,Streichel ihn.
+GGJ2026_DIALOG_DOG_OPTION_1769939696299_IEV4HC,Wonder...,Wundere dich...
+GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769940949604_DKM0AD,Did you finish your report? I want it tomorrow morning on my desk!,Haben Sie den Bericht fertig? Ich will ihn morgen früh auf meinem Schreibtisch!
+GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769941273875_9RS9NW,I'm not paying you to chit-chat!,Ich bezahle Sie nicht zum Schwätzen!
+GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769941284905_41GNCR,Back to work!,Zurück an die Arbeit!
+GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769941337719_I0ME50,Is that attitude you're giving me?,Was ist das denn für eine Unverschämtheit?
+GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769941373522_MZQE8Y,I fixed that problem we've been having with the printer.,Ich hab den Fehler beim Drucker behoben.
+GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769941391311_H6PFCX,Now that's unexpected!,Ach! Das ist aber unerwartet!
+GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769941541748_QRHJ66,"Why, I'll never!",Das ist ja..!
+GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769941556634_E3YDM3,You are not putting in the work I expect of you. You keep coming in late and your work mentality lately is abysmal!,"Sie arbeiten nicht zu meiner Zufriedenheit. Ständig sind Sie zu spät, und ihre Einstellung bei der Arbeit ist auch ein Schandmahl im Büroraum!"
+GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769941727305_KPMSFK,Show some spite! Put in some effort!,Hängen Sie sich mal rein! Strengen Sie sich mal an! 
+GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769941737230_19NOJS,"If you allow yourself one more plunder, that's it!","Wenn Sie sich noch einen Fehler erlauben, wars das!"
+GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769942118109_1JDXY7,Now that's more like it. Keep it up!,Das nenne ich Einsatz. Weiter so!
+GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769942497368_DTJC8Z,"Oh, I've had it with you!",Ich habe wirklich genug von Ihnen!
+GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769942511669_3S6I9M,Pack your things and get your sorry self out of my sight!,Packen Sie Ihren Kram und gehen Sie mir aus den Augen!
+GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769942521862_NKA4BA,And don't come back!,And kommen Sie nicht zurück!
+GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769942747730_QRB158,Now get to work on that report!,Machen Sie sich endlich an den Bericht!
+GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769944181685_T7EJAD,"Well, good job! About time you showed some initiative!","Nun, gute Arbeit! Wurde auch Zeit, dass Sie mal etwas Eigeninitiative zeigen."
+GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769945275749_RWRNYE,Do you have any idea how much work I'm putting in?,"Haben Sie irgendeine Vorstellung davon, wie ich mich abplackere?"
+GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769945294170_UFOKOE,Just getting to work each day takes some real effort of will with how boring and tedious this job is!,"Allein der Weg zur Arbeit ist schon anstrengend genug, weil dieser Job so langweilig ist!"
+GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769945320648_DTYAUC,"Maybe you're the one who needs to change, not me!","Vielleicht müssen Sie was anderen, nicht ich!"
+GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769945358538_N7YK5O,"You're just getting started, but your boss doesn't let you finish.","Eigentlich redest du dich gerade erst warm, aber deine Chefin lässt dich nicht ausreden."
+GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769945396520_AE3WW9," Why, never in all my days have I had to endure such disrespect!","Also, sowas habe ich ja noch nie erlebt, in all meinen Tagen hier."
+GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769945838437_D7K8MR,I've had it with you!,Es reicht!
+GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769945851934_TA0VZ2,Get your sorry self out of my sight!,Gehen Sie mir aus meinen Augen.
+GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769945901938_VX6042,And don't think you need to come back! You're fired!,"Und glauben Sie ja nicht, sie bräuchten noch einmal her kommen! Sie sind gefeuert!"
+GGJ2026_DIALOG_BOSS_DURING_WORK_OPTION_1769941029771_30XMDE,...,...
+GGJ2026_DIALOG_BOSS_DURING_WORK_OPTION_1769941086049_96VLS0,About that printer...,Was den Drucken angeht....
+GGJ2026_DIALOG_BOSS_DURING_WORK_OPTION_1769945222243_TB7FSE,Vent your frustrations.,Lass deinen Frust raus.
+GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942004374_64MJDS,"The coffee machine looks like a christmas tree,
+lights blinking constantly.",Der Kaffeeautomat sieht aus wie ein Weihnachtbaum mit den ganzen blinkenden Lichtern.
+GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942034536_PK531Y,Really? Not working again? Someone has to do something about this!,Echt jetzt? Die klappt schon wieder nicht? Da muss echt mal jemand was machen!
+GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942062079_JYHWVE,This machine just gave up.,Diese Maschine hat einfach aufgegeben.
+GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942154735_ZARYN0,I don't need another coffee.,Ich brauche nicht noch einen Kaffee.
+GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942434774_CGQSTI,Nothing I can do about it. Hopefully someone will fix it.,Da kann ich nichts machen. Hoffentlich repariert die bald jemand.
+GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942498102_DHQTJQ,Thats it! I've had enough!,Das reicht! Ich kann nicht mehr!
+GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942511999_RJK4DB,You take your phone and call the support hotline.,Du nimmst dein Handy aus der Tasche und rufst den Support an.
+GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942526912_LVLGFD,The callcenter staff didn't stand a chance...,Der Callcenter Mitarbeiter hatte keine Chance...
+GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942547509_AWSLJY,"You scream into your phone, with anger burning in your heart.","Du brüllst in dein Handy, die Wut eine helle Flamme in deinem Herzen."
+GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942587750_NB3D1S,After some time you let it all out. The flames have boiled down. You feel empty and cold.,Nach kurzer Zeit hast du alles raus gelassen. Die Flammen sind erloschen. Du fühlst dich leer. und kalt.
+GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942614075_SGY7DM,"It's silent on the other end of the line. The only thing you can hear is your own, ragged breathing.","Auf der anderen Seite der Leitung ist es ganz still. Du hörst nur deinen eigenen, abgehackten Atem."
+GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942645448_A3GT3V,You end the call. You have more important things to do.,Du legst auf. Du hast Wichtigeres zu erledigen.
+GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942684590_R65BPW,And a silent sob...,Ein leises Schluchzen...
+GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942696973_JHKOAE,I will take care of this now.,Ich kümmere mich jetzt darum.
+GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942712806_EBPMP8,You call the support hotline.,Du rufst den Support an.
+GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942724997_3OX8DG,You explain the problem with the machine to the support.,Du schilderst dem Callcenter Mitarbeiter das Problem.
+GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942764341_00AQU1,Together you identify the problem. The support manager gives you detailed instructions of what to do.,"Gemeinsam identifiziert ihr das Problem. Der Support Manager gibt dir detaillierte Instruktionen, um das Problem zu beheben."
+GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942815329_G6CDQ7,"After some minutes of tinkering with the mashine, it actually roars to life and starts its cleaning cycle.",Du werkelst ein paar Minuten an der Maschine herum. Dann erwacht sie tatsächlich wieder zum Leben und startet ihren Reinigungsdurchauf.
+GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942851711_6DRCKA,You did it! What a relief!,Du hast es geschafft! Was für eine Erleichterung!
+GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942899337_K6C2A7,"In the end, you managed to get your coffee.",Am Ende bekommst du tatsächlich noch deinen Kaffee.
+GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769943414970_9ATG5C,A warm feeling of being helpful stirs inside you.,"Ein warmes Gefühl erfüllt dich, anderen geholfen zu haben."
+GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769943442538_BKL0N8,The anger in your middle stirs up again just by seeing the blinking lights.,"Die Wut in deinem Inneren beginnt wieder zu brodeln, wenn du die blinkenden Lichter nur siehst...."
+GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_OPTION_1769942339253_4A6QH7,Just leave.,Geh wieder.
+GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_OPTION_1769942351479_TZNXHW,Complain angrily.,Beschwer dich wütend.
+GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_OPTION_1769942371967_MK9NWG,Contact support.,Kontaktiere den Support.
+GGJ2026_INTERACTION_GO_TO_APARTMENT,Go home,Nach Hause gehen
 GGJ2026_INTERACTION_GO_TO_OFFICE,Go to office,Zum Büro gehen
 GGJ2026_INTERACTION_GO_TO_OFFICE_KITCHEN,Enter kitchen,Küche betreten
 GGJ2026_INTERACTION_INTERACT_BED,Sleep,Schlafen
@@ -242,92 +243,96 @@ GGJ2026_INTERACTION_INTERACT_CHILD,Talk to child,Mit Kind reden
 GGJ2026_INTERACTION_INTERACT_COFFEE_MACHINE,Use coffee machine,Kaffeemaschine benutzen
 GGJ2026_INTERACTION_INTERACT_DOG,Look at dog,Hund anschauen
 GGJ2026_INTERACTION_INTERACT_MY_DESK,Start work,Arbeit beginnen
-GGJ2026_INTERACTION_INTERACT_OMMSCHEN,Talk to granny,Mit Ommschen reden
+GGJ2026_INTERACTION_INTERACT_OMMSCHEN,Talk to granny,Mit dem Ommschen reden
 GGJ2026_INTERACTION_INTERACT_PRINTER,Use copy machine,Kopierer benutzen
-GGJ2026_INTERACTION_INTERACT_SUPER_MARKT,Enter supermarket,Supermarkt betreten
+GGJ2026_INTERACTION_INTERACT_SUPER_MARKT,Enter store,Supermarkt betreten
 GGJ2026_INTERACTION_LEAVE_HOME,Leave home,Zuhause verlassen
 GGJ2026_INTERACTION_LEAVE_OFFICE,Leave office,Büro verlassen
 GGJ2026_INTERACTION_LEAVE_OFFICE_KITCHEN,Leave kitchen,Küche verlassen
 GGJ2026_INTERACTION_TALK_TO_COLLEAGUE,Talk to clleague,Mit Kollegen sprechen
-GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769944677366_W0EZ94,"Nothing has changed. What did you expect.
-No one cared. Not even you..",
-GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769944723507_K12GH0,Finaly. The darm mashine was fixed!,
-GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769944743161_J7A5AD,you make yourself a coffee.,
-GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769944755250_7UE7S2,Reluctantly the mashine gobbles up a coffee into your mug.,
-GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769944783559_WUQOBL,The smell is not as good as it used to.,
-GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769944805077_5GYO9G,The company just showed up and did something before leaving without a word.,
-GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769944841084_XQ4LBU,He looks down on his coffee.,
-GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769944850686_SKMQNA,Don't know if i prefer not having coffee at all..,
-GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769944869544_XNATLU,You kindof feel the same.,
-GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769945085044_A5KH7H,Better than nothing i guess.,
+GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769944677366_W0EZ94,"Nothing has changed. What did you expect?
+No one cares. Not even you.","Nichts hat sich geändert. Was hast du erwartet?
+Niemand kümmert es. Nicht mal dich."
+GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769944723507_K12GH0,Finally. The darm machine is fixed!,Na endlich. Die blöde Maschine funktioniert wieder!
+GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769944743161_J7A5AD,You make yourself a coffee.,Du machst dir einen Kaffee.
+GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769944755250_7UE7S2,Reluctantly the machine gobbles up a glob of coffee into your mug.,Fast widerwillig spuckt die Maschine einen Schwall Kaffee in deine Tasse.
+GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769944783559_WUQOBL,The smell is not as good as it used to.,Er riecht nicht so gut wie sonst...
+GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769944805077_5GYO9G,The company just showed up and did something before leaving again without a word.,Die Automatenfirma war gerade da und hat kommentarlos irgendwas daran gemacht.
+GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769944841084_XQ4LBU,He looks down at his coffee.,Er schaut auf seinen Kaffee hinunter.
+GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769944850686_SKMQNA,I don't know if I prefer not having coffee at all...,"Ich weiß nicht, ob ich nicht lieber gar keinen Kaffee hätte...."
+GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769944869544_XNATLU,You kind of feel the same.,Du fühlst das gleiche.
+GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769945085044_A5KH7H,Better than nothing I guess.,"Besser als nichts, würde ich sagen."
 GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769945096558_KIH9HC,"You kick the mashine.
-How does it dare to give you such a bad coffee.",
-GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769945122799_SLXU1Q,"Strangely the christmal lights lit up again..
-You broke the mashine.",
-GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769945185004_CX1PCD,It may not be safe to drink that.,
-GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769945205427_NLC8VR,Did the workers poison you?,
-GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769945500324_CV2ZDH,You dispose the coffee in the sink.,
-GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769945625329_HJK8FZ,You broke the mashine.,
-GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769945659898_K549V8,I will not get another coffe.,
-GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769945834375_MQKGMD,You pour yourself another coffee.,
-GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_OPTION_1769944880985_I411GB,Accept the bad coffee,
-GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_OPTION_1769944923796_ZSN9U8,Kick the mashine,
-GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_OPTION_1769944960368_VP87HO,Throw away the coffee,
-GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769946367288_HASG3A,The colleague is surrounded by others hwo are making fun of him.,
-GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769946461720_UY6ELK,You are used to this view. The colleague is just so easy to make fun of.,
-GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769946777800_IF9WHX,I should better not be involved in this.,
-GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769946844680_5JDT37,What if they pick on me next?,
-GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769946912021_2FAJ5V,You move on. Too afraid to step up.,
-GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769946961960_ZT3C7B,You move on.,
-GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769946977679_QLYZJF,Out of nowhere you join in.,
-GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947008011_FMZ862,You are part of the mob now. You feel that you belong here.,
-GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947055701_1UVCJL,Leave me alone!,
-GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947082603_MNDS0G,Please!,
-GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947089009_KNXUIE,We can see tears in the eyes of the colleague.,
-GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947153264_OQQR3J,We continue. Fuled by the reaction of the colleague.,
-GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947183349_1Z1C41,We are one. Against one. That is fair.,
-GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947244393_61I7ST,Thats it! I cant take it anymore!,
-GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947256415_SZOJKR,He storms of. We have won.,
-GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947276516_EK835O,But all good things come to an end.,
-GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947297517_NH3QTB,After a short quiet time we disband.,
-GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947330270_C6P78J,You are you again.,
-GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947357431_A34B3A,Please stop already!,
-GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947370167_H8Y9YJ,The mob continues the barages of hurtfull comments.,
-GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947408327_QOZIIM,Enougth already!,
-GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947417477_H3W2U6,"You'r voice rips through the room.
-All eyes are on you. In shock? With hope?",
-GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947511623_YEG5NY,Will you just leave it be? He's had enouth of your behaviour and so do I!,
-GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947554151_Z31HDQ,You are just a bunch of hatefull people with nothing better to do than to pick on him!,
-GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947607085_LZV6WQ,The mob tries to hold against you. But you overwelm them easily.,
-GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947818023_5OP2V3,"The mob is one, but you and your colleague are two.",
-GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947916038_I7T45C,After a short quiet time the mob disbands.,
-GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769948174422_QQWG6H,Thank you for stepping up.,
-GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769948265695_NR3F1S,I hope this will not backfire.,
-GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769948280130_BVOTY5,But if feels good right now.,
-GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769948369558_QRXYQ5,Thank you again for stepping up.,
-GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_OPTION_1769946573741_UPSD58,Just leave them be.,
-GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_OPTION_1769946585512_QV4HI1,Join in.,
-GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_OPTION_1769946626118_7HT0F2,Better not get involved,
-GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_OPTION_1769946662617_9R7IXN,Yell at the otehrs.,
-GGJ2026_DIALOG_BED_DIALOG_LINE_1769947099863_P6SEEK,Your bed looks very inviting. It's your favorite piece of furniture.,
-GGJ2026_DIALOG_BED_DIALOG_LINE_1769947189337_Z90A1B,Home sweet home...,
-GGJ2026_DIALOG_BED_OPTION_1769947166668_NFN26W,Sleep.,
-GGJ2026_DIALOG_BED_OPTION_1769947210070_CVKHBT,Not yet...,
-GGJ2026_DIALOG_BOSS_POST_WORK_DIALOG_LINE_1769947497541_BGNFEG,You're still here?,
-GGJ2026_DIALOG_BOSS_POST_WORK_DIALOG_LINE_1769947728838_CJ5V32,Go on home then! ,
-GGJ2026_DIALOG_BOSS_POST_WORK_DIALOG_LINE_1769947756170_O5PFU1,Oh!,
-GGJ2026_DIALOG_BOSS_POST_WORK_DIALOG_LINE_1769947772455_3QNQ2W,She looks surprised but happy.,
-GGJ2026_DIALOG_BOSS_POST_WORK_DIALOG_LINE_1769947783438_XA0AKW,Why thank you!,
-GGJ2026_DIALOG_BOSS_POST_WORK_DIALOG_LINE_1769947798195_B4V11O,Don't expect special treatment though!,
-GGJ2026_DIALOG_BOSS_POST_WORK_OPTION_1769947606934_9QEUDC,...,
-GGJ2026_DIALOG_BOSS_POST_WORK_OPTION_1769947648633_LB01I6,Thanks for your hard work always.,
-GGJ2026_DIALOG_SUPERMARKET_POST_WORK_DIALOG_LINE_1769948196080_7LCJC0,It's really convenient you always come by this store on your way home.,
-GGJ2026_DIALOG_SUPERMARKET_POST_WORK_DIALOG_LINE_1769948248391_5R1VZW,Maybe you should get something.,
-GGJ2026_DIALOG_SUPERMARKET_POST_WORK_DIALOG_LINE_1769948394186_47IW3E,You get your stuff and queue up. This store's always busy around this time.,
-GGJ2026_DIALOG_SUPERMARKET_POST_WORK_DIALOG_LINE_1769948432846_TNG0GU,Eventually you make it outside.,
-GGJ2026_DIALOG_SUPERMARKET_POST_WORK_OPTION_1769948267747_WPCNQ4,Get groceries.,
-GGJ2026_DIALOG_SUPERMARKET_POST_WORK_OPTION_1769948274622_L7JYFU,Get snacks.,
-GGJ2026_DIALOG_SUPERMARKET_POST_WORK_OPTION_1769948280318_ODDEO8,Buy nothing.,
+How does it dare to give you such bad coffee.","Du trittst gegen die Maschine.
+Wie kann sie es wagen, dir solch schlechten Kaffee zu geben!"
+GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769945122799_SLXU1Q,"The christmas lights start up again.
+It seems like you broke the machine.","Die Weihnachtslichter blinken wieder.
+Scheinbar hast du die Maschine wieder kaputt gemacht."
+GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769945185004_CX1PCD,It may not be safe to drink that.,Das ist eventuell nicht trinkbar.
+GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769945205427_NLC8VR,Did the workers poison you?,Hat die Automatenfirma dich vergiftet?
+GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769945500324_CV2ZDH,You dispose og the coffee in the sink.,Du schüttest den Kaffee ins Waschbecken.
+GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769945625329_HJK8FZ,You broke the machine.,Du hast die Maschine kaputt gemacht.
+GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769945659898_K549V8,I will not get another coffee.,Ich hol mir nicht noch einen Kaffee.
+GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769945834375_MQKGMD,You pour yourself another coffee.,Du holst dir nochmal nach.
+GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_OPTION_1769944880985_I411GB,Accept the bad coffee.,Akzeptier den schlechten Kaffee.
+GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_OPTION_1769944923796_ZSN9U8,Kick the machine.,Triitt gegen die Maschine.
+GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_OPTION_1769944960368_VP87HO,Pour away the coffee.,Schütte den Kaffee weg.
+GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769946367288_HASG3A,A colleague is surrounded by others who are making fun of him.,"Ein Kollege steht umringt von anderen, die sich über ihn lustig machen."
+GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769946461720_UY6ELK,You are used to this view. This colleague is just so easy to make fun of.,"Eine vertraute Szene. Dieser spezielle Kollege bietet sich quasi dafür an, sich über ihn lustig zu machen."
+GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769946777800_IF9WHX,I should better not be involved in this.,Ich sollte mich hier besser nicht einmischen.
+GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769946844680_5JDT37,What if they pick on me next?,"Was, wenn sie es danach auf mich absehen?"
+GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769946912021_2FAJ5V,"You move on, too afraid to step in.","Du gehst weiter. Du traust dich nicht, dazwischen zu gehen."
+GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769946961960_ZT3C7B,You move on.,Du gehst weiter.
+GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769946977679_QLYZJF,Out of nowhere you join in.,Du stellst dich mit in den Kreis.
+GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947008011_FMZ862,You are part of the mob now. You feel that you belong here.,"Du bist jetzt ein Teil des Mobs. Du hast das Gefühlt, dazuzugehören. "
+GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947055701_1UVCJL,Leave me alone!,Lasst mich in Ruhe!
+GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947082603_MNDS0G,Please!,Bitte!
+GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947089009_KNXUIE,We can see tears in the eyes of the colleague.,Wir können Tränen in den Augen unseres Kollegen sehen.
+GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947153264_OQQR3J,We continue. His reactions are your fuel.,Wir machen weiter. Seine Reaktion ist unser Antrieb.
+GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947183349_1Z1C41,We are one. Against one. That is fair.,Wir sind eins. Gegen einen. Das ist nur fair.
+GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947244393_61I7ST,Thats it! I cant take it anymore!,Genug! Ich kann nicht mehr!
+GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947256415_SZOJKR,He storms of. We have won.,Er stürmt aus der Küche. Wir haben gewonnen.
+GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947276516_EK835O,But all good things come to an end.,Aber alle guten Dinge enden irgendwann.
+GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947297517_NH3QTB,After a short quiet time we disband.,Nach kurzer Zeit lösen wir die Gruppe auf.
+GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947330270_C6P78J,You are you again.,Du bist wieder du.
+GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947357431_A34B3A,Please stop already!,Bitte hört endlich auf!
+GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947370167_H8Y9YJ,The mob continues its barrage of hurtful comments.,Der Mob lässt weiter verletzende Kommentare los.
+GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947408327_QOZIIM,Enough already!,Schluss jetzt!
+GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947417477_H3W2U6,"Your voice rips through the room.
+All eyes are on you. In shock? With hope?","Deine Stimme klingt durch den kleinen Raum.
+Alle Augen ruhen auf dir. Geschockt? Hoffnungsvoll?"
+GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947511623_YEG5NY,Will you just leave it be? He's had enouth of your behaviour and so do I!,"Lasst ihr das vielleicht endlich mal sein? Er braucht das nicht, und mir reicht es auch langsam!"
+GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947554151_Z31HDQ,You are just a bunch of hateful people with nothing better to do than to pick on him!,"Ihr seid doch bloß ein Haufen trauriger Gestalten, die nichts bessere zu tun haben, als auf einem rumzuhacken!"
+GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947607085_LZV6WQ,The mob tries to hold against you. But you overwelm them easily.,"Der Mob versucht, gegen dich anzukommen. Aber dir ist es ein leichtes, sie zurückzudrängen."
+GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947818023_5OP2V3,"The mob is one, but you and your colleague are two.","Der Mob ist eins, aber du und dein Kollege, ihr seid 2."
+GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947916038_I7T45C,After a short quiet time the mob disbands.,Nach kurzer Zeit löst der Mob sich auf.
+GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769948174422_QQWG6H,Thank you for stepping up.,"Danke, dass du dich für mich eingesetzt hast."
+GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769948265695_NR3F1S,I hope this will not backfire.,"Ich hoffe, das wird nicht noch was nach sich ziehen."
+GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769948280130_BVOTY5,But if feels good right now.,Aber jetzt gerade fühlt es sich gut an.
+GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769948369558_QRXYQ5,Thank you again for stepping up.,Danke nochmal.
+GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_OPTION_1769946573741_UPSD58,Just leave them be.,Lass sie machen.
+GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_OPTION_1769946585512_QV4HI1,Join in.,Mach mit.
+GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_OPTION_1769946626118_7HT0F2,Better not get involved,"Manchmal ist es besser, sich nicht einzumischen."
+GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_OPTION_1769946662617_9R7IXN,Yell at the perpetrators.,Schrei dir Antagonisten an.
+GGJ2026_DIALOG_BED_DIALOG_LINE_1769947099863_P6SEEK,Your bed looks very inviting. It's your favorite piece of furniture.,Dein Bett sieht sehr einladend aus. Es ist dein Lieblingsstück in deiner Wohnung.
+GGJ2026_DIALOG_BED_DIALOG_LINE_1769947189337_Z90A1B,Finally over...,Endlich vorbei...
+GGJ2026_DIALOG_BED_OPTION_1769947166668_NFN26W,Sleep.,Geh schlafen.
+GGJ2026_DIALOG_BED_OPTION_1769947210070_CVKHBT,Not yet...,Noch nicht...
+GGJ2026_DIALOG_BOSS_POST_WORK_DIALOG_LINE_1769947497541_BGNFEG,You're still here?,Du bist immern noch da?
+GGJ2026_DIALOG_BOSS_POST_WORK_DIALOG_LINE_1769947728838_CJ5V32,Go on home then! ,Machen Sie schon Feierabend!
+GGJ2026_DIALOG_BOSS_POST_WORK_DIALOG_LINE_1769947756170_O5PFU1,Oh!,Oh!
+GGJ2026_DIALOG_BOSS_POST_WORK_DIALOG_LINE_1769947772455_3QNQ2W,She looks surprised but happy.,"Sie sieht überrascht aus, aber nicht unglücklich."
+GGJ2026_DIALOG_BOSS_POST_WORK_DIALOG_LINE_1769947783438_XA0AKW,Why thank you!,"Ja, Danke Ihnen!"
+GGJ2026_DIALOG_BOSS_POST_WORK_DIALOG_LINE_1769947798195_B4V11O,Don't expect special treatment though!,Erwarten Sie aber jetzt keine Sonderbehandlung!
+GGJ2026_DIALOG_BOSS_POST_WORK_OPTION_1769947606934_9QEUDC,...,...
+GGJ2026_DIALOG_BOSS_POST_WORK_OPTION_1769947648633_LB01I6,Thanks for your hard work always.,Danke für Ihre harte Arbeit immer.
+GGJ2026_DIALOG_SUPERMARKET_POST_WORK_DIALOG_LINE_1769948196080_7LCJC0,It's really convenient you always come by this store on your way home.,"Es ist echt praktisch, dass dieser Laden auf deinem Arbeitsweg liegt."
+GGJ2026_DIALOG_SUPERMARKET_POST_WORK_DIALOG_LINE_1769948248391_5R1VZW,Maybe you should get something.,Vielleicht solltest du etwas kaufen.
+GGJ2026_DIALOG_SUPERMARKET_POST_WORK_DIALOG_LINE_1769948394186_47IW3E,You get your stuff and queue up. This store's always busy around this time...,Du sammelst deine Einkäufe zusammen und reihst dich in die Schlange ein. Hier ist um die Zeit immer so viel los...
+GGJ2026_DIALOG_SUPERMARKET_POST_WORK_DIALOG_LINE_1769948432846_TNG0GU,Eventually you make it outside.,Irgendwann schaffst du es wieder nach draußen.
+GGJ2026_DIALOG_SUPERMARKET_POST_WORK_OPTION_1769948267747_WPCNQ4,Get groceries.,Mach deinen Wocheneinkauf.
+GGJ2026_DIALOG_SUPERMARKET_POST_WORK_OPTION_1769948274622_L7JYFU,Get snacks.,Kauf Snacks.
+GGJ2026_DIALOG_SUPERMARKET_POST_WORK_OPTION_1769948280318_ODDEO8,Buy nothing.,Kauf nichts.
 GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769948855751_HM8C2V,Hey mister.,
 GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769948862804_JR5WFZ,What are you doing?,
 GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949097565_WNODPQ,...,

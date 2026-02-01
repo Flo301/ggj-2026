@@ -5,6 +5,22 @@
       "id": "start",
       "lines": [
         {
+          "type": "switch",
+          "condition": {
+            "type": "didDays",
+            "value": "6"
+          },
+          "nextSection": "wakeup-3"
+        },
+        {
+          "type": "switch",
+          "condition": {
+            "type": "didDays",
+            "value": "3"
+          },
+          "nextSection": "wakeup-2"
+        },
+        {
           "type": "nextSection",
           "nextSection": "wakeup"
         }

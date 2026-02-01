@@ -73,7 +73,11 @@ partial class GlobalState : Node
 		{
 			availableEmotions.Add(emotion);
 		}
+		dayCount++;
+		newEmotions = [];
+		LastScene = null;
 		GetTree().ChangeSceneToFile("res://scenes/levels/Apartment.tscn");
+		EmitSignal(SignalName.DialogEnd, "");
 	}
 
 	public void AddDialogDone(string dialogName)
