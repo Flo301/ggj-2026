@@ -1,6 +1,8 @@
 keys,en,de
 GGJ2026_MENU_ANWENDEN,Apply,Anwenden
+GGJ2026_MENU_CONTINUE,Continue,Weiter
 GGJ2026_MENU_EINSTELLUNGEN,Settings,Einstellungen
+GGJ2026_MENU_EXIT_TO_MENU,To Titlescreen,Zum Hauptmenü
 GGJ2026_MENU_JA,Yes,Ja
 GGJ2026_MENU_LADEN,Load,Laden
 GGJ2026_MENU_NEIN,No,Nein
@@ -13,6 +15,7 @@ GGJ2026_MENU_NEUE_MASKE_SAD,Unlocked emotion: [color=dodgerblue][outline_size=2]
 GGJ2026_MENU_NEUE_MASKE_SURPRISED,Unlocked emotion: [color=gold][outline_size=2][outline_color=white]Surprise,Emotion freigeschaltet: [color=gold][outline_size=2][outline_color=white]Überraschung
 GGJ2026_MENU_NEUE_MASKE_THANKFUL,Unlocked emotion: [color=turquoise][outline_size=2][outline_color=white]Thankfulness,Emotion freigeschaltet: [color=gray][outline_size=2][outline_color=white]Dankbarkeit
 GGJ2026_MENU_NEXT_DAY,Next Day,Nächster Tag
+GGJ2026_MENU_PAUSE,--- PAUSED ---,--- PAUSIERT ---
 GGJ2026_MENU_SCHLIESSEN,Close,Schließen
 GGJ2026_MENU_START,Start,Start
 GGJ2026_MENU_TAGESENDE,Another day ends,Ein weiterer Tag geht zuende
@@ -29,50 +32,50 @@ GGJ2026_SPEAKER_DOG,Dog,Hund
 GGJ2026_SPEAKER_MOBBED_COLLEAGUE,Mobbed colleague,Gemobbter Kollege
 GGJ2026_SPEAKER_OLD_LADY,Old Lady,Alter Frau
 GGJ2026_SPEAKER_PLAYER,Player,Spieler
-GGJ2026_DIALOG_WAKEUP_DIALOG_DIALOG_LINE_1769879845325_5LHVNK,Ring! Ring!,
-GGJ2026_DIALOG_WAKEUP_DIALOG_DIALOG_LINE_1769879940323_GS45LK,Time to get up.,
-GGJ2026_DIALOG_WAKEUP_DIALOG_DIALOG_LINE_1769880854882_Z4IZ8A,You don't really feel like getting up...,
-GGJ2026_DIALOG_WAKEUP_DIALOG_DIALOG_LINE_1769896100239_T3YZDS,Ring! Ring!,
-GGJ2026_DIALOG_WAKEUP_DIALOG_DIALOG_LINE_1769896103105_MNMJSN,Time to get up. Again... ,
-GGJ2026_DIALOG_WAKEUP_DIALOG_DIALOG_LINE_1769896242796_QBVUUM,Ring! Ring!,
-GGJ2026_DIALOG_WAKEUP_DIALOG_DIALOG_LINE_1769896245224_39JHCG,Time to get up! Another day again. Another day of work...,
-GGJ2026_DIALOG_WAKEUP_DIALOG_DIALOG_LINE_1769897294162_BMCJEF,You crawl out of bed and get ready for work.,
-GGJ2026_DIALOG_WAKEUP_DIALOG_DIALOG_LINE_1769897367589_Q1J3M5,You have the feeling maybe your phone rang at some point...,
-GGJ2026_DIALOG_WAKEUP_DIALOG_OPTION_1769880685564_V8P6NC,Get up.,
-GGJ2026_DIALOG_WAKEUP_DIALOG_OPTION_1769880722012_NOLYAT,Continue sleeping.,
-GGJ2026_DIALOG_WAKEUP_DIALOG_OPTION_1769896183869_YDTFE0,Get up,
-GGJ2026_DIALOG_WAKEUP_DIALOG_OPTION_1769896195402_3L8BVJ,Stay in Bed,
-GGJ2026_DIALOG_WAKEUP_DIALOG_OPTION_1769897119639_RALWH1,Get your coat and leave.,
-GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769881180424_JRE32V,This thing stops working as soon as you need it. It's been like this so long you forget what it's like not to have to argue with your office supplies.,
-GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769881268931_K2GHW4,*Thump*,
-GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769881274713_U976KT,The printer still doesn't work.,
-GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769881302141_DM2KKF,You actually have work to do. Someone else can take care of this if they want to.,
-GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769933948166_YISWA7,...,
-GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769934049731_2JIZ0H,"Okay, let's see here...",
-GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769934078842_LVIAPR,You check the error message and do a quick search for causes.,
-GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769934396567_1S781K,...,
-GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769934416182_KT18IP,You restart the printer.,
-GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769934457051_7EHGC9,"It takes a relative age. When it's done running updates, The printer starts working down the list of documents in queue.",
-GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769934661694_TZ815M,...,
-GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769934683957_AY0V93,You can't believe no one thought to do this before.,
-GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769934711646_K7RS6R,Apparently your coworkers can't either. There's an embarrassed silence while everyone looks on as the printer busily works away.,
-GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769934840335_975GUD,"Then, there's a bit of a stir as people get to cancelling old tickets and the usual office noises start back up again.",
-GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769936999890_3CU7H8,Still working. Nice.,
-GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769948009821_8KO37A,This printer is a reflection of your inner world.,
-GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769948035275_GRS8SK,You're not working properly.,
-GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769948082448_85FE0J,You're broken.,
-GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769948087845_Z21DLX,This world is broken.,
-GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769948095486_WD2C64,You start crying.,
-GGJ2026_DIALOG_KOPIERER_OPTION_1769881231444_XA4NR2,Hit the printer,
-GGJ2026_DIALOG_KOPIERER_OPTION_1769881246970_VW5FCV,Leave,
-GGJ2026_DIALOG_KOPIERER_OPTION_1769933592466_VUQPWM,Try to fix it.,
-GGJ2026_DIALOG_KOPIERER_OPTION_1769947977349_08Y97E,Despair.,
-GGJ2026_DIALOG_LEAVE_THE_OFFICE_DIALOG_LINE_1769881479425_4NRUMM,Where do you think you are going!,
-GGJ2026_DIALOG_LEAVE_THE_OFFICE_DIALOG_LINE_1769881493634_DX1TYO,...,
-GGJ2026_DIALOG_LEAVE_THE_OFFICE_DIALOG_LINE_1769884909081_T5W9OD,That's it then...,
-GGJ2026_DIALOG_LEAVE_THE_OFFICE_DIALOG_LINE_1769943091445_6ZBYPJ,Back to work!,
-GGJ2026_DIALOG_LEAVE_THE_OFFICE_DIALOG_LINE_1769943973737_S4BZ4N,And don't think you can come back!,
-GGJ2026_DIALOG_SUPERMARKET_DIALOG_LINE_1769937172466_V02MRT,I might be late if i get some coffee. Should i do it?,
+GGJ2026_DIALOG_WAKEUP_DIALOG_DIALOG_LINE_1769879845325_5LHVNK,Ring! Ring!,Ring! Ring!
+GGJ2026_DIALOG_WAKEUP_DIALOG_DIALOG_LINE_1769879940323_GS45LK,Time to get up.,Zeit aufzustehen!
+GGJ2026_DIALOG_WAKEUP_DIALOG_DIALOG_LINE_1769880854882_Z4IZ8A,You don't really feel like getting up...,Du willst noch nicht aufstehen...
+GGJ2026_DIALOG_WAKEUP_DIALOG_DIALOG_LINE_1769896100239_T3YZDS,Ring! Ring!,Ring! Ring!
+GGJ2026_DIALOG_WAKEUP_DIALOG_DIALOG_LINE_1769896103105_MNMJSN,Time to get up. Again... ,Zeit aufzustehen. Schon wieder Morgen...
+GGJ2026_DIALOG_WAKEUP_DIALOG_DIALOG_LINE_1769896242796_QBVUUM,Ring! Ring!,Ring! Ring!
+GGJ2026_DIALOG_WAKEUP_DIALOG_DIALOG_LINE_1769896245224_39JHCG,Time to get up! Another day again. Another day of work...,Zeit aufzustehen. Schon wieder Morgen. Schon wieder Arbeit...
+GGJ2026_DIALOG_WAKEUP_DIALOG_DIALOG_LINE_1769897294162_BMCJEF,You crawl out of bed and get ready for work.,Du schälst dich aus dem Bett und machst dich fertig für die Arbeit.
+GGJ2026_DIALOG_WAKEUP_DIALOG_DIALOG_LINE_1769897367589_Q1J3M5,You have the feeling maybe your phone rang at some point...,"Dumpf hast du das Gefühl, dein Telefon hat irgendwann geklingelt..."
+GGJ2026_DIALOG_WAKEUP_DIALOG_OPTION_1769880685564_V8P6NC,Get up.,Steh auf.
+GGJ2026_DIALOG_WAKEUP_DIALOG_OPTION_1769880722012_NOLYAT,Continue sleeping.,Schlaf weiter.
+GGJ2026_DIALOG_WAKEUP_DIALOG_OPTION_1769896183869_YDTFE0,Get up.,Steh auf.
+GGJ2026_DIALOG_WAKEUP_DIALOG_OPTION_1769896195402_3L8BVJ,Stay in Bed.,Bleib im Bett.
+GGJ2026_DIALOG_WAKEUP_DIALOG_OPTION_1769897119639_RALWH1,Get your coat and leave.,Du nimmst deine Jacke und gehst.
+GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769881180424_JRE32V,This thing stops working as soon as you need it. It's been like this so long you forget what it's like not to have to argue with your office supplies.,"Das Teil klappt nie, wenn du es brauchst. Das geht schon so lange so, dass du dich nicht erinnerst, dass im Büro irgendwann mal alles funktioniert hätte."
+GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769881268931_K2GHW4,*Thump*,*Klonk*
+GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769881274713_U976KT,The printer still doesn't work.,Der Drucker klappt immer noch nicht.
+GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769881302141_DM2KKF,You actually have work to do. Someone else can take care of this if they want to.,Du hast tatsächlich Tasks abzuarbeiten. Um den Drucker kann sich jemand anderes kümmern.
+GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769933948166_YISWA7,...,...
+GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769934049731_2JIZ0H,"Okay, let's see here...","Okay, schauen wir mal..."
+GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769934078842_LVIAPR,You check the error message and do a quick search for causes.,Du liest dir die Fehlernachricht durch und suchst nach der Nummer im Internet.
+GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769934396567_1S781K,...,...
+GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769934416182_KT18IP,You restart the printer.,Du startest den Drucker neu.
+GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769934457051_7EHGC9,"It takes a relative age. When it's done running updates, the printer starts working down the list of documents in queue.","Es dauert eine gefühlte Ewigkeit. Wenn die Updates alle durch sind, fängt der Drucker an, die Queue an offenen Aufträgen auszudrucken."
+GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769934661694_TZ815M,...,...
+GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769934683957_AY0V93,You can't believe no one thought to do this before.,"Du kannst nicht glauben, dass das echt noch niemand versucht hat."
+GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769934711646_K7RS6R,Apparently your coworkers can't either. There's an embarrassed silence while everyone looks on as the printer busily works away.,Deine Kollegen können es scheinbar auch nicht glauben. Betretendes Schweigen ersetzt die übliche Geräuschkulisse während alle dem Drucker beim Drucken zuschauen.
+GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769934840335_975GUD,"Then, there's a bit of a stir as people get to cancelling old tickets and the usual office noises start back up again.","Dann geht ein Raunen durch den Raum und deine Kollegen stornieren offenkundig alte, verloren geglaubte Druckaufträge."
+GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769936999890_3CU7H8,Still working. Nice.,Klappt immer noch. Nice.
+GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769948009821_8KO37A,This printer is a reflection of the poor state of your inner world.,Dieser Drucker ist ein Sinnbild für dein Innerstes.
+GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769948035275_GRS8SK,You're not working properly.,Du funktionierst auch nicht richtig.
+GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769948082448_85FE0J,You're broken.,Du bist kaputt.
+GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769948087845_Z21DLX,This world is broken.,Diese Welt ist kaputt.
+GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769948095486_WD2C64,You start crying.,Du brichst in Tränen aus
+GGJ2026_DIALOG_KOPIERER_OPTION_1769881231444_XA4NR2,Hit the printer.,Schlag mit der Faust gegen den Drucker.
+GGJ2026_DIALOG_KOPIERER_OPTION_1769881246970_VW5FCV,Leave.,Geh weiter.
+GGJ2026_DIALOG_KOPIERER_OPTION_1769933592466_VUQPWM,Try to fix it.,"Versuch, den Drucker zu reparieren."
+GGJ2026_DIALOG_KOPIERER_OPTION_1769947977349_08Y97E,Despair.,Verzweiflung überkommt dich
+GGJ2026_DIALOG_LEAVE_THE_OFFICE_DIALOG_LINE_1769881479425_4NRUMM,Where do you think you are going!,Und wo möchten Sie hin?
+GGJ2026_DIALOG_LEAVE_THE_OFFICE_DIALOG_LINE_1769881493634_DX1TYO,...,...
+GGJ2026_DIALOG_LEAVE_THE_OFFICE_DIALOG_LINE_1769884909081_T5W9OD,That's it then...,Das wars dann wohl...
+GGJ2026_DIALOG_LEAVE_THE_OFFICE_DIALOG_LINE_1769943091445_6ZBYPJ,Back to work!,Zurück an die Arbeit!
+GGJ2026_DIALOG_LEAVE_THE_OFFICE_DIALOG_LINE_1769943973737_S4BZ4N,And don't think you can come back!,"Und glauben Sie nicht, dass Sie noch einmal wieder kommen brauchen!"
+GGJ2026_DIALOG_SUPERMARKET_DIALOG_LINE_1769937172466_V02MRT,I might be late if I getcoffee. Should I do it?,Ich könnte mir einen Kaffee 
 GGJ2026_DIALOG_SUPERMARKET_DIALOG_LINE_1769937261200_P6VVAA,"You enter the market to get a nice, hot, delicious coffee.",
 GGJ2026_DIALOG_SUPERMARKET_DIALOG_LINE_1769937293429_V8L893,The mashine roars to life and starts to prepares a perfect cup of black gold.,
 GGJ2026_DIALOG_SUPERMARKET_DIALOG_LINE_1769937320254_26MMJK,Meh. Better then nothing i guess.,
@@ -114,7 +117,7 @@ GGJ2026_DIALOG_GRANDMA_PRE_WORK_DIALOG_LINE_1769939160787_GQ9ZSW,Sorry to Bother
 GGJ2026_DIALOG_GRANDMA_PRE_WORK_DIALOG_LINE_1769939238577_EQBHT7,The old lady is shocked.,
 GGJ2026_DIALOG_GRANDMA_PRE_WORK_DIALOG_LINE_1769939267991_WYWCSF,Then she just starts crying.,
 GGJ2026_DIALOG_GRANDMA_PRE_WORK_DIALOG_LINE_1769939286576_076L93,Big tears roll from her eyes. Sobbing and crying in the middle of her bags and groceries.,
-GGJ2026_DIALOG_GRANDMA_PRE_WORK_DIALOG_LINE_1769939358644_FVWMY2,You walk on filled with anger.,
+GGJ2026_DIALOG_GRANDMA_PRE_WORK_DIALOG_LINE_1769939358644_FVWMY2,"You walk on, filled with anger.",
 GGJ2026_DIALOG_GRANDMA_PRE_WORK_OPTION_1769938431650_V5XO2I,Nothing you can do other than wait.,
 GGJ2026_DIALOG_GRANDMA_PRE_WORK_OPTION_1769938486788_NEZOPS,Push her to the side,
 GGJ2026_DIALOG_GRANDMA_PRE_WORK_OPTION_1769938506297_7HDO0P,Offer to help her,
@@ -123,6 +126,8 @@ GGJ2026_DIALOG_DESK_DIALOG_LINE_1769946334963_VXGTL9,Your work day continues...,
 GGJ2026_DIALOG_DESK_DIALOG_LINE_1769946468247_ZL83BN,You power up your work computer.,
 GGJ2026_DIALOG_DESK_DIALOG_LINE_1769946691928_M7TC9I,You knew you should have gotten a coffee. You're not able to concentrate at all.,
 GGJ2026_DIALOG_DESK_DIALOG_LINE_1769946923139_7EEJME,"You may do mediocre work today, but you don't feel like getting up...",
+GGJ2026_DIALOG_DESK_DIALOG_LINE_1769951035571_BZZIYU,Your working hours have ended.,
+GGJ2026_DIALOG_DESK_DIALOG_LINE_1769951057440_0I0PSU,Do unpaid overtime?,
 GGJ2026_DIALOG_DESK_OPTION_1769938364275_VRCL0B,Sit down.,
 GGJ2026_DIALOG_DESK_OPTION_1769938435312_IJG55F,Stay standing in front of your desk.,
 GGJ2026_DIALOG_DESK_OPTION_1769946373183_XGXT5O,,
@@ -131,6 +136,7 @@ GGJ2026_DIALOG_DESK_OPTION_1769946548361_H963N1,You continue where you left off 
 GGJ2026_DIALOG_DESK_OPTION_1769946597194_NWA83D,"You stare at the screen, unable to concentrate.",
 GGJ2026_DIALOG_DESK_OPTION_1769946770676_9KP3UE,Go to the office kitchen for coffee.,
 GGJ2026_DIALOG_DESK_OPTION_1769946859800_0BZO8U,Try to concentrate.,
+GGJ2026_DIALOG_DESK_OPTION_1769951067187_9OKN3N,No.,
 GGJ2026_DIALOG_WRONG_DESK_DIALOG_LINE_1769938794759_K4MBKC,Yes?,
 GGJ2026_DIALOG_WRONG_DESK_DIALOG_LINE_1769938801485_GAQEVM,Did you need something?,
 GGJ2026_DIALOG_WRONG_DESK_DIALOG_LINE_1769938816777_0I48OR,You're bothering me.,
@@ -294,6 +300,7 @@ GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947916038_I7T45C,After a sh
 GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769948174422_QQWG6H,Thank you for stepping up.,
 GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769948265695_NR3F1S,I hope this will not backfire.,
 GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769948280130_BVOTY5,But if feels good right now.,
+GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769948369558_QRXYQ5,Thank you again for stepping up.,
 GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_OPTION_1769946573741_UPSD58,Just leave them be.,
 GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_OPTION_1769946585512_QV4HI1,Join in.,
 GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_OPTION_1769946626118_7HT0F2,Better not get involved,
@@ -312,6 +319,55 @@ GGJ2026_DIALOG_BOSS_POST_WORK_OPTION_1769947606934_9QEUDC,...,
 GGJ2026_DIALOG_BOSS_POST_WORK_OPTION_1769947648633_LB01I6,Thanks for your hard work always.,
 GGJ2026_DIALOG_SUPERMARKET_POST_WORK_DIALOG_LINE_1769948196080_7LCJC0,It's really convenient you always come by this store on your way home.,
 GGJ2026_DIALOG_SUPERMARKET_POST_WORK_DIALOG_LINE_1769948248391_5R1VZW,Maybe you should get something.,
+GGJ2026_DIALOG_SUPERMARKET_POST_WORK_DIALOG_LINE_1769948394186_47IW3E,You get your stuff and queue up. This store's always busy around this time.,
+GGJ2026_DIALOG_SUPERMARKET_POST_WORK_DIALOG_LINE_1769948432846_TNG0GU,Eventually you make it outside.,
 GGJ2026_DIALOG_SUPERMARKET_POST_WORK_OPTION_1769948267747_WPCNQ4,Get groceries.,
 GGJ2026_DIALOG_SUPERMARKET_POST_WORK_OPTION_1769948274622_L7JYFU,Get snacks.,
 GGJ2026_DIALOG_SUPERMARKET_POST_WORK_OPTION_1769948280318_ODDEO8,Buy nothing.,
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769948855751_HM8C2V,Hey mister.,
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769948862804_JR5WFZ,What are you doing?,
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949097565_WNODPQ,...,
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949098000_A5GDS1,Hey mister!,
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949195518_KQE90G,...,
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949202483_XMP73G,Hey!,
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949249371_6P3HLU,"You can hear her crying, but you keep walking.",
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949511397_V19M0L,Hey.,
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949511838_QNNBHH,Play with me!,
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949617026_OUKB76,You play with her for a bit.,
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949693289_784Z7Z,Hahaha!,
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949713967_9UZMPY,Thanks mister! That was fun!,
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949784244_EPP5GJ,Bye kid.,
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949821789_RKMPYE,Bye bye mister! Let's play again!,
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949841839_ZOD7IX,"Where are your mom and dad, kid?",
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949918430_HOZYUD,The smile slips off the child's face.,
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949952643_01OF0I,"I-, I don't knooooow.",
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949973891_FKCEBP,Then she stars wailing.,
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949996020_PT7LDU,I want my maamaaa.,
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950007821_QKQHTY,You don't know what to do.,
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950023952_95LB9E,"You try to calm her down, but it's not really working",
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950050573_7WXYOU,The passersby are looking at you....,
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950146811_R85TRZ,You quickly retreat.,
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950157247_TMY4D5,You can hear someone else start talking to the child. They are surely much better equipped to deal with this than you are.,
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950218647_2L3RM3,You call the police and explain the situation.,
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950234321_39SDIR,The parents have already filed a report and are quickly found.,
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950260168_T14Z67,'Baby! I was so worried!',
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950327744_BH7DY1,You wait with the child who has calmed down a bit by now.,
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950359014_U4PD8Y,"Your mom will be here son, kid.",
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950374094_V7OJLR,Uhuh....,
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950487742_1LPZAX,"Finally a car turns into the parking lot, wheels screeching.",
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950518976_0I8PWS,A woman comes tumbling out and rushes towards you.,
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950552071_FN0808,Mama!,
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950561930_HXBZEA,The child starts crying again as they hug.,
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950574903_J96YOP,'Thank you for contacting the police and helping us find our baby!',
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950628915_2P5RFR,'We'll be forever in your debt.',
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950665214_U4WT5G,You talk for a bit and exchange numbers before saying goodbye. The child is half asleep in her mother's arms.,
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950687577_GUEYGS,"Bye kid. Keep close to your parents from now on, yeah?",
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950773479_I61DP2,"Uhuh. Bye mister, let's play again...",
+GGJ2026_DIALOG_CHILD_OPTION_1769948898286_56OVQB,Ignore her,
+GGJ2026_DIALOG_CHILD_OPTION_1769948910963_XQ6DPB,Talk to her.,
+GGJ2026_DIALOG_CHILD_OPTION_1769948939133_UZB1OR,Offer help.,
+GGJ2026_DIALOG_CHILD_OPTION_1769949569176_CN6YXX,Play with her.,
+GGJ2026_DIALOG_CHILD_OPTION_1769949739948_S8KGIX,You wonder why she's here alone...,
+GGJ2026_DIALOG_CHILD_OPTION_1769949762131_AD0MTE,Say goodbye.,
+GGJ2026_DIALOG_CHILD_OPTION_1769950047100_F7K7YC,Call the police.,
+GGJ2026_DIALOG_CHILD_OPTION_1769950108207_5OSPIL,Leave.,
