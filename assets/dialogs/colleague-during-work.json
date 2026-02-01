@@ -1,0 +1,231 @@
+{
+  "startSection": "start",
+  "sections": [
+    {
+      "id": "start",
+      "lines": [
+        {
+          "type": "showBackground",
+          "background": "gemobbter Kollege"
+        },
+        {
+          "type": "switch",
+          "condition": {
+            "type": "didDialog",
+            "value": "colleague-during-work.help"
+          },
+          "nextSection": "post-help"
+        },
+        {
+          "type": "switch",
+          "condition": {
+            "type": "didDialog",
+            "value": "colleague-during-work.join"
+          },
+          "nextSection": "post-join"
+        },
+        {
+          "type": "switch",
+          "condition": {
+            "type": "didDialog",
+            "value": "colleague-during-work.afraid"
+          },
+          "nextSection": "post-afraid"
+        },
+        {
+          "type": "nextSection",
+          "nextSection": "mogging-in-process"
+        }
+      ]
+    },
+    {
+      "id": "mogging-in-process",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769946367288_HASG3A"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769946461720_UY6ELK"
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_OPTION_1769946573741_UPSD58",
+              "nextSection": "ignore"
+            },
+            {
+              "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_OPTION_1769946585512_QV4HI1",
+              "nextSection": "join",
+              "condition": {
+                "type": "hasEmotion",
+                "value": "angry"
+              }
+            },
+            {
+              "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_OPTION_1769946626118_7HT0F2",
+              "nextSection": "start",
+              "condition": {
+                "type": "hasEmotion",
+                "value": "afraid"
+              }
+            },
+            {
+              "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_OPTION_1769946662617_9R7IXN",
+              "nextSection": "help",
+              "condition": {
+                "type": "hasEmotion",
+                "value": "angry"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "help",
+      "lines": [
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_COLLEAGUE",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947357431_A34B3A"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947370167_H8Y9YJ"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947408327_QOZIIM"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947417477_H3W2U6"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947511623_YEG5NY"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947554151_Z31HDQ"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947607085_LZV6WQ"
+        }
+      ]
+    },
+    {
+      "id": "post-help",
+      "lines": []
+    },
+    {
+      "id": "ignore",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769946961960_ZT3C7B"
+        }
+      ]
+    },
+    {
+      "id": "join",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769946977679_QLYZJF"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947008011_FMZ862"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947183349_1Z1C41"
+        },
+        {
+          "type": "showBackground",
+          "background": "Kollege open mouth"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_COLLEAGUE",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947055701_1UVCJL"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_COLLEAGUE",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947082603_MNDS0G"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947089009_KNXUIE"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947153264_OQQR3J"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_COLLEAGUE",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947244393_61I7ST"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947256415_SZOJKR"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947276516_EK835O"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947297517_NH3QTB"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947330270_C6P78J"
+        }
+      ]
+    },
+    {
+      "id": "post-join",
+      "lines": []
+    },
+    {
+      "id": "afraid",
+      "lines": [
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769946777800_IF9WHX"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769946844680_5JDT37"
+        },
+        {
+          "type": "nextSection",
+          "nextSection": "post-afraid"
+        }
+      ]
+    },
+    {
+      "id": "post-afraid",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769946912021_2FAJ5V"
+        }
+      ]
+    }
+  ]
+}

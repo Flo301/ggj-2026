@@ -1,0 +1,45 @@
+{
+  "startSection": "start",
+  "sections": [
+    {
+      "id": "start",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_BED_DIALOG_LINE_1769947099863_P6SEEK"
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "text": "GGJ2026_DIALOG_BED_OPTION_1769947166668_NFN26W",
+              "nextSection": "start"
+            },
+            {
+              "text": "GGJ2026_DIALOG_BED_OPTION_1769947210070_CVKHBT",
+              "nextSection": "stay awake"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sleep",
+      "lines": [
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_BED_DIALOG_LINE_1769947189337_Z90A1B"
+        },
+        {
+          "type": "event",
+          "name": "interact"
+        }
+      ]
+    },
+    {
+      "id": "stay awake",
+      "lines": []
+    }
+  ]
+}

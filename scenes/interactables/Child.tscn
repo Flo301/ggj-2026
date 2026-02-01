@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://dlkqgkkppl0fv"]
+
+[ext_resource type="Script" uid="uid://cso3014gt6c28" path="res://scripts/interactables/DialogInteractable.cs" id="1_ylbok"]
+[ext_resource type="Texture2D" uid="uid://bnhockfrejj8b" path="res://assets/sprites/characters/kind world.png" id="2_ylbok"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_gmvds"]
+radius = 1.1157227
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_jbchb"]
+
+[node name="Child" type="Area3D" unique_id=1584149579]
+script = ExtResource("1_ylbok")
+InteractionText = "GGJ2026_INTERACTION_INTERACT_CHILD"
+Dialog = "child"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=357662295]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0187359, 0)
+shape = SubResource("CylinderShape3D_gmvds")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=387633324]
+transform = Transform3D(0.56, 0, 0, 0, 0.56, 0, 0, 0, 0.56, 0, 1.1359525, 0)
+pixel_size = 0.005
+texture = ExtResource("2_ylbok")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=666548985]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.050541162, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1566675471]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9716191, 0)
+shape = SubResource("CylinderShape3D_jbchb")

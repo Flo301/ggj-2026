@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://c7ravkmxag6ay"]
+
+[ext_resource type="Script" uid="uid://cso3014gt6c28" path="res://scripts/interactables/DialogInteractable.cs" id="1_njnai"]
+[ext_resource type="Texture2D" uid="uid://bjj0mdr1p7s7f" path="res://assets/sprites/apartment/bed.png" id="2_njnai"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_gmvds"]
+radius = 1.1157227
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_jbchb"]
+
+[node name="Bed" type="Area3D" unique_id=1584149579]
+script = ExtResource("1_njnai")
+InteractionText = "GGJ2026_INTERACTION_INTERACT_BED"
+Dialog = "wakeup-dialog"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=357662295]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CylinderShape3D_gmvds")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=387633324]
+transform = Transform3D(0.5519725, 0.0944793, 0, -0.0944793, 0.5519725, 0, 0, 0, 0.56, 0, 0.49894738, 0)
+pixel_size = 0.009
+texture = ExtResource("2_njnai")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=666548985]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1566675471]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9716191, 0)
+shape = SubResource("CylinderShape3D_jbchb")

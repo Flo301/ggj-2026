@@ -1,0 +1,173 @@
+{
+  "startSection": "start",
+  "sections": [
+    {
+      "id": "start",
+      "lines": [
+        {
+          "type": "showBackground",
+          "background": "Ommsche"
+        },
+        {
+          "type": "nextSection",
+          "nextSection": "encounter-grandma"
+        }
+      ]
+    },
+    {
+      "id": "encounter-grandma",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_GRANDMA_PRE_WORK_DIALOG_LINE_1769938298313_P02ZX8"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_GRANDMA_PRE_WORK_DIALOG_LINE_1769938335368_Q1PPMS"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_GRANDMA_PRE_WORK_DIALOG_LINE_1769938402655_BEYGGR"
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "text": "GGJ2026_DIALOG_GRANDMA_PRE_WORK_OPTION_1769938431650_V5XO2I",
+              "nextSection": "wait"
+            },
+            {
+              "text": "GGJ2026_DIALOG_GRANDMA_PRE_WORK_OPTION_1769938486788_NEZOPS",
+              "nextSection": "push",
+              "condition": {
+                "type": "hasEmotion",
+                "value": "angry"
+              }
+            },
+            {
+              "text": "GGJ2026_DIALOG_GRANDMA_PRE_WORK_OPTION_1769938506297_7HDO0P",
+              "nextSection": "help",
+              "condition": {
+                "type": "hasEmotion",
+                "value": "thankful"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wait",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_GRANDMA_PRE_WORK_DIALOG_LINE_1769938627621_X52GKD"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_GRANDMA_PRE_WORK_DIALOG_LINE_1769938712281_18I2QY"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_GRANDMA_PRE_WORK_DIALOG_LINE_1769938663778_LXT81N"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_GRANDMA_PRE_WORK_DIALOG_LINE_1769938706839_IB6MXU"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_GRANDMA_PRE_WORK_DIALOG_LINE_1769938743931_TN3IZY"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_GRANDMA_PRE_WORK_DIALOG_LINE_1769938748519_TLBJ0Y"
+        }
+      ]
+    },
+    {
+      "id": "push",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_GRANDMA_PRE_WORK_DIALOG_LINE_1769938801693_0R9JKA"
+        },
+        {
+          "type": "showBackground",
+          "background": "Omsche open mouth"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_GRANDMA_PRE_WORK_DIALOG_LINE_1769938862725_GXIR5Q"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_OLD_LADY",
+          "text": "GGJ2026_DIALOG_GRANDMA_PRE_WORK_DIALOG_LINE_1769939003888_95U58A"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_GRANDMA_PRE_WORK_DIALOG_LINE_1769939238577_EQBHT7"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_GRANDMA_PRE_WORK_DIALOG_LINE_1769939267991_WYWCSF"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_GRANDMA_PRE_WORK_DIALOG_LINE_1769939286576_076L93"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_GRANDMA_PRE_WORK_DIALOG_LINE_1769939358644_FVWMY2"
+        },
+        {
+          "type": "event",
+          "name": "getEmotion",
+          "value": "sad"
+        }
+      ]
+    },
+    {
+      "id": "help",
+      "lines": [
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_GRANDMA_PRE_WORK_DIALOG_LINE_1769939014907_8HMF8I"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_OLD_LADY",
+          "text": "GGJ2026_DIALOG_GRANDMA_PRE_WORK_DIALOG_LINE_1769939047592_IW1TAC"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_GRANDMA_PRE_WORK_DIALOG_LINE_1769939071348_ET7MUB"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_OLD_LADY",
+          "text": "GGJ2026_DIALOG_GRANDMA_PRE_WORK_DIALOG_LINE_1769939099561_2U0TG5"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_GRANDMA_PRE_WORK_DIALOG_LINE_1769939160787_GQ9ZSW"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_GRANDMA_PRE_WORK_DIALOG_LINE_1769939148394_SY0AOK"
+        },
+        {
+          "type": "event",
+          "name": "getEmotion",
+          "value": "thankful"
+        }
+      ]
+    }
+  ]
+}

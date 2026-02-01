@@ -27,7 +27,7 @@
           "options": [
             {
               "text": "GGJ2026_DIALOG_WAKEUP_DIALOG_OPTION_1769880685564_V8P6NC",
-              "nextSection": "start"
+              "nextSection": "get-up"
             },
             {
               "text": "GGJ2026_DIALOG_WAKEUP_DIALOG_OPTION_1769880722012_NOLYAT",
@@ -39,20 +39,68 @@
     },
     {
       "id": "get-up",
-      "lines": []
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_WAKEUP_DIALOG_DIALOG_LINE_1769897294162_BMCJEF"
+        }
+      ]
     },
     {
       "id": "continue-sleeping",
       "lines": [
         {
           "type": "dialog",
-          "speaker": "GGJ2026_SPEAKER_PLAYER",
           "text": "GGJ2026_DIALOG_WAKEUP_DIALOG_DIALOG_LINE_1769880854882_Z4IZ8A"
         },
         {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_WAKEUP_DIALOG_DIALOG_LINE_1769897367589_Q1J3M5"
+        },
+        {
           "type": "event",
-          "name": "trigger",
-          "value": "restart-day"
+          "name": "restart-day"
+        }
+      ]
+    },
+    {
+      "id": "wakeup-2",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_WAKEUP_DIALOG_DIALOG_LINE_1769896100239_T3YZDS"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_WAKEUP_DIALOG_DIALOG_LINE_1769896103105_MNMJSN"
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "text": "GGJ2026_DIALOG_WAKEUP_DIALOG_OPTION_1769896183869_YDTFE0",
+              "nextSection": "get-up"
+            },
+            {
+              "text": "GGJ2026_DIALOG_WAKEUP_DIALOG_OPTION_1769896195402_3L8BVJ",
+              "nextSection": "continue-sleeping"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wakeup-3",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_WAKEUP_DIALOG_DIALOG_LINE_1769896242796_QBVUUM"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_WAKEUP_DIALOG_DIALOG_LINE_1769896245224_39JHCG"
         }
       ]
     }

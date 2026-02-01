@@ -1,0 +1,82 @@
+{
+  "startSection": "start",
+  "sections": [
+    {
+      "id": "start",
+      "lines": [
+        {
+          "type": "switch",
+          "condition": {
+            "type": "didDialog",
+            "value": "supermarket.buy-something"
+          },
+          "nextSection": "had-bought"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_SUPERMARKET_DIALOG_LINE_1769937172466_V02MRT"
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "text": "GGJ2026_DIALOG_SUPERMARKET_OPTION_1769937222870_IX0SPN",
+              "nextSection": "buy-something"
+            },
+            {
+              "text": "GGJ2026_DIALOG_SUPERMARKET_OPTION_1769937234085_B4PXRC",
+              "nextSection": "buy-nothing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "buy-nothing",
+      "lines": [
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_SUPERMARKET_DIALOG_LINE_1769937702325_X3MEER"
+        }
+      ]
+    },
+    {
+      "id": "buy-something",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_SUPERMARKET_DIALOG_LINE_1769937261200_P6VVAA"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_SUPERMARKET_DIALOG_LINE_1769937293429_V8L893"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_SUPERMARKET_DIALOG_LINE_1769937364539_5DH2BE"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_SUPERMARKET_DIALOG_LINE_1769937451200_7PI5HU"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_SUPERMARKET_DIALOG_LINE_1769937320254_26MMJK"
+        }
+      ]
+    },
+    {
+      "id": "had-bought",
+      "lines": [
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_SUPERMARKET_DIALOG_LINE_1769937636738_RZZG7Z"
+        }
+      ]
+    }
+  ]
+}

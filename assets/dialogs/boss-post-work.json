@@ -1,0 +1,24 @@
+{
+  "startSection": "start",
+  "sections": [
+    {
+      "id": "start",
+      "lines": [
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_BOSS",
+          "text": "GGJ2026_DIALOG_BOSS_POST_WORK_DIALOG_LINE_1769947497541_BGNFEG"
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "text": "GGJ2026_DIALOG_BOSS_POST_WORK_OPTION_1769947606934_9QEUDC",
+              "nextSection": "start"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

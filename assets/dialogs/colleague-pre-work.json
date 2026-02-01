@@ -1,0 +1,156 @@
+{
+  "startSection": "start",
+  "sections": [
+    {
+      "id": "start",
+      "lines": [
+        {
+          "type": "showBackground",
+          "background": "gemobbter Kollege"
+        },
+        {
+          "type": "switch",
+          "condition": {
+            "type": "didDialog",
+            "value": "colleague-pre-work.talk"
+          },
+          "nextSection": "repeat"
+        },
+        {
+          "type": "nextSection",
+          "nextSection": "talk"
+        }
+      ]
+    },
+    {
+      "id": "talk",
+      "lines": [
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_MOBBED_COLLEAGUE",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_DIALOG_LINE_1769939295674_PJAE8V"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_DIALOG_LINE_1769939303360_CB1KSO"
+        }
+      ]
+    },
+    {
+      "id": "repeat",
+      "lines": [
+        {
+          "type": "switch",
+          "condition": {
+            "type": "didDialog",
+            "value": "colleague-pre-work.talk-insult"
+          },
+          "nextSection": "post-insult"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_DIALOG_LINE_1769939357200_F5SU9P"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_MOBBED_COLLEAGUE",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_DIALOG_LINE_1769939376836_W1HAE2"
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "text": "GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_OPTION_1769939405946_TK9J7U",
+              "nextSection": "talk-ignore"
+            },
+            {
+              "text": "GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_OPTION_1769939417375_Z53INA",
+              "nextSection": "talk-greet",
+              "condition": {
+                "type": "hasEmotion",
+                "value": "happy"
+              }
+            },
+            {
+              "text": "GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_OPTION_1769939444184_Z3CIP4",
+              "nextSection": "talk-insult",
+              "condition": {
+                "type": "hasEmotion",
+                "value": "angry"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "talk-ignore",
+      "lines": [
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_DIALOG_LINE_1769939610990_G2EWPR"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_MOBBED_COLLEAGUE",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_DIALOG_LINE_1769939622335_G57IVS"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_DIALOG_LINE_1769939634395_ICI18F"
+        }
+      ]
+    },
+    {
+      "id": "talk-greet",
+      "lines": [
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_DIALOG_LINE_1769939674888_3SI3MY"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_MOBBED_COLLEAGUE",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_DIALOG_LINE_1769939682779_LV5B18"
+        }
+      ]
+    },
+    {
+      "id": "talk-insult",
+      "lines": [
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_DIALOG_LINE_1769939834780_JHCP9A"
+        },
+        {
+          "type": "showBackground",
+          "background": "Kollege open mouth"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_DIALOG_LINE_1769939844777_IRRU4N"
+        },
+        {
+          "type": "showBackground",
+          "background": "gemobbter Kollege"
+        }
+      ]
+    },
+    {
+      "id": "post-insult",
+      "lines": [
+        {
+          "type": "showBackground",
+          "background": "gemobbter Kollege"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_PRE_WORK_DIALOG_LINE_1769939988966_W46WC7"
+        }
+      ]
+    }
+  ]
+}

@@ -8,7 +8,7 @@
           "type": "switch",
           "condition": {
             "type": "didDialog",
-            "value": "leave-the-office.leave"
+            "value": "leave-the-office.leave-message"
           },
           "nextSection": "leave"
         },
@@ -16,13 +16,29 @@
           "type": "switch",
           "condition": {
             "type": "didDialog",
-            "value": "boss.boss-statement"
+            "value": "boss-during-work.vent"
           },
-          "nextSection": "leave-message"
+          "nextSection": "get-fired"
+        },
+        {
+          "type": "switch",
+          "condition": {
+            "type": "didDialog",
+            "value": "leave-the-office.talk-to-boss"
+          },
+          "nextSection": "get-fired"
         },
         {
           "type": "nextSection",
           "nextSection": "talk-to-boss"
+        },
+        {
+          "type": "switch",
+          "condition": {
+            "type": "didDialog",
+            "value": "leave-the-office.get-fired"
+          },
+          "nextSection": "leave-message"
         }
       ]
     },
@@ -39,6 +55,14 @@
       "id": "talk-to-boss",
       "lines": [
         {
+          "type": "switch",
+          "condition": {
+            "type": "didDialog",
+            "value": ""
+          },
+          "nextSection": ""
+        },
+        {
           "type": "showBackground",
           "background": "chefin open mouth"
         },
@@ -51,6 +75,11 @@
           "type": "dialog",
           "speaker": "GGJ2026_SPEAKER_PLAYER",
           "text": "GGJ2026_DIALOG_LEAVE_THE_OFFICE_DIALOG_LINE_1769881493634_DX1TYO"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_BOSS",
+          "text": "GGJ2026_DIALOG_LEAVE_THE_OFFICE_DIALOG_LINE_1769943091445_6ZBYPJ"
         }
       ]
     },
@@ -61,6 +90,24 @@
           "type": "dialog",
           "speaker": "GGJ2026_SPEAKER_PLAYER",
           "text": "GGJ2026_DIALOG_LEAVE_THE_OFFICE_DIALOG_LINE_1769884909081_T5W9OD"
+        },
+        {
+          "type": "nextSection",
+          "nextSection": "leave"
+        }
+      ]
+    },
+    {
+      "id": "get-fired",
+      "lines": [
+        {
+          "type": "showBackground",
+          "background": "chefin open mouth"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_BOSS",
+          "text": "GGJ2026_DIALOG_LEAVE_THE_OFFICE_DIALOG_LINE_1769943973737_S4BZ4N"
         },
         {
           "type": "nextSection",

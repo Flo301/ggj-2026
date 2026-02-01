@@ -1,0 +1,190 @@
+{
+  "startSection": "start",
+  "sections": [
+    {
+      "id": "start",
+      "lines": [
+        {
+          "type": "switch",
+          "condition": {
+            "type": "didDialog",
+            "value": "coffe-mashine-pre-work.anger"
+          },
+          "nextSection": "did-complained"
+        },
+        {
+          "type": "switch",
+          "condition": {
+            "type": "didDialog",
+            "value": "coffe-mashine-pre-work.fix"
+          },
+          "nextSection": "was-fixed"
+        },
+        {
+          "type": "switch",
+          "condition": {
+            "type": "didDialog",
+            "value": "coffe-mashine-during-work.retaliate"
+          },
+          "nextSection": "broken-again"
+        },
+        {
+          "type": "switch",
+          "condition": {
+            "type": "didDialog",
+            "value": "coffe-mashine-during-work.dispose-coffee"
+          },
+          "nextSection": "did-dispose"
+        },
+        {
+          "type": "switch",
+          "condition": {
+            "type": "didDialog",
+            "value": "coffe-mashine-during-work.accept-bad-coffee"
+          },
+          "nextSection": "accept-bad-coffee"
+        },
+        {
+          "type": "nextSection",
+          "nextSection": "still-broken"
+        }
+      ]
+    },
+    {
+      "id": "was-fixed",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769945834375_MQKGMD"
+        }
+      ]
+    },
+    {
+      "id": "did-complained",
+      "lines": [
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769944723507_K12GH0"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769944743161_J7A5AD"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769944755250_7UE7S2"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769944783559_WUQOBL"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_COLLEAGUE",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769944805077_5GYO9G"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769944841084_XQ4LBU"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_COLLEAGUE",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769944850686_SKMQNA"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769944869544_XNATLU"
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "text": "GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_OPTION_1769944880985_I411GB",
+              "nextSection": "accept-bad-coffee"
+            },
+            {
+              "text": "GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_OPTION_1769944923796_ZSN9U8",
+              "nextSection": "retaliate",
+              "condition": {
+                "type": "hasEmotion",
+                "value": "angry"
+              }
+            },
+            {
+              "text": "GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_OPTION_1769944960368_VP87HO",
+              "nextSection": "dispose-coffee"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "still-broken",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769944677366_W0EZ94"
+        }
+      ]
+    },
+    {
+      "id": "accept-bad-coffee",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769945085044_A5KH7H"
+        }
+      ]
+    },
+    {
+      "id": "retaliate",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769945096558_KIH9HC"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769945122799_SLXU1Q"
+        }
+      ]
+    },
+    {
+      "id": "dispose-coffee",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769945185004_CX1PCD"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769945205427_NLC8VR"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769945500324_CV2ZDH"
+        }
+      ]
+    },
+    {
+      "id": "broken-again",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769945625329_HJK8FZ"
+        }
+      ]
+    },
+    {
+      "id": "did-dispose",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_DURING_WORK_DIALOG_LINE_1769945659898_K549V8"
+        }
+      ]
+    }
+  ]
+}

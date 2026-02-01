@@ -1,0 +1,192 @@
+{
+  "startSection": "start",
+  "sections": [
+    {
+      "id": "start",
+      "lines": [
+        {
+          "type": "switch",
+          "condition": {
+            "type": "didDialog",
+            "value": "coffe-mashine-pre-work.anger"
+          },
+          "nextSection": "post-anger"
+        },
+        {
+          "type": "switch",
+          "condition": {
+            "type": "didDialog",
+            "value": "coffe-mashine-pre-work.fix"
+          },
+          "nextSection": "post-fix"
+        },
+        {
+          "type": "switch",
+          "condition": {
+            "type": "didDialog",
+            "value": "supermarket.buy-something"
+          },
+          "nextSection": "already-have-coffee"
+        },
+        {
+          "type": "nextSection",
+          "nextSection": "init"
+        }
+      ]
+    },
+    {
+      "id": "init",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942004374_64MJDS"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_COLLEAGUE",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942062079_JYHWVE"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942034536_PK531Y"
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "text": "GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_OPTION_1769942339253_4A6QH7",
+              "nextSection": "ignore"
+            },
+            {
+              "text": "GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_OPTION_1769942351479_TZNXHW",
+              "nextSection": "anger",
+              "condition": {
+                "type": "hasEmotion",
+                "value": "angry"
+              }
+            },
+            {
+              "text": "GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_OPTION_1769942371967_MK9NWG",
+              "nextSection": "fix",
+              "condition": {
+                "type": "hasEmotion",
+                "value": "thankful"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ignore",
+      "lines": [
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942434774_CGQSTI"
+        }
+      ]
+    },
+    {
+      "id": "anger",
+      "lines": [
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942498102_DHQTJQ"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942511999_RJK4DB"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942526912_LVLGFD"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942547509_AWSLJY"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942587750_NB3D1S"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942614075_SGY7DM"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942684590_R65BPW"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942645448_A3GT3V"
+        }
+      ]
+    },
+    {
+      "id": "fix",
+      "lines": [
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942696973_JHKOAE"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942712806_EBPMP8"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942724997_3OX8DG"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942764341_00AQU1"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942815329_G6CDQ7"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_COLLEAGUE",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942851711_6DRCKA"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942899337_K6C2A7"
+        }
+      ]
+    },
+    {
+      "id": "post-fix",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769943414970_9ATG5C"
+        }
+      ]
+    },
+    {
+      "id": "post-anger",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769943442538_BKL0N8"
+        }
+      ]
+    },
+    {
+      "id": "already-have-coffee",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COFFE_MASHINE_PRE_WORK_DIALOG_LINE_1769942154735_ZARYN0"
+        }
+      ]
+    }
+  ]
+}

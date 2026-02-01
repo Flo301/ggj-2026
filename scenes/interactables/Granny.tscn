@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://bnawv50pbgpf5"]
+
+[ext_resource type="Script" uid="uid://cso3014gt6c28" path="res://scripts/interactables/DialogInteractable.cs" id="1_7s21n"]
+[ext_resource type="Texture2D" uid="uid://em6swt28ngkv" path="res://assets/sprites/characters/ommschen world.png" id="2_7s21n"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_gmvds"]
+radius = 1.1157227
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3meis"]
+size = Vector3(0.56004333, 1.671814, 7.2318726)
+
+[node name="Granny" type="Area3D" unique_id=1584149579]
+script = ExtResource("1_7s21n")
+InteractionText = "GGJ2026_INTERACTION_INTERACT_OMMSCHEN"
+Dialog = "grandma-pre-work"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=357662295]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CylinderShape3D_gmvds")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=387633324]
+transform = Transform3D(0.56, 0, 0, 0, 0.56, 0, 0, 0, 0.56, 0, 0.9073448, 0)
+pixel_size = 0.004
+texture = ExtResource("2_7s21n")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=666548985]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1566675471]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17935944, 0.8934026, -0.6609802)
+shape = SubResource("BoxShape3D_3meis")
