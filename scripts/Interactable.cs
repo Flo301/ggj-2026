@@ -6,6 +6,9 @@ public abstract partial class Interactable : Area3D
     [Export]
     public string InteractionText = "Interact";
 
+    [Export]
+    public string Dialog = null;
+
     public override void _Ready()
     {
         base._Ready();
@@ -29,5 +32,18 @@ public abstract partial class Interactable : Area3D
         }
     }
 
-    public abstract void OnInteract();
+    public void Interact()
+    {
+        if (Dialog != null)
+        {
+            var dialog = GlobalState.Instance.openDialog(Dialog);
+            dialog.Interact += () => onInteract();
+        }
+        else
+        {
+            onInteract();
+        }
+    }
+
+    protected abstract void onInteract();
 }

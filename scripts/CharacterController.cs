@@ -76,7 +76,7 @@ public partial class CharacterController : CharacterBody3D
         {
             if (keyEvent.Keycode == Key.E && _currentInteractable != null)
             {
-                _currentInteractable.OnInteract();
+                _currentInteractable.Interact();
             }
         }
     }

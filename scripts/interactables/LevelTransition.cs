@@ -10,7 +10,7 @@ public partial class LevelTransition : Interactable
 
     private PackedScene playerScene = GD.Load<PackedScene>("res://scenes/entities/Player.tscn");
 
-    public override void OnInteract()
+    protected override void onInteract()
     {
         GlobalState.Instance.LastScene = GetTree().CurrentScene.SceneFilePath;
         GetTree().ChangeSceneToFile(TargetLevelPath);
