@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://clxdblnwwdpfy"]
+
+[ext_resource type="Script" uid="uid://cso3014gt6c28" path="res://scripts/interactables/DialogInteractable.cs" id="1_uh40f"]
+[ext_resource type="Texture2D" uid="uid://b4rmlxoqu5xtf" path="res://assets/sprites/characters/doggo world.png" id="2_uh40f"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_gmvds"]
+radius = 1.1157227
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_jbchb"]
+
+[node name="Dog" type="Area3D" unique_id=1584149579]
+script = ExtResource("1_uh40f")
+InteractionText = "GGJ2026_INTERACTION_INTERACT_DOG"
+Dialog = "dog"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=357662295]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CylinderShape3D_gmvds")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=387633324]
+transform = Transform3D(0.56, 0, 0, 0, 0.56, 0, 0, 0, 0.56, 0, 0.49894738, 0)
+pixel_size = 0.004
+texture = ExtResource("2_uh40f")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=666548985]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1566675471]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9716191, 0)
+shape = SubResource("CylinderShape3D_jbchb")

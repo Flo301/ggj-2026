@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cucsrpjhcbq4s"]
 
 [ext_resource type="PackedScene" uid="uid://np5laepqvf8u" path="res://scenes/InGameUI.tscn" id="1_qbkdb"]
-[ext_resource type="PackedScene" uid="uid://b8q1x6tp5flbv" path="res://scenes/interactables/TransitionInvisible.tscn" id="2_qbkdb"]
+[ext_resource type="PackedScene" uid="uid://b8q1x6tp5flbv" path="res://scenes/interactables/transitions/TransitionInvisible.tscn" id="2_qbkdb"]
 [ext_resource type="PackedScene" uid="uid://cwy64im38csj1" path="res://scenes/props/supermarkt/CarCarrier.tscn" id="3_oy4nh"]
 [ext_resource type="PackedScene" uid="uid://bovlsdxi75qsi" path="res://scenes/props/supermarkt/Building.tscn" id="3_qlsl0"]
 [ext_resource type="PackedScene" uid="uid://c1kubfxwm03fo" path="res://scenes/props/supermarkt/CarOld.tscn" id="4_o8hgf"]

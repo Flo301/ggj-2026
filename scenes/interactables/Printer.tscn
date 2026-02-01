@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://dxdypt1brf71a"]
+
+[ext_resource type="Script" uid="uid://cso3014gt6c28" path="res://scripts/interactables/DialogInteractable.cs" id="1_b7cr8"]
+[ext_resource type="Texture2D" uid="uid://c0ab6u4u31uq3" path="res://assets/sprites/office/printer.png" id="2_b7cr8"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_gmvds"]
+radius = 1.1157227
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_jbchb"]
+
+[node name="Printer" type="Area3D" unique_id=1584149579]
+script = ExtResource("1_b7cr8")
+InteractionText = "GGJ2026_INTERACTION_INTERACT_PRINTER"
+Dialog = "kopierer"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=357662295]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CylinderShape3D_gmvds")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=387633324]
+transform = Transform3D(0.56, 0, 0, 0, 0.56, 0, 0, 0, 0.56, 0, 0.6138091, 0)
+pixel_size = 0.007
+texture = ExtResource("2_b7cr8")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=666548985]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1566675471]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9716191, 0)
+shape = SubResource("CylinderShape3D_jbchb")

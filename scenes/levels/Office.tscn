@@ -2,9 +2,9 @@
 
 [ext_resource type="PackedScene" uid="uid://np5laepqvf8u" path="res://scenes/InGameUI.tscn" id="1_8rhdg"]
 [ext_resource type="Material" uid="uid://cru6isnn2ffor" path="res://assets/textures/architecture/floor.tres" id="2_1uvqo"]
-[ext_resource type="PackedScene" uid="uid://bgbb7p4i3cbu6" path="res://scenes/interactables/TransitionDoorOffice.tscn" id="4_ydf51"]
+[ext_resource type="PackedScene" uid="uid://bgbb7p4i3cbu6" path="res://scenes/interactables/transitions/TransitionDoorOffice.tscn" id="4_ydf51"]
 [ext_resource type="PackedScene" uid="uid://dwytcgscm8ukm" path="res://scenes/props/office/Wall.tscn" id="5_2gnet"]
-[ext_resource type="PackedScene" uid="uid://beodwmp3pvlcs" path="res://scenes/interactables/ExampleInteractable.tscn" id="6_2r08a"]
+[ext_resource type="PackedScene" uid="uid://beodwmp3pvlcs" path="res://scenes/interactables/transitions/ExampleInteractable.tscn" id="6_2r08a"]
 [ext_resource type="PackedScene" uid="uid://oaajihjusq4q" path="res://scenes/props/office/Table.tscn" id="7_yd851"]
 [ext_resource type="PackedScene" uid="uid://k5njibnt0l2l" path="res://scenes/props/office/Mailbox.tscn" id="8_3jl2r"]
 [ext_resource type="PackedScene" uid="uid://f8l67qwkyx7y" path="res://scenes/props/office/Poster.tscn" id="9_28jjv"]

@@ -2,10 +2,10 @@
 
 [ext_resource type="PackedScene" uid="uid://np5laepqvf8u" path="res://scenes/InGameUI.tscn" id="1_khbpq"]
 [ext_resource type="Material" uid="uid://cru6isnn2ffor" path="res://assets/textures/architecture/floor.tres" id="2_wxto0"]
-[ext_resource type="PackedScene" uid="uid://bgbb7p4i3cbu6" path="res://scenes/interactables/TransitionDoorOffice.tscn" id="5_qmk2h"]
+[ext_resource type="PackedScene" uid="uid://bgbb7p4i3cbu6" path="res://scenes/interactables/transitions/TransitionDoorOffice.tscn" id="5_qmk2h"]
 [ext_resource type="PackedScene" uid="uid://bouh6tof2mnwj" path="res://scenes/props/office/Kitchen.tscn" id="7_20fno"]
 [ext_resource type="PackedScene" uid="uid://f8l67qwkyx7y" path="res://scenes/props/office/Poster.tscn" id="7_j478u"]
-[ext_resource type="PackedScene" uid="uid://bwmg6eb1x3uma" path="res://scenes/props/office/CoffeeMaschine.tscn" id="8_nsd05"]
+[ext_resource type="PackedScene" uid="uid://bwmg6eb1x3uma" path="res://scenes/props/office/CoffeeMaschineProp.tscn" id="8_nsd05"]
 [ext_resource type="PackedScene" uid="uid://c1ewac81l4av8" path="res://scenes/prefabs/barria.tscn" id="9_h082s"]
 [ext_resource type="PackedScene" uid="uid://ccblsmf6h4o68" path="res://scenes/props/apartment/TableDining.tscn" id="9_khbpq"]
 [ext_resource type="PackedScene" uid="uid://b8u2nvkiee4lc" path="res://scenes/props/apartment/ChairDiningBack.tscn" id="10_aw3wf"]
