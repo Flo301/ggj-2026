@@ -3,6 +3,18 @@
 [ext_resource type="Script" uid="uid://boav64v511gup" path="res://scripts/EndDayScreen.cs" id="1_dnl8l"]
 [ext_resource type="PackedScene" uid="uid://5mbjetkkvlmv" path="res://scenes/prefabs/ui_background.tscn" id="2_6m1pc"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lu5hu"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.6, 0.6, 0.6, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
 [node name="EndDayScreen" type="Control" unique_id=1773701320 node_paths=PackedStringArray("ContentContainer", "NoNewMaskLabel")]
 layout_mode = 3
 anchors_preset = 15
@@ -11,8 +23,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_dnl8l")
-ContentContainer = NodePath("BoxContainer/BoxContainer/Window/MarginContainer/VBoxContainer/MarginContent/ContainerContent")
-NoNewMaskLabel = NodePath("BoxContainer/BoxContainer/Window/MarginContainer/VBoxContainer/MarginContent/ContainerContent/LabenNoNewMask")
+ContentContainer = NodePath("HBoxContainer/VBoxContainerMiddle/Window/MarginContainer/VBoxContainer/MarginContent/ContainerContent")
+NoNewMaskLabel = NodePath("HBoxContainer/VBoxContainerMiddle/Window/MarginContainer/VBoxContainer/MarginContent/ContainerContent/LabenNoNewMask")
 
 [node name="Background" type="ColorRect" parent="." unique_id=815867247]
 layout_mode = 1
@@ -23,7 +35,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
-[node name="BoxContainer" type="BoxContainer" parent="." unique_id=951035780]
+[node name="HBoxContainer" type="BoxContainer" parent="." unique_id=951035780]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -32,12 +44,12 @@ grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
-[node name="Control" type="Control" parent="BoxContainer" unique_id=990395926]
+[node name="Control" type="Control" parent="HBoxContainer" unique_id=990395926]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="BoxContainer" type="BoxContainer" parent="BoxContainer" unique_id=1354063763]
+[node name="VBoxContainerMiddle" type="BoxContainer" parent="HBoxContainer" unique_id=1354063763]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -45,18 +57,18 @@ size_flags_stretch_ratio = 1.5
 alignment = 1
 vertical = true
 
-[node name="Control" type="Control" parent="BoxContainer/BoxContainer" unique_id=71375280]
+[node name="Control" type="Control" parent="HBoxContainer/VBoxContainerMiddle" unique_id=71375280]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Window" type="Control" parent="BoxContainer/BoxContainer" unique_id=992406523]
+[node name="Window" type="Control" parent="HBoxContainer/VBoxContainerMiddle" unique_id=992406523]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 6.0
 
-[node name="MarginContainer" type="MarginContainer" parent="BoxContainer/BoxContainer/Window" unique_id=659312221]
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/VBoxContainerMiddle/Window" unique_id=659312221]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -68,19 +80,19 @@ theme_override_constants/margin_top = 5
 theme_override_constants/margin_right = 5
 theme_override_constants/margin_bottom = 5
 
-[node name="VBoxContainer" type="BoxContainer" parent="BoxContainer/BoxContainer/Window/MarginContainer" unique_id=1213375272]
+[node name="VBoxContainer" type="BoxContainer" parent="HBoxContainer/VBoxContainerMiddle/Window/MarginContainer" unique_id=1213375272]
 layout_mode = 2
 vertical = true
 
-[node name="ContainerTitle" type="MarginContainer" parent="BoxContainer/BoxContainer/Window/MarginContainer/VBoxContainer" unique_id=833705157]
+[node name="ContainerTitle" type="MarginContainer" parent="HBoxContainer/VBoxContainerMiddle/Window/MarginContainer/VBoxContainer" unique_id=833705157]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.1
 
-[node name="UIBackground" parent="BoxContainer/BoxContainer/Window/MarginContainer/VBoxContainer/ContainerTitle" unique_id=1493063387 instance=ExtResource("2_6m1pc")]
+[node name="UIBackground" parent="HBoxContainer/VBoxContainerMiddle/Window/MarginContainer/VBoxContainer/ContainerTitle" unique_id=1493063387 instance=ExtResource("2_6m1pc")]
 layout_mode = 2
 
-[node name="LabelTitle" type="RichTextLabel" parent="BoxContainer/BoxContainer/Window/MarginContainer/VBoxContainer/ContainerTitle" unique_id=1618666673]
+[node name="LabelTitle" type="RichTextLabel" parent="HBoxContainer/VBoxContainerMiddle/Window/MarginContainer/VBoxContainer/ContainerTitle" unique_id=1618666673]
 unique_name_in_owner = true
 layout_mode = 2
 bbcode_enabled = true
@@ -90,7 +102,7 @@ autowrap_mode = 0
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="MarginContent" type="MarginContainer" parent="BoxContainer/BoxContainer/Window/MarginContainer/VBoxContainer" unique_id=600034154]
+[node name="MarginContent" type="MarginContainer" parent="HBoxContainer/VBoxContainerMiddle/Window/MarginContainer/VBoxContainer" unique_id=600034154]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_constants/margin_left = 10
@@ -98,13 +110,13 @@ theme_override_constants/margin_top = 10
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 10
 
-[node name="ContainerContent" type="BoxContainer" parent="BoxContainer/BoxContainer/Window/MarginContainer/VBoxContainer/MarginContent" unique_id=592381363]
+[node name="ContainerContent" type="BoxContainer" parent="HBoxContainer/VBoxContainerMiddle/Window/MarginContainer/VBoxContainer/MarginContent" unique_id=592381363]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_constants/separation = 10
 vertical = true
 
-[node name="LabenNoNewMask" type="RichTextLabel" parent="BoxContainer/BoxContainer/Window/MarginContainer/VBoxContainer/MarginContent/ContainerContent" unique_id=636905763]
+[node name="LabenNoNewMask" type="RichTextLabel" parent="HBoxContainer/VBoxContainerMiddle/Window/MarginContainer/VBoxContainer/MarginContent/ContainerContent" unique_id=636905763]
 visible = false
 clip_contents = false
 layout_mode = 2
@@ -113,12 +125,42 @@ text = "GGJ2026_MENU_NEUE_MASKE_NULL"
 fit_content = true
 horizontal_alignment = 1
 
-[node name="Control2" type="Control" parent="BoxContainer/BoxContainer" unique_id=295856646]
+[node name="Control2" type="Control" parent="HBoxContainer/VBoxContainerMiddle" unique_id=295856646]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Control2" type="Control" parent="BoxContainer" unique_id=1467684790]
+[node name="VBoxContainerRight" type="BoxContainer" parent="HBoxContainer" unique_id=798304874]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+alignment = 2
+vertical = true
+
+[node name="BoxContainer" type="BoxContainer" parent="HBoxContainer/VBoxContainerRight" unique_id=1651960116]
+layout_mode = 2
+alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/VBoxContainerRight/BoxContainer" unique_id=626373746]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="UIBackground" parent="HBoxContainer/VBoxContainerRight/BoxContainer/MarginContainer" unique_id=676433002 instance=ExtResource("2_6m1pc")]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/VBoxContainerRight/BoxContainer/MarginContainer" unique_id=1942719222]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="ButtonEndDay" type="Button" parent="HBoxContainer/VBoxContainerRight/BoxContainer/MarginContainer/MarginContainer" unique_id=463129129]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_lu5hu")
+text = "GGJ2026_MENU_NEXT_DAY"
+
+[connection signal="button_up" from="HBoxContainer/VBoxContainerRight/BoxContainer/MarginContainer/MarginContainer/ButtonEndDay" to="." method="EndDay"]

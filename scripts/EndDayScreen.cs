@@ -8,6 +8,7 @@ public partial class EndDayScreen : Control
 	public BoxContainer ContentContainer;
 	[Export]
 	public RichTextLabel NoNewMaskLabel;
+	public Action Callback;
 	
 	/*
 	public List<string> test= ["afraid", "angry", "happy", "loving", "sad", "surprised", "thankful"];
@@ -17,8 +18,10 @@ public partial class EndDayScreen : Control
 	}
 	*/
 	
-	public void Init(List<string> newEmotions)
+	public void Init(List<string> newEmotions, Action callback)
 	{
+		Callback = callback;
+		
 		var scene = GD.Load<PackedScene>("res://scenes/prefabs/container_mask.tscn");
 		if (newEmotions.Count <= 0)
 		{
@@ -31,5 +34,10 @@ public partial class EndDayScreen : Control
 			ContentContainer.AddChild(instance);
 			instance.Init(emotion, $"GGJ2026_MENU_NEUE_MASKE_{emotion.ToUpper()}");
 		}
+	}
+	
+	public void EndDay()
+	{
+		Callback();
 	}
 }
