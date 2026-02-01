@@ -66,7 +66,7 @@
             },
             {
               "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_OPTION_1769946626118_7HT0F2",
-              "nextSection": "start",
+              "nextSection": "afraid",
               "condition": {
                 "type": "hasEmotion",
                 "value": "afraid"
@@ -117,14 +117,50 @@
         },
         {
           "type": "dialog",
-          "speaker": "GGJ2026_SPEAKER_PLAYER",
           "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947607085_LZV6WQ"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947818023_5OP2V3"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947916038_I7T45C"
+        },
+        {
+          "type": "showBackground",
+          "background": "Kollege open mouth"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_COLLEAGUE",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769948174422_QQWG6H"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_COLLEAGUE",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769948265695_NR3F1S"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_COLLEAGUE",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769948280130_BVOTY5"
+        },
+        {
+          "type": "event",
+          "name": "getEmotion",
+          "value": "thankful"
         }
       ]
     },
     {
       "id": "post-help",
-      "lines": []
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769948369558_QRXYQ5"
+        }
+      ]
     },
     {
       "id": "ignore",
@@ -192,6 +228,11 @@
         {
           "type": "dialog",
           "text": "GGJ2026_DIALOG_COLLEAGUE_DURING_WORK_DIALOG_LINE_1769947330270_C6P78J"
+        },
+        {
+          "type": "event",
+          "name": "getEmotion",
+          "value": "afraid"
         }
       ]
     },

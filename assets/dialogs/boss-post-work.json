@@ -5,6 +5,10 @@
       "id": "start",
       "lines": [
         {
+          "type": "showBackground",
+          "background": "chefin"
+        },
+        {
           "type": "dialog",
           "speaker": "GGJ2026_SPEAKER_BOSS",
           "text": "GGJ2026_DIALOG_BOSS_POST_WORK_DIALOG_LINE_1769947497541_BGNFEG"
@@ -14,9 +18,60 @@
           "options": [
             {
               "text": "GGJ2026_DIALOG_BOSS_POST_WORK_OPTION_1769947606934_9QEUDC",
-              "nextSection": "start"
+              "nextSection": "goodbye"
+            },
+            {
+              "text": "GGJ2026_DIALOG_BOSS_POST_WORK_OPTION_1769947648633_LB01I6",
+              "nextSection": "praise",
+              "condition": {
+                "type": "hasEmotion",
+                "value": "thankful"
+              }
             }
           ]
+        }
+      ]
+    },
+    {
+      "id": "goodbye",
+      "lines": [
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_BOSS",
+          "text": "GGJ2026_DIALOG_BOSS_POST_WORK_DIALOG_LINE_1769947728838_CJ5V32"
+        }
+      ]
+    },
+    {
+      "id": "praise",
+      "lines": [
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_BOSS",
+          "text": "GGJ2026_DIALOG_BOSS_POST_WORK_DIALOG_LINE_1769947756170_O5PFU1"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_BOSS_POST_WORK_DIALOG_LINE_1769947772455_3QNQ2W"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_BOSS",
+          "text": "GGJ2026_DIALOG_BOSS_POST_WORK_DIALOG_LINE_1769947783438_XA0AKW"
+        },
+        {
+          "type": "showBackground",
+          "background": "chefin open mouth"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_BOSS",
+          "text": "GGJ2026_DIALOG_BOSS_POST_WORK_DIALOG_LINE_1769947798195_B4V11O"
+        },
+        {
+          "type": "event",
+          "name": "getEmotion",
+          "value": "happy"
         }
       ]
     }

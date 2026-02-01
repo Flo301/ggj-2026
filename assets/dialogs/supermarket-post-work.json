@@ -1,0 +1,56 @@
+{
+  "startSection": "start",
+  "sections": [
+    {
+      "id": "start",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_SUPERMARKET_POST_WORK_DIALOG_LINE_1769948196080_7LCJC0"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_SUPERMARKET_POST_WORK_DIALOG_LINE_1769948248391_5R1VZW"
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "text": "GGJ2026_DIALOG_SUPERMARKET_POST_WORK_OPTION_1769948267747_WPCNQ4",
+              "nextSection": "buy stuff"
+            },
+            {
+              "text": "GGJ2026_DIALOG_SUPERMARKET_POST_WORK_OPTION_1769948274622_L7JYFU",
+              "nextSection": "buy stuff"
+            },
+            {
+              "text": "GGJ2026_DIALOG_SUPERMARKET_POST_WORK_OPTION_1769948280318_ODDEO8",
+              "nextSection": "leave"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "buy stuff",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_SUPERMARKET_POST_WORK_DIALOG_LINE_1769948394186_47IW3E"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_SUPERMARKET_POST_WORK_DIALOG_LINE_1769948432846_TNG0GU"
+        },
+        {
+          "type": "nextSection",
+          "nextSection": "leave"
+        }
+      ]
+    },
+    {
+      "id": "leave",
+      "lines": []
+    }
+  ]
+}

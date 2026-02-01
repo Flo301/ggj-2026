@@ -132,6 +132,11 @@
           "type": "dialog",
           "speaker": "GGJ2026_SPEAKER_BOSS",
           "text": "GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769942747730_QRB158"
+        },
+        {
+          "type": "event",
+          "name": "getEmotion",
+          "value": "angry"
         }
       ]
     },

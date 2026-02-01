@@ -9,6 +9,14 @@
           "text": "GGJ2026_DIALOG_DESK_DIALOG_LINE_1769938320214_OU9VE8"
         },
         {
+          "type": "switch",
+          "condition": {
+            "type": "didDialog",
+            "value": "desk.start-work"
+          },
+          "nextSection": "after-work"
+        },
+        {
           "type": "options",
           "options": [
             {
@@ -102,6 +110,28 @@
         {
           "type": "nextSection",
           "nextSection": "start-work"
+        }
+      ]
+    },
+    {
+      "id": "after-work",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_DESK_DIALOG_LINE_1769951035571_BZZIYU"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_DESK_DIALOG_LINE_1769951057440_0I0PSU"
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "text": "GGJ2026_DIALOG_DESK_OPTION_1769951067187_9OKN3N",
+              "nextSection": "stay-standing"
+            }
+          ]
         }
       ]
     }

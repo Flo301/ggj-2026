@@ -39,6 +39,14 @@
                 "type": "hasEmotion",
                 "value": "thankful"
               }
+            },
+            {
+              "text": "GGJ2026_DIALOG_KOPIERER_OPTION_1769947977349_08Y97E",
+              "nextSection": "despair",
+              "condition": {
+                "type": "hasEmotion",
+                "value": "sad"
+              }
             }
           ]
         }
@@ -122,6 +130,31 @@
           "type": "dialog",
           "speaker": "GGJ2026_SPEAKER_PLAYER",
           "text": "GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769936999890_3CU7H8"
+        }
+      ]
+    },
+    {
+      "id": "despair",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769948009821_8KO37A"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769948035275_GRS8SK"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769948082448_85FE0J"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769948087845_Z21DLX"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_KOPIERER_DIALOG_LINE_1769948095486_WD2C64"
         }
       ]
     }

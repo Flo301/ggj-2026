@@ -1,0 +1,347 @@
+{
+  "startSection": "start",
+  "sections": [
+    {
+      "id": "start",
+      "lines": [
+        {
+          "type": "showBackground",
+          "background": "Kind"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_CHILD",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769948855751_HM8C2V"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_CHILD",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769948862804_JR5WFZ"
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "text": "GGJ2026_DIALOG_CHILD_OPTION_1769948898286_56OVQB",
+              "nextSection": "ignore"
+            },
+            {
+              "text": "GGJ2026_DIALOG_CHILD_OPTION_1769948910963_XQ6DPB",
+              "nextSection": "Talk"
+            },
+            {
+              "text": "GGJ2026_DIALOG_CHILD_OPTION_1769948939133_UZB1OR",
+              "nextSection": "start",
+              "condition": {
+                "type": "hasEmotion",
+                "value": "thankful"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Talk",
+      "lines": [
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949511397_V19M0L"
+        },
+        {
+          "type": "showBackground",
+          "background": "Kind open mouth"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_CHILD",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949511838_QNNBHH"
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "text": "GGJ2026_DIALOG_CHILD_OPTION_1769949569176_CN6YXX",
+              "nextSection": "playtime",
+              "condition": {
+                "type": "hasEmotion",
+                "value": "happy"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "leave",
+      "lines": [
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949784244_EPP5GJ"
+        },
+        {
+          "type": "showBackground",
+          "background": "Kind open mouth"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_CHILD",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949821789_RKMPYE"
+        }
+      ]
+    },
+    {
+      "id": "ignore",
+      "lines": [
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949097565_WNODPQ"
+        },
+        {
+          "type": "showBackground",
+          "background": "Kind open mouth"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_CHILD",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949098000_A5GDS1"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949195518_KQE90G"
+        },
+        {
+          "type": "showBackground",
+          "background": "Kind"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_CHILD",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949202483_XMP73G"
+        },
+        {
+          "type": "showBackground",
+          "background": "Kind open mouth"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949249371_6P3HLU"
+        },
+        {
+          "type": "event",
+          "name": "getEmotion",
+          "value": "sad"
+        }
+      ]
+    },
+    {
+      "id": "help",
+      "lines": [
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949841839_ZOD7IX"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949918430_HOZYUD"
+        },
+        {
+          "type": "showBackground",
+          "background": "Kind open mouth"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949973891_FKCEBP"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_CHILD",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949952643_01OF0I"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_CHILD",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949996020_PT7LDU"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950007821_QKQHTY"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950023952_95LB9E"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950050573_7WXYOU"
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "text": "GGJ2026_DIALOG_CHILD_OPTION_1769950047100_F7K7YC",
+              "nextSection": "police"
+            },
+            {
+              "text": "GGJ2026_DIALOG_CHILD_OPTION_1769950108207_5OSPIL",
+              "nextSection": "leave crying"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "playtime",
+      "lines": [
+        {
+          "type": "showBackground",
+          "background": "Kind"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949617026_OUKB76"
+        },
+        {
+          "type": "showBackground",
+          "background": "Kind open mouth"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_CHILD",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949693289_784Z7Z"
+        },
+        {
+          "type": "showBackground",
+          "background": "Kind"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_CHILD",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949713967_9UZMPY"
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "text": "GGJ2026_DIALOG_CHILD_OPTION_1769949739948_S8KGIX",
+              "nextSection": "help",
+              "condition": {
+                "type": "hasEmotion",
+                "value": "thankful"
+              }
+            },
+            {
+              "text": "GGJ2026_DIALOG_CHILD_OPTION_1769949762131_AD0MTE",
+              "nextSection": "leave"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "police",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950218647_2L3RM3"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950234321_39SDIR"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950327744_BH7DY1"
+        },
+        {
+          "type": "showBackground",
+          "background": "Kind"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950359014_U4PD8Y"
+        },
+        {
+          "type": "showBackground",
+          "background": "Kind open mouth"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_CHILD",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950374094_V7OJLR"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950487742_1LPZAX"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950518976_0I8PWS"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950260168_T14Z67"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_CHILD",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950552071_FN0808"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950561930_HXBZEA"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950574903_J96YOP"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950628915_2P5RFR"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950665214_U4WT5G"
+        },
+        {
+          "type": "showBackground",
+          "background": "Kind"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950687577_GUEYGS"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_CHILD",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950773479_I61DP2"
+        },
+        {
+          "type": "event",
+          "name": "getEmotion",
+          "value": "loving"
+        }
+      ]
+    },
+    {
+      "id": "leave crying",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950146811_R85TRZ"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950157247_TMY4D5"
+        }
+      ]
+    }
+  ]
+}
