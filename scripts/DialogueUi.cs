@@ -207,9 +207,9 @@ public partial class DialogueUi : Control
 		switch (name)
 		{
 			case "getEmotion":
-				if (!GlobalState.Instance.availableEmotions.Contains(value))
+				if (!GlobalState.Instance.availableEmotions.Contains(value) && !GlobalState.Instance.newEmotions.Contains(value))
 				{
-					GlobalState.Instance.availableEmotions.Add(value);
+					GlobalState.Instance.newEmotions.Add(value);
 				}
 				break;
 			case "endDay":
