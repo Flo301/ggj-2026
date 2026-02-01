@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bq0jx3684ndaj" path="res://scripts/DialogueUi.cs" id="1_cncga"]
 [ext_resource type="PackedScene" uid="uid://5mbjetkkvlmv" path="res://scenes/prefabs/ui_background.tscn" id="1_dxd25"]
-[ext_resource type="Texture2D" uid="uid://c2bw3adspihyg" path="res://assets/sprites/dialogue/Babyman.png" id="1_kllol"]
+[ext_resource type="Texture2D" uid="uid://744o2mj0s8hw" path="res://assets/sprites/dialogue/Ommsche.png" id="2_cncga"]
 [ext_resource type="PackedScene" uid="uid://do68o4lg40ipu" path="res://scenes/prefabs/container_option.tscn" id="3_7yr7v"]
 
 [sub_resource type="Gradient" id="Gradient_kllol"]
@@ -25,7 +25,7 @@ mouse_filter = 1
 script = ExtResource("1_cncga")
 DialogueTitle = NodePath("MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogue/MarginContainer/VBoxContainer/MarginContainer/RichTextDialogueTitle")
 DialogueContent = NodePath("MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogue/MarginContainer/VBoxContainer/RichTextDialogueContent")
-CharacterTexture = NodePath("MarginContainer/HBoxContainerCharacters/ContainerGraphicLeft/TextureDialogueCharacter")
+CharacterTexture = NodePath("MarginContainer/HBoxContainerCharacters/ContainerGraphicLeft/BoxContainer/TextureDialogueCharacter")
 OptionsContainer = NodePath("MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogueOptions/ContainerDialogueSelection/VBoxContainerOptions")
 
 [node name="Background" type="ColorRect" parent="." unique_id=452911920]
@@ -56,17 +56,27 @@ layout_mode = 2
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="TextureDialogueCharacter" type="TextureRect" parent="MarginContainer/HBoxContainerCharacters/ContainerGraphicLeft" unique_id=923860804]
-unique_name_in_owner = true
+[node name="BoxContainer" type="BoxContainer" parent="MarginContainer/HBoxContainerCharacters/ContainerGraphicLeft" unique_id=1509591221]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_kllol")
-expand_mode = 4
+vertical = true
+
+[node name="TextureDialogueCharacter" type="TextureRect" parent="MarginContainer/HBoxContainerCharacters/ContainerGraphicLeft/BoxContainer" unique_id=923860804]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.19
+texture = ExtResource("2_cncga")
+expand_mode = 2
 stretch_mode = 4
+
+[node name="Control" type="Control" parent="MarginContainer/HBoxContainerCharacters/ContainerGraphicLeft/BoxContainer" unique_id=1847399466]
+layout_mode = 2
+size_flags_vertical = 3
 
 [node name="ContainerGraphicRight" type="Control" parent="MarginContainer/HBoxContainerCharacters" unique_id=1644138963]
 layout_mode = 2
