@@ -1,5 +1,6 @@
 using Godot;
 using System;
+using System.Threading.Tasks;
 
 public partial class LevelTransition : Interactable
 {
@@ -14,9 +15,22 @@ public partial class LevelTransition : Interactable
 
     protected override void onInteract()
     {
-        GlobalState.Instance.LastScene = GetTree().CurrentScene.SceneFilePath;
-        GetTree().ChangeSceneToFile(TargetLevelPath);
+        _ = changeScene();
         //TODO: Level Transition - fade out/in, loading screen, etc.
+    }
+
+    public async Task changeScene()
+    {
+        GlobalState.Instance.LastScene = GetTree().CurrentScene.SceneFilePath;
+
+        var fadeScene = GD.Load<PackedScene>("res://scenes/transitions/fade-to-black.tscn");
+        var instance = fadeScene.Instantiate();
+        InGameUi.Instance.AddChild(instance);
+
+        await ToSignal(GetTree().CreateTimer(0.29), "timeout");
+
+        GetTree().ChangeSceneToFile(TargetLevelPath);
+        instance.QueueFree();
     }
 
     public override void _Ready()
