@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://don6j007y1u5l" path="res://assets/sprites/UI/LWFH-BG.png" id="1_gpbvw"]
 [ext_resource type="Script" uid="uid://cvwuh0wy08q51" path="res://scripts/Titlemenu.cs" id="1_q7ugu"]
+[ext_resource type="PackedScene" uid="uid://bm0y1mwqf47nq" path="res://scenes/levels/Apartment.tscn" id="2_bi0dk"]
 [ext_resource type="Texture2D" uid="uid://efimvbpv0tve" path="res://assets/sprites/UI/MenuItemBase.png" id="2_iulo1"]
 [ext_resource type="Texture2D" uid="uid://od1u57gk6mkk" path="res://assets/sprites/UI/Reset-Icon.png" id="3_q7ugu"]
 [ext_resource type="Texture2D" uid="uid://dg43sow8rqhiq" path="res://assets/sprites/UI/Flag-German.png" id="5_0io7f"]
@@ -15,6 +16,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_q7ugu")
+StartScene = ExtResource("2_bi0dk")
 
 [node name="Background" type="TextureRect" parent="." unique_id=1013399480]
 layout_mode = 1
@@ -91,6 +93,7 @@ size_flags_horizontal = 3
 alignment = 2
 
 [node name="VBoxContainer" type="BoxContainer" parent="HBoxContainer/HBoxContainerRight" unique_id=990349270]
+visible = false
 layout_mode = 2
 vertical = true
 

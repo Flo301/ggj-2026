@@ -92,6 +92,9 @@ vertical = true
 [node name="SettingRow" parent="BoxContainer/BoxContainer/Window/MarginContainer/VBoxContainer/ContainerSettings" unique_id=1871728949 instance=ExtResource("3_fil21")]
 layout_mode = 2
 
+[node name="LabelSetting" parent="BoxContainer/BoxContainer/Window/MarginContainer/VBoxContainer/ContainerSettings/SettingRow" index="0" unique_id=434831280]
+text = "[SETTING_NAME] Coming Soon™"
+
 [node name="HButtonContainer" type="BoxContainer" parent="BoxContainer/BoxContainer/Window/MarginContainer/VBoxContainer" unique_id=941081702]
 layout_mode = 2
 alignment = 1
@@ -120,3 +123,5 @@ size_flags_vertical = 3
 
 [connection signal="button_up" from="BoxContainer/BoxContainer/Window/MarginContainer/VBoxContainer/HButtonContainer/ButtonClose" to="." method="Close"]
 [connection signal="button_up" from="BoxContainer/BoxContainer/Window/MarginContainer/VBoxContainer/HButtonContainer/ButtonApply" to="." method="Apply"]
+
+[editable path="BoxContainer/BoxContainer/Window/MarginContainer/VBoxContainer/ContainerSettings/SettingRow"]
