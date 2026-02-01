@@ -15,6 +15,9 @@ public partial class ConditionalNodeHidder : Node3D
     [Export]
     public bool AllDontsMustBeTrue = false;
 
+    [Export]
+    public string[] DoSuperHideWhenFlags = [];
+
     public override void _Ready()
     {
         GlobalState.Instance.DialogEnd += checkIfShouldHide;
@@ -49,6 +52,12 @@ public partial class ConditionalNodeHidder : Node3D
     private bool ShouldHide()
     {
         bool doHide = false;
+
+        if(DoSuperHideWhenFlags.Any(x => GlobalState.Instance.HasDoneDialog(x)))
+        {
+            return true;
+        }
+
         if (AllDoesMustBeTrue)
         {
             doHide = DoHideWhenFlags.All(x => GlobalState.Instance.HasDoneDialog(x));
