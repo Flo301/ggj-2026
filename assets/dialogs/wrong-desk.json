@@ -1,0 +1,68 @@
+{
+  "startSection": "start",
+  "sections": [
+    {
+      "id": "start",
+      "lines": [
+        {
+          "type": "switch",
+          "condition": {
+            "type": "didDialog",
+            "value": "wrong-desk.talk"
+          },
+          "nextSection": "repeat"
+        },
+        {
+          "type": "nextSection",
+          "nextSection": "talk"
+        }
+      ]
+    },
+    {
+      "id": "repeat",
+      "lines": [
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_COLLEAGUE",
+          "text": "GGJ2026_DIALOG_WRONG_DESK_DIALOG_LINE_1769938794759_K4MBKC"
+        },
+        {
+          "type": "switch",
+          "condition": {
+            "type": "didDialog",
+            "value": "wrong-desk.repeat"
+          },
+          "nextSection": "repeat2"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_WRONG_DESK_DIALOG_LINE_1769938801485_GAQEVM"
+        }
+      ]
+    },
+    {
+      "id": "repeat2",
+      "lines": [
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_COLLEAGUE",
+          "text": "GGJ2026_DIALOG_WRONG_DESK_DIALOG_LINE_1769938816777_0I48OR"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_WRONG_DESK_DIALOG_LINE_1769938824050_KAVO5X"
+        }
+      ]
+    },
+    {
+      "id": "talk",
+      "lines": [
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_COLLEAGUE",
+          "text": "GGJ2026_DIALOG_WRONG_DESK_DIALOG_LINE_1769938918740_HECO3O"
+        }
+      ]
+    }
+  ]
+}

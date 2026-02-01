@@ -1,0 +1,109 @@
+{
+  "startSection": "start",
+  "sections": [
+    {
+      "id": "start",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_DESK_DIALOG_LINE_1769938320214_OU9VE8"
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "text": "GGJ2026_DIALOG_DESK_OPTION_1769938364275_VRCL0B",
+              "nextSection": "sit-desk"
+            },
+            {
+              "text": "GGJ2026_DIALOG_DESK_OPTION_1769938435312_IJG55F",
+              "nextSection": "stay-standing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "start-work",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_DESK_DIALOG_LINE_1769946334963_VXGTL9"
+        },
+        {
+          "type": "event",
+          "name": "interact"
+        }
+      ]
+    },
+    {
+      "id": "stay-standing",
+      "lines": []
+    },
+    {
+      "id": "sit-desk",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_DESK_DIALOG_LINE_1769946468247_ZL83BN"
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "text": "GGJ2026_DIALOG_DESK_OPTION_1769946534502_RWSDS6",
+              "nextSection": "start-work"
+            },
+            {
+              "text": "GGJ2026_DIALOG_DESK_OPTION_1769946548361_H963N1",
+              "nextSection": "start-work"
+            },
+            {
+              "text": "GGJ2026_DIALOG_DESK_OPTION_1769946597194_NWA83D",
+              "nextSection": "no-coffee",
+              "condition": {
+                "type": "didDialog",
+                "value": "supermarket.buy-nothing"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "no-coffee",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_DESK_DIALOG_LINE_1769946691928_M7TC9I"
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "text": "GGJ2026_DIALOG_DESK_OPTION_1769946770676_9KP3UE",
+              "nextSection": "stay-standing"
+            },
+            {
+              "text": "GGJ2026_DIALOG_DESK_OPTION_1769946859800_0BZO8U",
+              "nextSection": "caffeinless"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "caffeinless",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_DESK_DIALOG_LINE_1769946923139_7EEJME"
+        },
+        {
+          "type": "nextSection",
+          "nextSection": "start-work"
+        }
+      ]
+    }
+  ]
+}

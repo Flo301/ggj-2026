@@ -1,0 +1,226 @@
+{
+  "startSection": "start",
+  "sections": [
+    {
+      "id": "start",
+      "lines": [
+        {
+          "type": "showBackground",
+          "background": "chefin"
+        },
+        {
+          "type": "switch",
+          "condition": {
+            "type": "didDialog",
+            "value": "boss-during-work.fixed-printer"
+          },
+          "nextSection": "praise"
+        },
+        {
+          "type": "switch",
+          "condition": {
+            "type": "didDialog",
+            "value": "boss-during-work.reprimand"
+          },
+          "nextSection": "get-fired"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_BOSS",
+          "text": "GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769940949604_DKM0AD"
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "text": "GGJ2026_DIALOG_BOSS_DURING_WORK_OPTION_1769941029771_30XMDE",
+              "nextSection": "reprimand"
+            },
+            {
+              "text": "GGJ2026_DIALOG_BOSS_DURING_WORK_OPTION_1769941086049_96VLS0",
+              "nextSection": "fixed-printer"
+            },
+            {
+              "text": "GGJ2026_DIALOG_BOSS_DURING_WORK_OPTION_1769945222243_TB7FSE",
+              "nextSection": "vent",
+              "condition": {
+                "type": "hasEmotion",
+                "value": "angry"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "talk",
+      "lines": [
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_BOSS",
+          "text": "GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769941273875_9RS9NW"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_BOSS",
+          "text": "GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769941284905_41GNCR"
+        }
+      ]
+    },
+    {
+      "id": "fixed-printer",
+      "lines": [
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769941373522_MZQE8Y"
+        },
+        {
+          "type": "showBackground",
+          "background": "chefin"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_BOSS",
+          "text": "GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769941391311_H6PFCX"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_BOSS",
+          "text": "GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769944181685_T7EJAD"
+        },
+        {
+          "type": "event",
+          "name": "getEmotion",
+          "value": "surprised"
+        }
+      ]
+    },
+    {
+      "id": "reprimand",
+      "lines": [
+        {
+          "type": "showBackground",
+          "background": "chefin open mouth"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_BOSS",
+          "text": "GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769941337719_I0ME50"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_BOSS",
+          "text": "GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769941541748_QRHJ66"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_BOSS",
+          "text": "GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769941556634_E3YDM3"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_BOSS",
+          "text": "GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769941727305_KPMSFK"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_BOSS",
+          "text": "GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769941737230_19NOJS"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_BOSS",
+          "text": "GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769942747730_QRB158"
+        }
+      ]
+    },
+    {
+      "id": "praise",
+      "lines": [
+        {
+          "type": "showBackground",
+          "background": "chefin"
+        },
+        {
+          "type": "switch",
+          "condition": {
+            "type": "didDialog",
+            "value": "boss-during-work.praise"
+          },
+          "nextSection": "talk"
+        },
+        {
+          "type": "showBackground",
+          "background": "chefin"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_BOSS",
+          "text": "GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769942118109_1JDXY7"
+        }
+      ]
+    },
+    {
+      "id": "vent",
+      "lines": [
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769945275749_RWRNYE"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769945294170_UFOKOE"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769945320648_DTYAUC"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769945358538_N7YK5O"
+        },
+        {
+          "type": "showBackground",
+          "background": "chefin open mouth"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_BOSS",
+          "text": "GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769945396520_AE3WW9"
+        },
+        {
+          "type": "nextSection",
+          "nextSection": "get-fired"
+        }
+      ]
+    },
+    {
+      "id": "get-fired",
+      "lines": [
+        {
+          "type": "showBackground",
+          "background": "chefin open mouth"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_BOSS",
+          "text": "GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769945838437_D7K8MR"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_BOSS",
+          "text": "GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769945851934_TA0VZ2"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_BOSS",
+          "text": "GGJ2026_DIALOG_BOSS_DURING_WORK_DIALOG_LINE_1769945901938_VX6042"
+        }
+      ]
+    }
+  ]
+}

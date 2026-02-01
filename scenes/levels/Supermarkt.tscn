@@ -9,6 +9,11 @@
 [ext_resource type="PackedScene" uid="uid://dkfly0dv3ys7p" path="res://scenes/props/supermarkt/TreeAsh.tscn" id="6_qbkdb"]
 [ext_resource type="PackedScene" uid="uid://didy16rqouvv" path="res://scenes/props/supermarkt/TreeDeadOak.tscn" id="8_qbkdb"]
 [ext_resource type="PackedScene" uid="uid://d1bs4l3442f8p" path="res://scenes/props/supermarkt/TreeLarch.tscn" id="9_8840q"]
+[ext_resource type="PackedScene" uid="uid://del4tbmlxipre" path="res://scenes/interactables/Supermarkt_Entry.tscn" id="10_8840q"]
+[ext_resource type="PackedScene" uid="uid://clxdblnwwdpfy" path="res://scenes/interactables/Dog.tscn" id="11_6o40j"]
+[ext_resource type="PackedScene" uid="uid://bnawv50pbgpf5" path="res://scenes/interactables/Granny.tscn" id="12_jwia5"]
+[ext_resource type="Script" uid="uid://cjpm8ycgfm0ma" path="res://scripts/ConditionalNodeHidder.cs" id="13_6wkgc"]
+[ext_resource type="PackedScene" uid="uid://dlkqgkkppl0fv" path="res://scenes/interactables/Child.tscn" id="14_5tjms"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_731x5"]
 
@@ -43,11 +48,75 @@ fov = 70.0
 size = 6.424
 near = 0.001
 
+[node name="World" type="Node3D" parent="." unique_id=255167590]
+
+[node name="Building" parent="World" unique_id=1777529680 instance=ExtResource("3_qlsl0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.45742714, -0.12015486, 3.7040076)
+
+[node name="CarCarrier" parent="World" unique_id=959571379 instance=ExtResource("3_oy4nh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.780034, -0.07013106, 4.1009507)
+
+[node name="CarOld" parent="World" unique_id=770997418 instance=ExtResource("4_o8hgf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2934732, 0.05000019, 11.164986)
+
+[node name="Garbage" parent="World" unique_id=976785580 instance=ExtResource("5_cy2gy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6030169, 0.115386486, 2.2664905)
+
+[node name="Garbage2" parent="World" unique_id=283885104 instance=ExtResource("5_cy2gy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.859693, 0.37818813, 1.9191604)
+
+[node name="TreeAsh" parent="World" unique_id=1431183076 instance=ExtResource("6_qbkdb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.3714113, 0.27967215, 1.3276246)
+
+[node name="TreeDeadOak" parent="World" unique_id=245502074 instance=ExtResource("8_qbkdb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.7040896, -0.14764977, 2.7169046)
+
+[node name="TreeLarch" parent="World" unique_id=472357659 instance=ExtResource("9_8840q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.9272127, -0.4325943, 2.4158916)
+
+[node name="CarOld2" parent="World" unique_id=1170605688 instance=ExtResource("4_o8hgf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7480211, 0.05000019, 11.2947645)
+
+[node name="Ground" type="StaticBody3D" parent="World" unique_id=83004813]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 2.842325, 0, 7.0845575)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="World/Ground" unique_id=1779877090]
+material_override = SubResource("StandardMaterial3D_731x5")
+mesh = SubResource("PlaneMesh_8s0of")
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Ground" unique_id=1886842643]
+shape = SubResource("BoxShape3D_ut3x7")
+metadata/_edit_lock_ = true
+
+[node name="Barriar" type="StaticBody3D" parent="World" unique_id=2011151939]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Barriar" unique_id=1154578052]
+shape = SubResource("BoxShape3D_qbkdb")
+
+[node name="Barriar2" type="StaticBody3D" parent="World" unique_id=229629192]
+transform = Transform3D(0.583527, 0, -0.81209373, 0, 1, 0, 0.81209373, 0, 0.583527, 5.0694647, 0, 1.7905874)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Barriar2" unique_id=1810550270]
+shape = SubResource("BoxShape3D_qbkdb")
+
+[node name="Barriar3" type="StaticBody3D" parent="World" unique_id=1698010404]
+transform = Transform3D(0.18602669, 0, -0.9825447, 0, 1, 0, 0.9825447, 0, 0.18602669, -3.823566, 9.536743e-07, 5.9846363)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Barriar3" unique_id=2044096511]
+shape = SubResource("BoxShape3D_qbkdb")
+
+[node name="Barriar4" type="StaticBody3D" parent="World" unique_id=423606901]
+transform = Transform3D(0.829915, 0, 0.55788994, 0, 1, 0, -0.55788994, 0, 0.829915, 4.845942, 9.536743e-07, 13.3513155)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Barriar4" unique_id=1372535286]
+shape = SubResource("BoxShape3D_qbkdb")
+
 [node name="LevelTransitionApartment" parent="." unique_id=1584149579 node_paths=PackedStringArray("SpawnPosition") instance=ExtResource("2_qbkdb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09840751, 0.049999952, 13.027482)
 SpawnPosition = NodePath("Node3D")
 TargetLevelPath = "res://scenes/levels/Apartment.tscn"
-InteractionText = "Go to Apartment"
+InteractionText = "GGJ2026_INTERACTION_GO_TO_APARTMENT"
 
 [node name="Node3D" type="Node3D" parent="LevelTransitionApartment" unique_id=564140868]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6550076, 0)
@@ -56,71 +125,33 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6550076, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.8476324, 0.049999952, 8.612136)
 SpawnPosition = NodePath("Node3D")
 TargetLevelPath = "res://scenes/levels/Office.tscn"
-InteractionText = "Go to Office"
+InteractionText = "GGJ2026_INTERACTION_GO_TO_OFFICE"
 
 [node name="Node3D" type="Node3D" parent="LevelTransitionOffice" unique_id=1403049586]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6550076, 0)
 
-[node name="Props" type="Node3D" parent="." unique_id=255167590]
+[node name="Dog" parent="." unique_id=3834806 instance=ExtResource("11_6o40j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.6103544, 0.28209972, 5.944343)
 
-[node name="Building" parent="Props" unique_id=1777529680 instance=ExtResource("3_qlsl0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.45742714, -0.12015486, 3.7040076)
+[node name="Child_after_work" type="Node3D" parent="." unique_id=1518151268]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.0776732, -0.02413404, 4.651026)
+script = ExtResource("13_6wkgc")
 
-[node name="CarCarrier" parent="Props" unique_id=959571379 instance=ExtResource("3_oy4nh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.780034, -0.07013106, 4.1009507)
+[node name="Child" parent="Child_after_work" unique_id=1905553757 instance=ExtResource("14_5tjms")]
 
-[node name="CarOld" parent="Props" unique_id=770997418 instance=ExtResource("4_o8hgf")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2934732, 0.05000019, 11.164986)
+[node name="Granny_before_dialog" type="Node3D" parent="." unique_id=1520408197]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.0171132, 0.049999952, 6.4151664)
+script = ExtResource("13_6wkgc")
 
-[node name="Garbage" parent="Props" unique_id=976785580 instance=ExtResource("5_cy2gy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6030169, 0.115386486, 2.2664905)
+[node name="Granny" parent="Granny_before_dialog" unique_id=685953901 instance=ExtResource("12_jwia5")]
 
-[node name="Garbage2" parent="Props" unique_id=283885104 instance=ExtResource("5_cy2gy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.859693, 0.37818813, 1.9191604)
+[node name="Entry_before_work" type="Node3D" parent="." unique_id=1903465055]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8778392, -0.0016871393, 4.002408)
+script = ExtResource("13_6wkgc")
 
-[node name="TreeAsh" parent="Props" unique_id=1431183076 instance=ExtResource("6_qbkdb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.3714113, 0.27967215, 1.3276246)
+[node name="Supermarkt_Entry" parent="Entry_before_work" unique_id=1881238126 instance=ExtResource("10_8840q")]
 
-[node name="TreeDeadOak" parent="Props" unique_id=245502074 instance=ExtResource("8_qbkdb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.7040896, -0.14764977, 2.7169046)
+[node name="Entry_after_work" type="Node3D" parent="." unique_id=355501302]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8778392, -0.0016871393, 4.002408)
 
-[node name="TreeLarch" parent="Props" unique_id=472357659 instance=ExtResource("9_8840q")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.9272127, -0.4325943, 2.4158916)
-
-[node name="CarOld2" parent="Props" unique_id=1170605688 instance=ExtResource("4_o8hgf")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7480211, 0.05000019, 11.2947645)
-
-[node name="Ground" type="StaticBody3D" parent="Props" unique_id=83004813]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 2.842325, 0, 7.0845575)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Props/Ground" unique_id=1779877090]
-material_override = SubResource("StandardMaterial3D_731x5")
-mesh = SubResource("PlaneMesh_8s0of")
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Props/Ground" unique_id=1886842643]
-shape = SubResource("BoxShape3D_ut3x7")
-metadata/_edit_lock_ = true
-
-[node name="Barriar" type="StaticBody3D" parent="." unique_id=2011151939]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Barriar" unique_id=1154578052]
-shape = SubResource("BoxShape3D_qbkdb")
-
-[node name="Barriar2" type="StaticBody3D" parent="." unique_id=229629192]
-transform = Transform3D(0.583527, 0, -0.81209373, 0, 1, 0, 0.81209373, 0, 0.583527, 5.0694647, 0, 1.7905874)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Barriar2" unique_id=1810550270]
-shape = SubResource("BoxShape3D_qbkdb")
-
-[node name="Barriar3" type="StaticBody3D" parent="." unique_id=1698010404]
-transform = Transform3D(0.18602669, 0, -0.9825447, 0, 1, 0, 0.9825447, 0, 0.18602669, -3.823566, 9.536743e-07, 5.9846363)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Barriar3" unique_id=2044096511]
-shape = SubResource("BoxShape3D_qbkdb")
-
-[node name="Barriar4" type="StaticBody3D" parent="." unique_id=423606901]
-transform = Transform3D(0.829915, 0, 0.55788994, 0, 1, 0, -0.55788994, 0, 0.829915, 4.845942, 9.536743e-07, 13.3513155)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Barriar4" unique_id=1372535286]
-shape = SubResource("BoxShape3D_qbkdb")
+[node name="Supermarkt_Entry" parent="Entry_after_work" unique_id=573223504 instance=ExtResource("10_8840q")]

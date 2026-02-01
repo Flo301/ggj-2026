@@ -18,8 +18,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 shape = SubResource("CylinderShape3D_gmvds")
 
 [node name="Sprite3D" type="Sprite3D" parent="." unique_id=387633324]
-transform = Transform3D(0.56, 0, 0, 0, 0.56, 0, 0, 0, 0.56, 0, 0.6138091, 0)
-pixel_size = 0.007
+transform = Transform3D(0.56, 0, 0, 0, 0.56, 0, 0, 0, 0.56, 0, 0.7377019, 0)
+pixel_size = 0.008
 texture = ExtResource("2_b7cr8")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=666548985]

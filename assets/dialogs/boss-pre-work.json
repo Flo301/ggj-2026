@@ -1,0 +1,105 @@
+{
+  "startSection": "start",
+  "sections": [
+    {
+      "id": "start",
+      "lines": [
+        {
+          "type": "showBackground",
+          "background": "chefin"
+        },
+        {
+          "type": "switch",
+          "condition": {
+            "type": "didDialog",
+            "value": "grandma-pre-work.wait"
+          },
+          "nextSection": "come-late"
+        },
+        {
+          "type": "switch",
+          "condition": {
+            "type": "didDialog",
+            "value": "grandma-pre-work.help"
+          },
+          "nextSection": "come-late"
+        },
+        {
+          "type": "switch",
+          "condition": {
+            "type": "didDialog",
+            "value": "boss-pre-work.greeting"
+          },
+          "nextSection": "repeat"
+        },
+        {
+          "type": "nextSection",
+          "nextSection": "greeting"
+        }
+      ]
+    },
+    {
+      "id": "greeting",
+      "lines": [
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_BOSS",
+          "text": "GGJ2026_DIALOG_BOSS_PRE_WORK_DIALOG_LINE_1769937588748_CI8HJZ"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_BOSS_PRE_WORK_DIALOG_LINE_1769937592807_QCWLIL"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_BOSS",
+          "text": "GGJ2026_DIALOG_BOSS_PRE_WORK_DIALOG_LINE_1769937599036_QU68RG"
+        }
+      ]
+    },
+    {
+      "id": "repeat",
+      "lines": [
+        {
+          "type": "showBackground",
+          "background": "chefin open mouth"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_BOSS",
+          "text": "GGJ2026_DIALOG_BOSS_PRE_WORK_DIALOG_LINE_1769937674690_U8TOO4"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_BOSS",
+          "text": "GGJ2026_DIALOG_BOSS_PRE_WORK_DIALOG_LINE_1769937695445_LAFF80"
+        }
+      ]
+    },
+    {
+      "id": "come-late",
+      "lines": [
+        {
+          "type": "showBackground",
+          "background": "chefin open mouth"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_BOSS",
+          "text": "GGJ2026_DIALOG_BOSS_PRE_WORK_DIALOG_LINE_1769943472773_8RQ2C3"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_BOSS",
+          "text": "GGJ2026_DIALOG_BOSS_PRE_WORK_DIALOG_LINE_1769943490136_BH3ESQ"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_BOSS",
+          "text": "GGJ2026_DIALOG_BOSS_PRE_WORK_DIALOG_LINE_1769943527949_N05NB7"
+        }
+      ]
+    }
+  ]
+}

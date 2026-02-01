@@ -1,0 +1,171 @@
+{
+  "startSection": "start",
+  "sections": [
+    {
+      "id": "start",
+      "lines": [
+        {
+          "type": "switch",
+          "condition": {
+            "type": "didDialog",
+            "value": "dog.pet"
+          },
+          "nextSection": "after-pet"
+        },
+        {
+          "type": "showBackground",
+          "background": "Doggo"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_DOG_DIALOG_LINE_1769939589986_XDGL6B"
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "text": "GGJ2026_DIALOG_DOG_OPTION_1769939629612_MCTNXR",
+              "nextSection": "ignore"
+            },
+            {
+              "text": "GGJ2026_DIALOG_DOG_OPTION_1769939696299_IEV4HC",
+              "nextSection": "wonder",
+              "condition": {
+                "type": "didDays",
+                "value": "3"
+              }
+            },
+            {
+              "text": "GGJ2026_DIALOG_DOG_OPTION_1769939671033_UHKZ4S",
+              "nextSection": "pet",
+              "condition": {
+                "type": "hasEmotion",
+                "value": "loving"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ignore",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_DOG_DIALOG_LINE_1769939731924_7J9VMS"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_DOG_DIALOG_LINE_1769939791268_APMDIE"
+        }
+      ]
+    },
+    {
+      "id": "wonder",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_DOG_DIALOG_LINE_1769939826631_YZG126"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_DOG_DIALOG_LINE_1769939834044_80JPE6"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_DOG_DIALOG_LINE_1769939927744_90CJEH"
+        },
+        {
+          "type": "showBackground",
+          "background": "Doggo open mouth"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_DOG_DIALOG_LINE_1769939944446_75EN61"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_DOG_DIALOG_LINE_1769940044570_Z4LOQ7"
+        },
+        {
+          "type": "showBackground",
+          "background": "Doggo"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_DOG_DIALOG_LINE_1769939970715_V9V6BP"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_DOG_DIALOG_LINE_1769940225015_1XEYV2"
+        },
+        {
+          "type": "event",
+          "name": "getEmotion",
+          "value": "sad"
+        }
+      ]
+    },
+    {
+      "id": "pet",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_DOG_DIALOG_LINE_1769940243069_AQ3MAU"
+        },
+        {
+          "type": "showBackground",
+          "background": "Doggo happy 2"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_DOG_DIALOG_LINE_1769940361466_FFXUML"
+        },
+        {
+          "type": "showBackground",
+          "background": "Doggo happy 1"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_DOG_DIALOG_LINE_1769940758638_FQ97DL"
+        },
+        {
+          "type": "showBackground",
+          "background": "Doggo happy 2"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_DOG",
+          "text": "GGJ2026_DIALOG_DOG_DIALOG_LINE_1769940867676_WOPL8D"
+        },
+        {
+          "type": "showBackground",
+          "background": "Doggo happy 1"
+        },
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_DOG_DIALOG_LINE_1769940915168_EPX4A3"
+        }
+      ]
+    },
+    {
+      "id": "after-pet",
+      "lines": [
+        {
+          "type": "showBackground",
+          "background": "Doggo happy 1"
+        },
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_DOG_DIALOG_LINE_1769941452845_VBQ9EP"
+        },
+        {
+          "type": "event",
+          "name": "getEmotion",
+          "value": "happy"
+        }
+      ]
+    }
+  ]
+}
