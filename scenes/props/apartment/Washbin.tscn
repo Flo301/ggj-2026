@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://eor0sfc2gsg0"]
 
-[ext_resource type="Material" uid="uid://drge3ur5tccf2" path="res://assets/textures/apartment/washbin#.tres" id="1_720y3"]
+[ext_resource type="Material" uid="uid://drge3ur5tccf2" path="res://assets/textures/apartment/washbin.tres" id="1_720y3"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4irf3"]
 size = Vector3(0.55876344, 0.7108491, 0.44920444)
