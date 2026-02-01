@@ -55,4 +55,9 @@ public partial class ConditionalNodeHidder : Node3D
 
         return doHide;
     }
+
+    public override void _ExitTree()
+    {
+        GlobalState.Instance.DialogDone -= checkIfShouldHide;
+    }
 }
