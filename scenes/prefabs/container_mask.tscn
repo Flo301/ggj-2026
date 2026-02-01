@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://cmvfutpwk10q4"]
+
+[ext_resource type="Script" uid="uid://lawjr6bwjhye" path="res://scripts/ContainerMask.cs" id="1_lex5j"]
+[ext_resource type="Texture2D" uid="uid://lhahh5b2ay7" path="res://assets/sprites/UI/Particle.png" id="1_nr7ma"]
+[ext_resource type="Texture2D" uid="uid://dpi3mc6273wm7" path="res://assets/sprites/masks/mask happy.png" id="3_lex5j"]
+
+[node name="ContainerMask" type="MarginContainer" unique_id=288633633 node_paths=PackedStringArray("Icon", "Text")]
+custom_minimum_size = Vector2(0, 100)
+script = ExtResource("1_lex5j")
+Icon = NodePath("HBoxContainer/ContainerIcon/TextureMask")
+Text = NodePath("HBoxContainer/LabelMask")
+
+[node name="HBoxContainer" type="BoxContainer" parent="." unique_id=519922333]
+layout_mode = 2
+
+[node name="ContainerIcon" type="MarginContainer" parent="HBoxContainer" unique_id=222163608]
+layout_mode = 2
+
+[node name="ParticleContainer" type="CenterContainer" parent="HBoxContainer/ContainerIcon" unique_id=1119821882]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="HBoxContainer/ContainerIcon/ParticleContainer" unique_id=393641758]
+layout_mode = 2
+
+[node name="ParticlesMask" type="CPUParticles2D" parent="HBoxContainer/ContainerIcon/ParticleContainer/Control" unique_id=151719813]
+texture = ExtResource("1_nr7ma")
+preprocess = 1.5
+speed_scale = 0.4
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_max = 100.0
+scale_amount_min = 0.01
+scale_amount_max = 0.1
+
+[node name="TextureMask" type="TextureRect" parent="HBoxContainer/ContainerIcon" unique_id=70761787]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("3_lex5j")
+expand_mode = 2
+stretch_mode = 4
+
+[node name="LabelMask" type="RichTextLabel" parent="HBoxContainer" unique_id=1592916126]
+clip_contents = false
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+text = "[Mask unlock Text]"
+fit_content = true
+autowrap_mode = 0
+vertical_alignment = 1
