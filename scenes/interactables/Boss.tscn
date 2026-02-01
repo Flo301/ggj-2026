@@ -10,7 +10,7 @@ radius = 1.1157227
 
 [node name="Boss" type="Area3D" unique_id=1584149579]
 script = ExtResource("1_1f4uf")
-InteractionText = "GGJ2026_INTERACTION_INTERACT_DOG"
+InteractionText = "GGJ2026_INTERACTION_INTERACT_BOSS"
 Dialog = "boss-pre-work"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=357662295]

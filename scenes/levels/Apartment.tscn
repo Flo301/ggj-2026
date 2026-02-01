@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://c4i3a8ljlca0l" path="res://scenes/interactables/transitions/TransitionDoorApartment.tscn" id="13_v8y3w"]
 [ext_resource type="PackedScene" uid="uid://ccblsmf6h4o68" path="res://scenes/props/apartment/TableDining.tscn" id="13_xcwtv"]
 [ext_resource type="PackedScene" uid="uid://c1ewac81l4av8" path="res://scenes/prefabs/barria.tscn" id="14_l4ua8"]
+[ext_resource type="PackedScene" uid="uid://ddkbvxj5eyedh" path="res://scenes/props/office/Chair.tscn" id="15_v1drk"]
 [ext_resource type="PackedScene" uid="uid://c7ravkmxag6ay" path="res://scenes/interactables/Bed.tscn" id="15_xcwtv"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8rhdg"]
@@ -148,3 +149,6 @@ InteractionText = "GGJ2026_INTERACTION_LEAVE_HOME"
 
 [node name="Node3D" type="Node3D" parent="LevelTransition" unique_id=110381146]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0339568, 0.84831774)
+
+[node name="Chair" parent="." unique_id=959571379 instance=ExtResource("15_v1drk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.0364304, 0.049999952, 4.2053666)
