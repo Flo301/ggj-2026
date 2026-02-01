@@ -21,9 +21,9 @@ GGJ2026_MENU_PAUSE,--- PAUSED ---,--- PAUSIERT ---
 GGJ2026_MENU_SCHLIESSEN,Close,Schließen
 GGJ2026_MENU_START,Start,Start
 GGJ2026_MENU_TAGESENDE,Another day ends,Ein weiterer Tag geht zuende
-GGJ2026_MENU_TITELNAME,"[font_size=32][color=green][outline_size=2][outline_color=black]Game Title
-[/outline_color][/outline_size][/color][/font_size]","[font_size=32][color=green][outline_size=2][outline_color=black]Spiel Titel
-[/outline_color][/outline_size][/color][/font_size]"
+GGJ2026_MENU_TITELNAME,"[font_size=32][outline_size=2][outline_color=black]Going Through Emotions
+[/outline_color][/outline_size][/font_size]","[font_size=32][outline_size=2][outline_color=black]Going Through Emotions
+[/outline_color][/outline_size][/font_size]"
 GGJ2026_MENU_TRY_AGAIN,Try Again,Neuer Versuch
 GGJ2026_MENU_VERLASSEN,Quit,Verlassen
 GGJ2026_MENU_VERLASSEN_INHALT,"You are currently trying to quit this awesome and super interesting game that you have right in front of you, are you sure that you REALLY REALLY want to leave us all alone??","Du versuchst gerade dieses wunderschöne und superinteressante Spiel vor dir zu Verlassen, bist du dir WIRKLICH sicher das du uns alleine lassen willst?"
@@ -333,50 +333,50 @@ GGJ2026_DIALOG_SUPERMARKET_POST_WORK_DIALOG_LINE_1769948432846_TNG0GU,Eventually
 GGJ2026_DIALOG_SUPERMARKET_POST_WORK_OPTION_1769948267747_WPCNQ4,Get groceries.,Mach deinen Wocheneinkauf.
 GGJ2026_DIALOG_SUPERMARKET_POST_WORK_OPTION_1769948274622_L7JYFU,Get snacks.,Kauf Snacks.
 GGJ2026_DIALOG_SUPERMARKET_POST_WORK_OPTION_1769948280318_ODDEO8,Buy nothing.,Kauf nichts.
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769948855751_HM8C2V,Hey mister.,
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769948862804_JR5WFZ,What are you doing?,
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949097565_WNODPQ,...,
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949098000_A5GDS1,Hey mister!,
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949195518_KQE90G,...,
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949202483_XMP73G,Hey!,
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949249371_6P3HLU,"You can hear her crying, but you keep walking.",
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949511397_V19M0L,Hey.,
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949511838_QNNBHH,Play with me!,
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949617026_OUKB76,You play with her for a bit.,
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949693289_784Z7Z,Hahaha!,
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949713967_9UZMPY,Thanks mister! That was fun!,
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949784244_EPP5GJ,Bye kid.,
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949821789_RKMPYE,Bye bye mister! Let's play again!,
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949841839_ZOD7IX,"Where are your mom and dad, kid?",
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949918430_HOZYUD,The smile slips off the child's face.,
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949952643_01OF0I,"I-, I don't knooooow.",
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949973891_FKCEBP,Then she stars wailing.,
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949996020_PT7LDU,I want my maamaaa.,
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950007821_QKQHTY,You don't know what to do.,
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950023952_95LB9E,"You try to calm her down, but it's not really working",
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950050573_7WXYOU,The passersby are looking at you....,
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950146811_R85TRZ,You quickly retreat.,
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950157247_TMY4D5,You can hear someone else start talking to the child. They are surely much better equipped to deal with this than you are.,
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950218647_2L3RM3,You call the police and explain the situation.,
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950234321_39SDIR,The parents have already filed a report and are quickly found.,
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950260168_T14Z67,'Baby! I was so worried!',
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950327744_BH7DY1,You wait with the child who has calmed down a bit by now.,
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950359014_U4PD8Y,"Your mom will be here son, kid.",
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950374094_V7OJLR,Uhuh....,
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950487742_1LPZAX,"Finally a car turns into the parking lot, wheels screeching.",
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950518976_0I8PWS,A woman comes tumbling out and rushes towards you.,
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950552071_FN0808,Mama!,
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950561930_HXBZEA,The child starts crying again as they hug.,
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950574903_J96YOP,'Thank you for contacting the police and helping us find our baby!',
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950628915_2P5RFR,'We'll be forever in your debt.',
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950665214_U4WT5G,You talk for a bit and exchange numbers before saying goodbye. The child is half asleep in her mother's arms.,
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950687577_GUEYGS,"Bye kid. Keep close to your parents from now on, yeah?",
-GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950773479_I61DP2,"Uhuh. Bye mister, let's play again...",
-GGJ2026_DIALOG_CHILD_OPTION_1769948898286_56OVQB,Ignore her,
-GGJ2026_DIALOG_CHILD_OPTION_1769948910963_XQ6DPB,Talk to her.,
-GGJ2026_DIALOG_CHILD_OPTION_1769948939133_UZB1OR,Offer help.,
-GGJ2026_DIALOG_CHILD_OPTION_1769949569176_CN6YXX,Play with her.,
-GGJ2026_DIALOG_CHILD_OPTION_1769949739948_S8KGIX,You wonder why she's here alone...,
-GGJ2026_DIALOG_CHILD_OPTION_1769949762131_AD0MTE,Say goodbye.,
-GGJ2026_DIALOG_CHILD_OPTION_1769950047100_F7K7YC,Call the police.,
-GGJ2026_DIALOG_CHILD_OPTION_1769950108207_5OSPIL,Leave.,
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769948855751_HM8C2V,Hey mister.,Hey.
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769948862804_JR5WFZ,What are you doing?,Was machst du da?
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949097565_WNODPQ,...,...
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949098000_A5GDS1,Hey mister!,Hey!
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949195518_KQE90G,...,...
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949202483_XMP73G,Hey!,Heey!
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949249371_6P3HLU,"You can hear her crying, but you keep walking.","Du kannst hören, dass sie angefangen hat zu weinen, aber du gehst weiter."
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949511397_V19M0L,Hey.,Hey.
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949511838_QNNBHH,Play with me!,Spiel was mit mir!
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949617026_OUKB76,You play with her for a bit.,Du spielst eine Weile mit ihr.
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949693289_784Z7Z,Hahaha!,Hahaha!
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949713967_9UZMPY,Thanks mister! That was fun!,Danke! Das hat Spaß gemacht!
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949784244_EPP5GJ,Bye kid.,"Tschüß, Kleine."
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949821789_RKMPYE,Bye bye mister! Let's play again!,Bye bye! Lass uns bald wieder spielen!
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949841839_ZOD7IX,"Where are your mom and dad, kid?","Wo sind denn deine Mama und dein Papa, Kleine?"
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949918430_HOZYUD,The smile slips off the child's face.,Das Lächeln gleist ihr aus dem Gesicht.
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949952643_01OF0I,"I-, I don't knooooow.","Ich, ich weiß es nihihiicht."
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949973891_FKCEBP,Then she stars wailing.,Dann beginnt sie zu flennen.
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769949996020_PT7LDU,I want my maamaaa.,Ich will meine Maaamaa.
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950007821_QKQHTY,You don't know what to do.,"Du weißt nicht, was du tun sollst."
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950023952_95LB9E,"You try to calm her down, but it's not really working","Du versuchst, sie zu beruhigen, aber es klappt nicht wirklich."
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950050573_7WXYOU,The passersby are looking at you....,Die Passanten schauen alle rüber.
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950146811_R85TRZ,You quickly retreat.,Du machst dich schnell aus dem Staub.
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950157247_TMY4D5,You can hear someone else start talking to the child. They are surely much better equipped to deal with this than you are.,"Du hörst, dass jemand anders jetzt mit dem Kind redet. Derjenige ist mit Sicherheit eher in der Lage, diese Situation aufzulösen."
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950218647_2L3RM3,You call the police and explain the situation.,Du rufst die Polizei an und erklärst die Situation.
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950234321_39SDIR,The parents have already filed a report and are quickly found.,Die Eltern haben schon eine Anzeige aufgegeben und sind schnell gefunden.
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950260168_T14Z67,'Baby! I was so worried!',"""Schatz! Ich war so besorgt!"""
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950327744_BH7DY1,You wait with the child who has calmed down a bit by now.,"Du wartest beim Kind, das sich schon etwas beruhigt hat."
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950359014_U4PD8Y,"Your mom will be here son, kid.","Deine Mama ist bald hier, Kleine."
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950374094_V7OJLR,Uhuh....,Uhuh...
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950487742_1LPZAX,"Finally a car turns into the parking lot, wheels screeching.",Endlich kommt ein Auto angerast und hält mit quietschenden Reifen.
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950518976_0I8PWS,A woman comes tumbling out and rushes towards you.,Eine Frau kommt aus der Tür gestolpert.
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950552071_FN0808,Mama!,Mama!
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950561930_HXBZEA,The child starts crying again as they hug.,Das Kind fängt wieder an zu weinen während sie sich in den Armen liegen.
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950574903_J96YOP,'Thank you for contacting the police and helping us find our baby!',"""Danke, dass Sie die Polizei angerufen haben und uns geholfen haben, unser Kind wieder zu finden!"""
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950628915_2P5RFR,'We'll be forever in your debt.',"""Wir stehen in Ihrer Schuld."""
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950665214_U4WT5G,You talk for a bit and exchange numbers before saying goodbye. The child is half asleep in her mother's arms.,"Ihr redet noch kurz und tauscht Nummern aus, bevor ihr euch verabschiedet. Das Mädchen döst schon fast in den Armen seiner Mutter."
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950687577_GUEYGS,"Bye kid. Keep close to your parents from now on, yeah?","Tschüß, Kleine. Bleib ab jetzt schön bei denen Eltern, okay?"
+GGJ2026_DIALOG_CHILD_DIALOG_LINE_1769950773479_I61DP2,"Uhuh. Bye mister, let's play again...","Okay... Tschüß, lass uns nochmal spielen..."
+GGJ2026_DIALOG_CHILD_OPTION_1769948898286_56OVQB,Ignore her,Ignorier sie.
+GGJ2026_DIALOG_CHILD_OPTION_1769948910963_XQ6DPB,Talk to her.,Sprich mit ihr.
+GGJ2026_DIALOG_CHILD_OPTION_1769948939133_UZB1OR,Offer help.,Biete deine Hilfe an.
+GGJ2026_DIALOG_CHILD_OPTION_1769949569176_CN6YXX,Play with her.,Spiel mit ihr.
+GGJ2026_DIALOG_CHILD_OPTION_1769949739948_S8KGIX,You wonder why she's here alone...,"Du fragst dich, warum sie hier alleine ist..."
+GGJ2026_DIALOG_CHILD_OPTION_1769949762131_AD0MTE,Say goodbye.,Verabschiede dich.
+GGJ2026_DIALOG_CHILD_OPTION_1769950047100_F7K7YC,Call the police.,Ruf die Polizei.
+GGJ2026_DIALOG_CHILD_OPTION_1769950108207_5OSPIL,Leave.,Geh weiter.

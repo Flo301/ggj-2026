@@ -53,6 +53,7 @@ expand_mode = 2
 [node name="ButtonOption" type="Button" parent="HBoxContainerOption" unique_id=891022664]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxFlat_x1jng")
 text = "[OPTION_TEXT]"
 alignment = 0
