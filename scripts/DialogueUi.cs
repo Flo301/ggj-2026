@@ -213,6 +213,7 @@ public partial class DialogueUi : Control
 				break;
 			case "endDay":
 				GlobalState.Instance.endDay();
+				QueueFree();
 				return false;
 			case "background":
 				switch (value)
