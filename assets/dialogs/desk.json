@@ -12,9 +12,17 @@
           "type": "switch",
           "condition": {
             "type": "didDialog",
-            "value": "desk.start-work"
+            "value": "desk.finish-work"
           },
           "nextSection": "after-work"
+        },
+        {
+          "type": "switch",
+          "condition": {
+            "type": "didDialog",
+            "value": "desk.sit-desk"
+          },
+          "nextSection": "finish-work"
         },
         {
           "type": "options",
@@ -132,6 +140,15 @@
               "nextSection": "stay-standing"
             }
           ]
+        }
+      ]
+    },
+    {
+      "id": "finish-work",
+      "lines": [
+        {
+          "type": "dialog",
+          "text": "GGJ2026_DIALOG_DESK_DIALOG_LINE_1769955729751_HF36NO"
         }
       ]
     }

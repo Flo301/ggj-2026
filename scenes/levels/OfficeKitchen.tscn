@@ -5,11 +5,11 @@
 [ext_resource type="PackedScene" uid="uid://bgbb7p4i3cbu6" path="res://scenes/interactables/transitions/TransitionDoorOffice.tscn" id="5_qmk2h"]
 [ext_resource type="PackedScene" uid="uid://bouh6tof2mnwj" path="res://scenes/props/office/Kitchen.tscn" id="7_20fno"]
 [ext_resource type="PackedScene" uid="uid://f8l67qwkyx7y" path="res://scenes/props/office/Poster.tscn" id="7_j478u"]
-[ext_resource type="PackedScene" uid="uid://c1ewac81l4av8" path="res://scenes/prefabs/barria.tscn" id="9_h082s"]
+[ext_resource type="PackedScene" path="res://scenes/prefabs/barria.tscn" id="9_h082s"]
 [ext_resource type="PackedScene" uid="uid://ccblsmf6h4o68" path="res://scenes/props/apartment/TableDining.tscn" id="9_khbpq"]
 [ext_resource type="PackedScene" uid="uid://b8u2nvkiee4lc" path="res://scenes/props/apartment/ChairDiningBack.tscn" id="10_aw3wf"]
 [ext_resource type="PackedScene" uid="uid://dwytcgscm8ukm" path="res://scenes/props/office/Wall.tscn" id="10_cjje0"]
-[ext_resource type="PackedScene" uid="uid://cgxrfn3uftyf4" path="res://scenes/props/apartment/ChairDiningSide.tscn" id="11_aw3wf"]
+[ext_resource type="PackedScene" path="res://scenes/props/apartment/ChairDiningSide.tscn" id="11_aw3wf"]
 [ext_resource type="PackedScene" uid="uid://mwvtavo2h8b0" path="res://scenes/interactables/CoffeeMachine.tscn" id="11_ptxxp"]
 [ext_resource type="Script" uid="uid://cjpm8ycgfm0ma" path="res://scripts/ConditionalNodeHidder.cs" id="12_bda40"]
 [ext_resource type="PackedScene" uid="uid://cofb07a3ge8l" path="res://scenes/interactables/Colleague.tscn" id="12_ptxxp"]
@@ -158,27 +158,35 @@ metadata/_edit_lock_ = true
 shape = SubResource("BoxShape3D_ut3x7")
 metadata/_edit_lock_ = true
 
-[node name="CoffeeMachine_broken" type="Node3D" parent="." unique_id=1733419451]
+[node name="CoffeeMachine_pre_work" type="Node3D" parent="." unique_id=1733419451]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2674658, 0.049999714, -0.9850147)
 script = ExtResource("12_bda40")
+DoHideWhenFlags = PackedStringArray("desk.start")
 
-[node name="CoffeeMachine" parent="CoffeeMachine_broken" unique_id=1584149579 instance=ExtResource("11_ptxxp")]
+[node name="CoffeeMachine" parent="CoffeeMachine_pre_work" unique_id=1584149579 instance=ExtResource("11_ptxxp")]
 
-[node name="CoffeeMachine_fixed" type="Node3D" parent="." unique_id=1726637534]
+[node name="CoffeeMachine_work" type="Node3D" parent="." unique_id=1726637534]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2674658, 0.049999714, -0.9850147)
 script = ExtResource("12_bda40")
+DoHideWhenFlags = PackedStringArray("wakeup-dialog.start")
+DontHideWhenFlags = PackedStringArray("desk.start")
 
-[node name="CoffeeMachine" parent="CoffeeMachine_fixed" unique_id=1840130414 instance=ExtResource("11_ptxxp")]
+[node name="CoffeeMachine" parent="CoffeeMachine_work" unique_id=1840130414 instance=ExtResource("11_ptxxp")]
+Dialog = "coffe-mashine-during-work"
 
 [node name="Colleague_pre_work" type="Node3D" parent="." unique_id=1445066487]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2003038, 0.05000019, 8.285263)
 script = ExtResource("12_bda40")
+DoHideWhenFlags = PackedStringArray("desk.start")
 
 [node name="Colleague" parent="Colleague_pre_work" unique_id=2049515699 instance=ExtResource("12_ptxxp")]
+Dialog = "colleague-pre-work"
 
 [node name="Colleague_during_work" type="Node3D" parent="." unique_id=744488491]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2003038, 0.05000019, 8.285263)
 script = ExtResource("12_bda40")
+DoHideWhenFlags = PackedStringArray("wakeup-dialog.start")
+DontHideWhenFlags = PackedStringArray("desk.start")
 
 [node name="Colleague" parent="Colleague_during_work" unique_id=1782682259 instance=ExtResource("12_ptxxp")]
 

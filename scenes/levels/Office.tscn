@@ -9,11 +9,11 @@
 [ext_resource type="PackedScene" uid="uid://f8l67qwkyx7y" path="res://scenes/props/office/Poster.tscn" id="9_28jjv"]
 [ext_resource type="PackedScene" uid="uid://3p476btw42pn" path="res://scenes/props/office/YogaMatt.tscn" id="10_ccje7"]
 [ext_resource type="PackedScene" uid="uid://boaeujbh12rau" path="res://scenes/props/apartment/DeskComputer.tscn" id="11_rgr8h"]
-[ext_resource type="PackedScene" uid="uid://c1ewac81l4av8" path="res://scenes/prefabs/barria.tscn" id="12_xfxer"]
-[ext_resource type="PackedScene" uid="uid://ddkbvxj5eyedh" path="res://scenes/props/office/Chair.tscn" id="12_yd851"]
+[ext_resource type="PackedScene" path="res://scenes/prefabs/barria.tscn" id="12_xfxer"]
+[ext_resource type="PackedScene" path="res://scenes/props/office/Chair.tscn" id="12_yd851"]
 [ext_resource type="PackedScene" uid="uid://on4gr0rsheqw" path="res://scenes/props/apartment/Coatrack.tscn" id="14_3jl2r"]
 [ext_resource type="PackedScene" uid="uid://ny3qf5hsd5pw" path="res://scenes/props/apartment/Ventilation.tscn" id="15_28jjv"]
-[ext_resource type="PackedScene" uid="uid://cgxrfn3uftyf4" path="res://scenes/props/apartment/ChairDiningSide.tscn" id="16_28jjv"]
+[ext_resource type="PackedScene" path="res://scenes/props/apartment/ChairDiningSide.tscn" id="16_28jjv"]
 [ext_resource type="PackedScene" uid="uid://ccblsmf6h4o68" path="res://scenes/props/apartment/TableDining.tscn" id="17_ccje7"]
 [ext_resource type="PackedScene" uid="uid://b7rsc1ui5egnl" path="res://scenes/interactables/Boss.tscn" id="18_28jjv"]
 [ext_resource type="PackedScene" uid="uid://dxdypt1brf71a" path="res://scenes/interactables/Printer.tscn" id="18_ccje7"]
@@ -224,7 +224,7 @@ Dialog = "boss-during-work"
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.279175, 0.049999237, -0.5918555)
 script = ExtResource("19_cw3g0")
 DoHideWhenFlags = PackedStringArray("wakeup-dialog.start")
-DontHideWhenFlags = PackedStringArray("boss-during-work.start")
+DontHideWhenFlags = PackedStringArray("desk.after-work")
 
 [node name="Boss" parent="Boss_after_work" unique_id=1256646184 instance=ExtResource("18_28jjv")]
 Dialog = "boss-post-work"

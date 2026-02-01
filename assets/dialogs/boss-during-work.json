@@ -38,7 +38,11 @@
             },
             {
               "text": "GGJ2026_DIALOG_BOSS_DURING_WORK_OPTION_1769941086049_96VLS0",
-              "nextSection": "fixed-printer"
+              "nextSection": "fixed-printer",
+              "condition": {
+                "type": "didDialog",
+                "value": "kopierer.fix-printer"
+              }
             },
             {
               "text": "GGJ2026_DIALOG_BOSS_DURING_WORK_OPTION_1769945222243_TB7FSE",
