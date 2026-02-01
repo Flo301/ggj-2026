@@ -31,7 +31,7 @@
             },
             {
               "text": "GGJ2026_DIALOG_WAKEUP_DIALOG_OPTION_1769880722012_NOLYAT",
-              "nextSection": "start"
+              "nextSection": "continue-sleeping"
             }
           ]
         }
@@ -59,7 +59,7 @@
         },
         {
           "type": "event",
-          "name": "restart-day"
+          "name": "endDay"
         }
       ]
     },
