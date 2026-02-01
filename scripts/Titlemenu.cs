@@ -33,4 +33,16 @@ public partial class Titlemenu : Control
 		popupWindowInstance.Init("GGJ2026_MENU_VERLASSEN_TITEL", "GGJ2026_MENU_VERLASSEN_INHALT", "GGJ2026_MENU_JA", "GGJ2026_MENU_NEIN", () => {GetTree().Quit();});
 		AddChild(popupWindowInstance);
 	}
+
+	override public void _Ready()
+	{
+		TranslationServer.SetLocale("de");
+	}
+
+	public void OnLanguageChanged(int index)
+	{
+		// 1 German
+		// 2 English
+		TranslationServer.SetLocale(index == 0 ? "de" : "en");
+	}
 }

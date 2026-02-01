@@ -284,17 +284,28 @@ horizontal_alignment = 1
 [node name="TextureTitle" type="TextureRect" parent="HBoxContainer/VBoxContainer" unique_id=1903096057]
 layout_mode = 2
 
+[node name="OptionButton" type="OptionButton" parent="HBoxContainer/VBoxContainer" unique_id=1373366501]
+layout_mode = 2
+selected = 0
+item_count = 2
+popup/item_0/text = "Deutsch"
+popup/item_0/id = 0
+popup/item_1/text = "English"
+popup/item_1/id = 1
+
 [node name="ButtonStart" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=1700414469]
 layout_mode = 2
 text = "GGJ2026_MENU_START"
 icon = ExtResource("2_iulo1")
 
 [node name="ButtonLoad" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=397834150]
+visible = false
 layout_mode = 2
 text = "GGJ2026_MENU_LADEN"
 icon = ExtResource("2_iulo1")
 
 [node name="ButtonSettings" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=185815900]
+visible = false
 layout_mode = 2
 text = "GGJ2026_MENU_EINSTELLUNGEN"
 icon = ExtResource("2_iulo1")
@@ -380,6 +391,7 @@ expand_icon = true
 libraries/ = SubResource("AnimationLibrary_6nbsx")
 autoplay = &"idle"
 
+[connection signal="item_selected" from="HBoxContainer/VBoxContainer/OptionButton" to="." method="OnLanguageChanged"]
 [connection signal="button_up" from="HBoxContainer/VBoxContainer/ButtonStart" to="." method="StartGame"]
 [connection signal="button_up" from="HBoxContainer/VBoxContainer/ButtonLoad" to="." method="LoadSave"]
 [connection signal="button_up" from="HBoxContainer/VBoxContainer/ButtonSettings" to="." method="OpenSettings"]
