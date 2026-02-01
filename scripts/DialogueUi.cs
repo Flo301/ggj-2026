@@ -211,6 +211,9 @@ public partial class DialogueUi : Control
 					GlobalState.Instance.availableEmotions.Add(value);
 				}
 				break;
+			case "endDay":
+				GlobalState.Instance.endDay();
+				return false;
 			case "background":
 				switch (value)
 				{
@@ -244,7 +247,7 @@ public partial class DialogueUi : Control
 			return;
 		}
 
-		await ToSignal(GetTree().CreateTimer(0.01), "timeout");
+		await ToSignal(GetTree().CreateTimer(0.001), "timeout");
 		_ = updateCurrentVisibleCharacters();
 	}
 
