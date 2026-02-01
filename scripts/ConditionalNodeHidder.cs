@@ -18,14 +18,33 @@ public partial class ConditionalNodeHidder : Node3D
     public override void _Ready()
     {
         checkIfShouldHide();
-        GlobalState.Instance.DialogDone += checkIfShouldHide;
+        GlobalState.Instance.DialogEnd += checkIfShouldHide;
     }
 
     private void checkIfShouldHide(string dialogName = "")
     {
         if (ShouldHide())
         {
-            Visible = false;
+            toggleAllChilds(false, this);
+        }
+    }
+
+    private void toggleAllChilds(bool active, Node3D node)
+    {
+        node.Visible = active;
+        if (node is CollisionShape3D collisionShape1)
+        {
+            collisionShape1.Disabled = !active;
+        }
+
+        foreach (Node3D child in node.GetChildren())
+        {
+            child.Visible = active;
+            if (child is CollisionShape3D collisionShape2)
+            {
+                collisionShape2.Disabled = !active;
+            }
+            toggleAllChilds(active, child);
         }
     }
 
@@ -58,6 +77,6 @@ public partial class ConditionalNodeHidder : Node3D
 
     public override void _ExitTree()
     {
-        GlobalState.Instance.DialogDone -= checkIfShouldHide;
+        GlobalState.Instance.DialogEnd -= checkIfShouldHide;
     }
 }
