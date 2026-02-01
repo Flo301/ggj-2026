@@ -14,7 +14,7 @@ public partial class EndDayScreen : Control
 	public List<string> test= ["afraid", "angry", "happy", "loving", "sad", "surprised", "thankful"];
 	public override void _Ready()
 	{
-		Init(test);
+		Init(test, () => EndDay());
 	}
 	*/
 	
