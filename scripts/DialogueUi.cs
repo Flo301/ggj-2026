@@ -276,6 +276,9 @@ public partial class DialogueUi : Control
 			case "hasEmotion":
 				// Check if the player has the given emotion
 				return GlobalState.Instance.availableEmotions.Contains(condition.Value);
+			case "didDays":
+				// 
+				return GlobalState.Instance.dayCount >= int.Parse(condition.Value);
 			default:
 				break;
 		}
