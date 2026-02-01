@@ -63,17 +63,17 @@ partial class GlobalState : Node
 		var instance = scene.Instantiate<EndDayScreen>();
 		GetTree().Root.FindChild("InGameUi", true, false).AddChild(instance);
 		instance.Init(newEmotions, () => resetDay());
-
-		doneDialogs = [];
-		foreach (var emotion in newEmotions)
-		{
-			availableEmotions.Add(emotion);
-		}
 	}
 
 	public void resetDay()
 	{
 		// delete and respawn scene
+		doneDialogs = [];
+		foreach (var emotion in newEmotions)
+		{
+			availableEmotions.Add(emotion);
+		}
+		var scene = GD.Load<PackedScene>("res://scenes/levels/Apartment.tscn");
 	}
 
 	public void AddDialogDone(string dialogName)

@@ -26,7 +26,7 @@ script = ExtResource("1_cncga")
 DialogueTitle = NodePath("MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogue/MarginContainer/VBoxContainer/MarginContainer/RichTextDialogueTitle")
 DialogueContent = NodePath("MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogue/MarginContainer/VBoxContainer/RichTextDialogueContent")
 CharacterTexture = NodePath("MarginContainer/HBoxContainerCharacters/ContainerGraphicLeft/BoxContainer/TextureDialogueCharacter")
-OptionsContainer = NodePath("MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogueOptions/ContainerDialogueSelection/VBoxContainerOptions")
+OptionsContainer = NodePath("MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogueOptions/ContainerDialogueSelection/MarginContainer/VBoxContainerOptions")
 
 [node name="Background" type="ColorRect" parent="." unique_id=452911920]
 layout_mode = 1
@@ -109,7 +109,8 @@ size_flags_horizontal = 3
 
 [node name="ContainerDialogueSelection" type="MarginContainer" parent="MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogueOptions" unique_id=2125427363]
 layout_mode = 2
-size_flags_horizontal = 3
+size_flags_horizontal = 8
+size_flags_vertical = 8
 size_flags_stretch_ratio = 0.6
 theme_override_constants/margin_left = 7
 theme_override_constants/margin_top = 7
@@ -117,25 +118,31 @@ theme_override_constants/margin_right = 7
 theme_override_constants/margin_bottom = 7
 
 [node name="UIBackground" parent="MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogueOptions/ContainerDialogueSelection" unique_id=1493063387 instance=ExtResource("1_dxd25")]
-visible = false
 layout_mode = 2
 
-[node name="VBoxContainerOptions" type="BoxContainer" parent="MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogueOptions/ContainerDialogueSelection" unique_id=315614932]
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogueOptions/ContainerDialogueSelection" unique_id=2026114622]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="VBoxContainerOptions" type="BoxContainer" parent="MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogueOptions/ContainerDialogueSelection/MarginContainer" unique_id=315614932]
 layout_mode = 2
 alignment = 2
 vertical = true
 
-[node name="ContainerOption" parent="MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogueOptions/ContainerDialogueSelection/VBoxContainerOptions" unique_id=349841877 instance=ExtResource("3_7yr7v")]
+[node name="ContainerOption" parent="MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogueOptions/ContainerDialogueSelection/MarginContainer/VBoxContainerOptions" unique_id=349841877 instance=ExtResource("3_7yr7v")]
 z_index = 500
 layout_mode = 2
 
-[node name="ContainerOption2" parent="MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogueOptions/ContainerDialogueSelection/VBoxContainerOptions" unique_id=1601444125 instance=ExtResource("3_7yr7v")]
+[node name="ContainerOption2" parent="MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogueOptions/ContainerDialogueSelection/MarginContainer/VBoxContainerOptions" unique_id=1601444125 instance=ExtResource("3_7yr7v")]
 layout_mode = 2
 
-[node name="ContainerOption3" parent="MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogueOptions/ContainerDialogueSelection/VBoxContainerOptions" unique_id=1648665016 instance=ExtResource("3_7yr7v")]
+[node name="ContainerOption3" parent="MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogueOptions/ContainerDialogueSelection/MarginContainer/VBoxContainerOptions" unique_id=1648665016 instance=ExtResource("3_7yr7v")]
 layout_mode = 2
 
-[node name="ContainerOption4" parent="MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogueOptions/ContainerDialogueSelection/VBoxContainerOptions" unique_id=841471587 instance=ExtResource("3_7yr7v")]
+[node name="ContainerOption4" parent="MarginContainer/HBoxContainerUI/VBoxContainer/ContainerDialogueOptions/ContainerDialogueSelection/MarginContainer/VBoxContainerOptions" unique_id=841471587 instance=ExtResource("3_7yr7v")]
 layout_mode = 2
 
 [node name="ContainerDialogue" type="Control" parent="MarginContainer/HBoxContainerUI/VBoxContainer" unique_id=1716508218]
