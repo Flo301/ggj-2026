@@ -7,7 +7,7 @@
 radius = 1.1157227
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_3meis"]
-size = Vector3(0.56004333, 1.671814, 7.2318726)
+size = Vector3(0.56004333, 1.671814, 15.464462)
 
 [node name="Granny" type="Area3D" unique_id=1584149579]
 script = ExtResource("1_7s21n")
@@ -26,5 +26,5 @@ texture = ExtResource("2_7s21n")
 [node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=666548985]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1566675471]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17935944, 0.8934026, -0.6609802)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17935944, 0.8934026, -0.5304184)
 shape = SubResource("BoxShape3D_3meis")

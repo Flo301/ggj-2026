@@ -8,6 +8,8 @@ partial class GlobalState : Node
 {
 	[Signal]
 	public delegate void DialogDoneEventHandler(string dialogName);
+	[Signal]
+	public delegate void DialogEndEventHandler(string dialogName);
 
 	public static GlobalState Instance { get; private set; }
 	public string LastScene { get; internal set; }
@@ -53,7 +55,7 @@ partial class GlobalState : Node
 		instance.Init(dialog);
 		return instance;
 	}
-	
+
 	public void endDay()
 	{
 		// load EndDayScreen
@@ -61,14 +63,14 @@ partial class GlobalState : Node
 		var instance = scene.Instantiate<EndDayScreen>();
 		GetTree().Root.FindChild("InGameUi", true, false).AddChild(instance);
 		instance.Init(newEmotions, () => resetDay());
-		
+
 		doneDialogs = [];
 		foreach (var emotion in newEmotions)
 		{
 			availableEmotions.Add(emotion);
 		}
 	}
-	
+
 	public void resetDay()
 	{
 		// delete and respawn scene
@@ -81,5 +83,10 @@ partial class GlobalState : Node
 			doneDialogs.Add(dialogName);
 			EmitSignal(SignalName.DialogDone, dialogName);
 		}
+	}
+
+	public void OnDialogEnd(string dialogName)
+	{
+		EmitSignal(SignalName.DialogEnd, dialogName);
 	}
 }

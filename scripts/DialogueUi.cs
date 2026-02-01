@@ -94,6 +94,7 @@ public partial class DialogueUi : Control
 	{
 		base._ExitTree();
 		GlobalState.Instance.isDialogOpen = false;
+		GlobalState.Instance.OnDialogEnd(dialog.name);
 	}
 
 	public override void _EnterTree()

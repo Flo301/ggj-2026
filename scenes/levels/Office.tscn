@@ -183,6 +183,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.3020234, 0.050575256, -1.2
 SpawnPosition = NodePath("Spawn")
 TargetLevelPath = "res://scenes/levels/Supermarkt.tscn"
 InteractionText = "GGJ2026_INTERACTION_LEAVE_OFFICE"
+Dialog = "leave-the-office"
 
 [node name="Spawn" type="Node3D" parent="LevelTransitionStreet" unique_id=820280113]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0914073, 0.6856934, 0.92967236)
