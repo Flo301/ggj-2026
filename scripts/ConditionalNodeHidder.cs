@@ -17,16 +17,14 @@ public partial class ConditionalNodeHidder : Node3D
 
     public override void _Ready()
     {
-        checkIfShouldHide();
         GlobalState.Instance.DialogEnd += checkIfShouldHide;
+        checkIfShouldHide();
     }
 
     private void checkIfShouldHide(string dialogName = "")
     {
-        if (ShouldHide())
-        {
-            toggleAllChilds(false, this);
-        }
+
+        toggleAllChilds(!ShouldHide(), this);
     }
 
     private void toggleAllChilds(bool active, Node3D node)
