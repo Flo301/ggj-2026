@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b2vgqtykri4ic"]
 
 [ext_resource type="Script" uid="uid://w5gvduche184" path="res://scripts/CharacterController.cs" id="1_uifn6"]
-[ext_resource type="Texture2D" uid="uid://bdjr0ijtr2ip5" path="res://assets/sprites/mainCharacter/main_character_no_emote_front.png" id="2_oboob"]
+[ext_resource type="Texture2D" uid="uid://xta8xqog5tjq" path="res://assets/sprites/mainCharacter/mc_world.png" id="2_o7et6"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_gmvds"]
 radius = 0.15576172
@@ -21,4 +21,4 @@ visible = false
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.056342244, 0)
 pixel_size = 0.0014
 billboard = 2
-texture = ExtResource("2_oboob")
+texture = ExtResource("2_o7et6")
