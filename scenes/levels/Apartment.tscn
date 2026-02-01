@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://boaeujbh12rau" path="res://scenes/props/apartment/DeskComputer.tscn" id="12_l4ua8"]
 [ext_resource type="PackedScene" uid="uid://c4i3a8ljlca0l" path="res://scenes/interactables/TransitionDoorApartment.tscn" id="13_v8y3w"]
 [ext_resource type="PackedScene" uid="uid://ccblsmf6h4o68" path="res://scenes/props/apartment/TableDining.tscn" id="13_xcwtv"]
+[ext_resource type="PackedScene" uid="uid://c1ewac81l4av8" path="res://scenes/prefabs/barria.tscn" id="14_l4ua8"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8rhdg"]
 
@@ -135,3 +136,12 @@ TargetLevelPath = "res://scenes/levels/Supermarkt.tscn"
 
 [node name="Node3D" type="Node3D" parent="LevelTransition" unique_id=110381146]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0339568, 0.84831774)
+
+[node name="Barria1" parent="." unique_id=705692251 instance=ExtResource("14_l4ua8")]
+transform = Transform3D(0.89955777, 0, 0.4368018, 0, 1, 0, -0.4368018, 0, 0.89955777, 6.236762, 0, 1.3371744)
+
+[node name="Barria2" parent="." unique_id=1243981924 instance=ExtResource("14_l4ua8")]
+transform = Transform3D(0.84619313, 0, 0.5328763, 0, 1, 0, -0.5328763, 0, 0.84619313, -9.19488, 0, 1.3371744)
+
+[node name="Barria3" parent="." unique_id=1611236292 instance=ExtResource("14_l4ua8")]
+transform = Transform3D(0.46019974, 0, -0.8878154, 0, 1, 0, 0.8878154, 0, 0.46019974, 13.82197, -4.7683716e-07, 8.442078)

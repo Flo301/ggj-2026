@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cfajjmxhg1n2"]
+
+[ext_resource type="Material" uid="uid://bhcxecf8pth4c" path="res://assets/textures/office/printer.tres" id="1_6nqoo"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4irf3"]
+size = Vector3(1.9734861, 1.971, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_1r28g"]
+size = Vector2(3.86, 3.19)
+
+[node name="Table" type="StaticBody3D" unique_id=959571379]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1796003828]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.030176401, 0.994, 0)
+shape = SubResource("BoxShape3D_4irf3")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1625538107]
+transform = Transform3D(0.535, 0, 0, 0, -2.3385594e-08, -0.535, 0, 0.535, -2.3385594e-08, 0, 0.86542153, 0)
+material_override = ExtResource("1_6nqoo")
+mesh = SubResource("PlaneMesh_1r28g")

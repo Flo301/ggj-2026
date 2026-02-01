@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://durofrm5yq6lk"]
+
+[ext_resource type="Texture2D" uid="uid://doeeehr8kgps1" path="res://assets/sprites/apartment/chair_dining_back.png" id="1_kcoaq"]
+
+[resource]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_kcoaq")
+texture_repeat = false
+point_size = 105.1

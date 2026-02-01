@@ -1,9 +1,9 @@
-[gd_scene format=3 uid="uid://b8u2nvkiee4lc"]
+[gd_scene format=3 uid="uid://cgxrfn3uftyf4"]
 
-[ext_resource type="Material" uid="uid://durofrm5yq6lk" path="res://assets/textures/apartment/chair_dining_back.tres" id="1_o70g4"]
+[ext_resource type="Material" uid="uid://dg2wlbvqb3sr4" path="res://assets/textures/apartment/chair_dining_side.tres" id="1_woo4k"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4irf3"]
-size = Vector3(0.8337928, 1.1264732, 0.7888148)
+size = Vector3(0.75986373, 1.1264732, 0.643188)
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_1r28g"]
 size = Vector2(1.55, 2.06)
@@ -11,10 +11,10 @@ size = Vector2(1.55, 2.06)
 [node name="ChairDiningBack" type="StaticBody3D" unique_id=959571379]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1796003828]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03945145, 0.5717366, -0.329198)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0028818548, 0.5717366, -0.08902401)
 shape = SubResource("BoxShape3D_4irf3")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1625538107]
 transform = Transform3D(0.535, 0, 0, 0, -2.3385594e-08, -0.535, 0, 0.535, -2.3385594e-08, 0, 0.5572798, 0)
-material_override = ExtResource("1_o70g4")
+material_override = ExtResource("1_woo4k")
 mesh = SubResource("PlaneMesh_1r28g")

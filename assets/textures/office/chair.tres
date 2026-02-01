@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://c203ti1qm70q7"]
+
+[ext_resource type="Texture2D" uid="uid://px4hdeopu7yb" path="res://assets/sprites/apartment/chair_office.png" id="1_gkt1v"]
+
+[resource]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_gkt1v")
+texture_repeat = false
+point_size = 105.1
