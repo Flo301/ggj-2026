@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://ckwxm31o7r8i4" path="res://scripts/InGameUi.cs" id="1_fsjve"]
 [ext_resource type="PackedScene" uid="uid://5mbjetkkvlmv" path="res://scenes/prefabs/ui_background.tscn" id="2_6e2fk"]
+[ext_resource type="PackedScene" uid="uid://bpgrjwgqjhnun" path="res://scenes/transitions/fade-from-back.tscn" id="3_5ldle"]
 
 [node name="InGameUi" type="Control" unique_id=432755473]
 layout_mode = 3
@@ -68,3 +69,6 @@ size_flags_horizontal = 3
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.2
+
+[node name="FadeFromBlack" parent="." unique_id=830612318 instance=ExtResource("3_5ldle")]
+layout_mode = 1
