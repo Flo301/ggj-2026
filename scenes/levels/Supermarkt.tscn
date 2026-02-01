@@ -113,7 +113,7 @@ transform = Transform3D(0.829915, 0, 0.55788994, 0, 1, 0, -0.55788994, 0, 0.8299
 shape = SubResource("BoxShape3D_qbkdb")
 
 [node name="LevelTransitionApartment" parent="." unique_id=1584149579 node_paths=PackedStringArray("SpawnPosition") instance=ExtResource("2_qbkdb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09840751, 0.049999952, 13.027482)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1879578, 0.049999952, 9.80527)
 SpawnPosition = NodePath("Node3D")
 TargetLevelPath = "res://scenes/levels/Apartment.tscn"
 InteractionText = "GGJ2026_INTERACTION_GO_TO_APARTMENT"

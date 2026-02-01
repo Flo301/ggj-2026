@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cmwkpgjo31u4p"]
+
+[ext_resource type="Script" uid="uid://dby3o73x1hx50" path="res://scripts/interactables/LevelTransition.cs" id="1_ecpan"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_gmvds"]
+radius = 0.2
+
+[node name="LevelTransition" type="Area3D" unique_id=1584149579]
+monitoring = false
+monitorable = false
+script = ExtResource("1_ecpan")
+InteractionText = "Leave Office"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=357662295]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CylinderShape3D_gmvds")
+disabled = true

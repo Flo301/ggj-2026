@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bm0y1mwqf47nq"]
 
-[ext_resource type="PackedScene" uid="uid://dk677bmida20a" path="res://scenes/InGameUI.tscn" id="1_yef4m"]
+[ext_resource type="PackedScene" uid="uid://np5laepqvf8u" path="res://scenes/InGameUI.tscn" id="1_yef4m"]
 [ext_resource type="Material" uid="uid://cru6isnn2ffor" path="res://assets/textures/architecture/floor.tres" id="2_tmwjt"]
 [ext_resource type="PackedScene" uid="uid://dwytcgscm8ukm" path="res://scenes/props/office/Wall.tscn" id="4_4c6jp"]
 [ext_resource type="PackedScene" uid="uid://dnja1hqaqwyj3" path="res://scenes/props/apartment/BedsideTable.tscn" id="5_kseqt"]
@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://c1ewac81l4av8" path="res://scenes/prefabs/barria.tscn" id="14_l4ua8"]
 [ext_resource type="PackedScene" uid="uid://ddkbvxj5eyedh" path="res://scenes/props/office/Chair.tscn" id="15_v1drk"]
 [ext_resource type="PackedScene" uid="uid://c7ravkmxag6ay" path="res://scenes/interactables/Bed.tscn" id="15_xcwtv"]
+[ext_resource type="PackedScene" uid="uid://cmwkpgjo31u4p" path="res://scenes/interactables/transitions/TransitionEntryOnly.tscn" id="16_v1drk"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8rhdg"]
 
@@ -140,6 +141,17 @@ transform = Transform3D(0.46019974, 0, -0.8878154, 0, 1, 0, 0.8878154, 0, 0.4601
 
 [node name="Bed" parent="." unique_id=1248857512 instance=ExtResource("15_xcwtv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.540441, 0.050000668, 0.2706623)
+Dialog = "bed"
+
+[node name="IntroTransition" parent="." unique_id=1306002254 node_paths=PackedStringArray("SpawnPosition") instance=ExtResource("16_v1drk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4276533, 0, 1.5666032)
+SpawnPosition = NodePath("Node3D")
+TargetLevelPath = "init"
+SceneEnterDialog = "wakeup-dialog"
+InteractionText = "none"
+
+[node name="Node3D" type="Node3D" parent="IntroTransition" unique_id=86372013]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5815859, 0.7567332, 0)
 
 [node name="LevelTransition" parent="." unique_id=1584149579 node_paths=PackedStringArray("SpawnPosition") instance=ExtResource("13_v8y3w")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6910963, 0.049999714, -1.1333318)

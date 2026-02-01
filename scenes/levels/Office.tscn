@@ -182,6 +182,7 @@ metadata/_edit_lock_ = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.3020234, 0.050575256, -1.2489219)
 SpawnPosition = NodePath("Spawn")
 TargetLevelPath = "res://scenes/levels/Supermarkt.tscn"
+SceneEnterDialog = "boss-pre-work"
 InteractionText = "GGJ2026_INTERACTION_LEAVE_OFFICE"
 Dialog = "leave-the-office"
 
@@ -206,17 +207,24 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.033014, 0.05000019, 4.83771
 [node name="Boss_pre_work" type="Node3D" parent="." unique_id=1322950738]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.9232993, 0.049999714, 0.399868)
 script = ExtResource("19_cw3g0")
+DoHideWhenFlags = PackedStringArray("desk.start")
 
 [node name="Boss" parent="Boss_pre_work" unique_id=1584149579 instance=ExtResource("18_28jjv")]
 
 [node name="Boss_during_work" type="Node3D" parent="." unique_id=1892494844]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3982103, 0.049999714, 7.646182)
 script = ExtResource("19_cw3g0")
+DoHideWhenFlags = PackedStringArray("wakeup-dialog.start")
+DontHideWhenFlags = PackedStringArray("desk.start")
 
 [node name="Boss" parent="Boss_during_work" unique_id=1937297486 instance=ExtResource("18_28jjv")]
+Dialog = "boss-during-work"
 
 [node name="Boss_after_work" type="Node3D" parent="." unique_id=5718714]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.279175, 0.049999237, -0.5918555)
 script = ExtResource("19_cw3g0")
+DoHideWhenFlags = PackedStringArray("wakeup-dialog.start")
+DontHideWhenFlags = PackedStringArray("boss-during-work.start")
 
 [node name="Boss" parent="Boss_after_work" unique_id=1256646184 instance=ExtResource("18_28jjv")]
+Dialog = "boss-post-work"
