@@ -34,7 +34,7 @@ public partial class DialogueUi : Control
 	public void Init(Dialog newDialog)
 	{
 		dialog = newDialog;
-		jumpToSection(newDialog.StartSectionId);
+		CallDeferred(MethodName.jumpToSection, newDialog.StartSectionId);
 	}
 
 	public override void _Ready()
@@ -66,10 +66,10 @@ public partial class DialogueUi : Control
 		base._Input(@event);
 		if (
 			waitForNext && (
-				@event is InputEventMouseButton mouseButtonEvent && mouseButtonEvent.ButtonIndex == MouseButton.Left ||
+				@event is InputEventMouseButton mouseButtonEvent && mouseButtonEvent.ButtonIndex == MouseButton.Left && mouseButtonEvent.Pressed ||
 				@event is InputEventKey keyEvent && (
 					keyEvent.Keycode == Key.Enter || keyEvent.Keycode == Key.Space
-				)
+				) && !keyEvent.Echo && keyEvent.Pressed
 			)
 		)
 		{
@@ -107,7 +107,7 @@ public partial class DialogueUi : Control
 
 	public DialogLineBase getCurrentLine()
 	{
-		if (activeSection.Lines.Count <= activeLine)
+		if (activeSection == null || activeSection.Lines.Count <= activeLine)
 		{
 			return null;
 		}
@@ -222,8 +222,10 @@ public partial class DialogueUi : Control
 				}
 				break;
 			case "interact":
+				GD.Print("Interact");
 				EmitSignal(SignalName.Interact);
-				return false;
+				break;
+			// return false;
 			default:
 				GD.PushError("Unknown event name: " + name);
 				break;

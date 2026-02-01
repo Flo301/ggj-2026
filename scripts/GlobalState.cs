@@ -11,6 +11,8 @@ partial class GlobalState : Node
 
     public List<string> doneDialogs = [];
     public List<string> availableEmotions = ["happy"];
+    public List<string> newEmotions = [];
+    public int dayCount = 0;
 
     public bool isDialogOpen = false;
 
@@ -43,5 +45,14 @@ partial class GlobalState : Node
         GetTree().Root.FindChild("InGameUi", true, false).AddChild(instance);
         instance.Init(dialog);
         return instance;
+    }
+
+    public void resetDay()
+    {
+        doneDialogs = [];
+        foreach (var emotion in newEmotions)
+        {
+            availableEmotions.Add(emotion);
+        }
     }
 }

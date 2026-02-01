@@ -8,9 +8,17 @@
           "type": "switch",
           "condition": {
             "type": "didDialog",
-            "value": "boss.start"
+            "value": "leave-the-office.leave"
           },
           "nextSection": "leave"
+        },
+        {
+          "type": "switch",
+          "condition": {
+            "type": "didDialog",
+            "value": "boss.boss-statement"
+          },
+          "nextSection": "leave-message"
         },
         {
           "type": "nextSection",
@@ -22,14 +30,8 @@
       "id": "leave",
       "lines": [
         {
-          "type": "dialog",
-          "speaker": "GGJ2026_SPEAKER_PLAYER",
-          "text": "GGJ2026_DIALOG_LEAVE_THE_OFFICE_DIALOG_LINE_1769881528422_WAJZJB"
-        },
-        {
           "type": "event",
-          "name": "moveScene",
-          "value": "outdoors"
+          "name": "interact"
         }
       ]
     },
@@ -49,6 +51,20 @@
           "type": "dialog",
           "speaker": "GGJ2026_SPEAKER_PLAYER",
           "text": "GGJ2026_DIALOG_LEAVE_THE_OFFICE_DIALOG_LINE_1769881493634_DX1TYO"
+        }
+      ]
+    },
+    {
+      "id": "leave-message",
+      "lines": [
+        {
+          "type": "dialog",
+          "speaker": "GGJ2026_SPEAKER_PLAYER",
+          "text": "GGJ2026_DIALOG_LEAVE_THE_OFFICE_DIALOG_LINE_1769884909081_T5W9OD"
+        },
+        {
+          "type": "nextSection",
+          "nextSection": "leave"
         }
       ]
     }
